@@ -1,0 +1,246 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="sync_list">
+      <field name="name">Log sync wialon server data</field>
+      <field name="model">gpscontrol.wialon_conexion</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="log"/>
+          <field name="date"/>
+          <field name="status"/>
+        </tree>
+      </field>
+    </record>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="group_test_list">
+      <field name="name">Tree groups alistamientos</field>
+      <field name="model">gpscontrol.wialon_unit_group</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="id_wialon"/>
+          <field name="name"/>
+          <field name="childs_id"/>
+          <field name="crt"/>
+          <field name="bact"/>
+        </tree>
+      </field>
+    </record>
+      <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="unit_test_list">
+      <field name="name">Tree  units alistamientos</field>
+      <field name="model">gpscontrol.wialon_unit</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="id_wialon"/>
+            <field name="name"/>
+            <field name="parent_id"/>
+        </tree>
+      </field>
+    </record>   <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="pseudouser_test_list">
+      <field name="name">Tree Users wialon</field>
+      <field name="model">gpscontrol.wialon_pseudouser</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="id_wia"/>
+            <field name="emails"/>
+            <field name="uacl"/>
+            <field name="cls"/>
+            <field name="crt"/>
+            <field name="bact"/>
+
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="driver_test_list">
+      <field name="name">Tree Drivers wialon</field>
+      <field name="model">gpscontrol.wialon_driver</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="id_wia"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="notificaciones_test_list">
+      <field name="name">Tree Notificaciones wialon</field>
+      <field name="model">gpscontrol.notificaciones</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="user"/>
+            <field name="state"/>
+        </tree>
+      </field>
+    </record>
+
+  <!-- Tree of covid -->
+    <record model="ir.ui.view" id="covid_list">
+      <field name="name">Tree covid survey</field>
+      <field name="model">gpscontrol.covid</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="conductor"/>
+            <field name="fecha"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- formulario alistamientos-->
+
+        <record id="test_form" model="ir.ui.view">
+            <field name="name">Formulario alistamientos</field>
+            <field name="model">gpscontrol.wialon_conexion</field>
+            <field name="arch" type="xml">
+                <form string="Sync">
+                    <header>
+                        <field name="date" widget="datetime" readonly="1" />
+                        <field name="status" widget="statusbar" nolabel="1" readonly="1" />
+                    </header>
+                    <group>
+                        <sheet>
+                            <hr></hr>
+                            <field name="log" readonly="True"/>
+                            <hr></hr>
+                        </sheet>
+                    </group>
+                    <group>
+                        <button name="sync_users" string="Sync test" type="object" class="btn-primary"/>
+                        <button name="sync_units" string="Sync units" type="object" class="btn-primary"/>
+                        <button name="sync_groups" string="Sync Groups" type="object" class="btn-primary"/>
+                        <button name="sync_drivers" string="Sync Drivers" type="object" class="btn-primary"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+      <!-- formulario covid-->
+
+        <record id="covid_form" model="ir.ui.view">
+            <field name="name">Formulario covid</field>
+            <field name="model">gpscontrol.covid</field>
+            <field name="arch" type="xml">
+                <form string="Cuestionario covid">
+                    <header>
+                        <field name="fecha" widget="datetime" readonly="1" />
+                        <field name="state" widget="statusbar" nolabel="1" readonly="1" />
+                    </header>
+                    <group>
+                        <sheet>
+                            <hr></hr>
+                            <field name="conductor"/>
+                            <hr></hr>
+                            <group>
+                                <field name="temperatura"/>
+                            </group>
+                            <group>
+                                <field name="garganta" />
+                                <field name="congestion" />
+                                <field name="tos" />
+                                <field name="respiracion" />
+                            </group>
+                            <group>
+                                <field name="fatiga" />
+                                <field name="escalofrio" />
+                                <field name="musculos" />
+                            </group>
+                        </sheet>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="sync_action_window">
+      <field name="name">Control de Alistamientos</field>
+      <field name="res_model">gpscontrol.wialon_conexion</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="sync_list"/>
+    </record>
+
+       <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="group_test_action_window">
+      <field name="name">Grupos</field>
+      <field name="res_model">gpscontrol.wialon_unit_group</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="group_test_list"/>
+    </record>
+
+         <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="unit_test_action_window">
+      <field name="name">Unidades</field>
+      <field name="res_model">gpscontrol.wialon_unit</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="unit_test_list"/>
+    </record>
+         <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="pseudouser_action_window">
+      <field name="name">Usuarios in Wialon</field>
+      <field name="res_model">gpscontrol.wialon_pseudouser</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="pseudouser_test_list"/>
+    </record>
+
+    <record model="ir.actions.act_window" id="drivers_action_window">
+      <field name="name">Conductores in Wialon</field>
+      <field name="res_model">gpscontrol.wialon_driver</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="driver_test_list"/>
+    </record>
+
+    <record model="ir.actions.act_window" id="notificaciones_action_window">
+      <field name="name">Notificaciones in Wialon</field>
+      <field name="res_model">gpscontrol.notificaciones</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="notificaciones_test_list"/>
+    </record>
+    <!-- action covid -->
+    <record model="ir.actions.act_window" id="covid_action_window">
+      <field name="name">Cuestionarios Covid</field>
+      <field name="res_model">gpscontrol.covid</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="covid_list"/>
+    </record>
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="alistamientos.action_server">
+      <field name="name">alistamientos server</field>
+      <field name="model_id" ref="model_alistamientos_alistamientos"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+    <!-- Top menu item -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="alistamientos.menu_1" parent="alistamientos.menu_root"/>
+    -->
+    <menuitem name="configuracion" id="alistamientos_menu_2" parent="alistamientos_menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Sincronizar" id="menu_test" parent="alistamientos_menu_2" action="sync_action_window"/>
+    <menuitem name="Grupos" id="sync_group_test" parent="alistamientos_menu_2" action="group_test_action_window"/>
+    <menuitem name="Unidades" id="sync_unit_test" parent="alistamientos_menu_2" action="unit_test_action_window"/>
+    <menuitem name="Usuarios" id="menu_pseudouser_list" parent="alistamientos_menu_2" action="pseudouser_action_window"/>
+    <menuitem name="Conductores" id="menu_driver_list" parent="alistamientos_menu_2" action="drivers_action_window"/>
+    <menuitem name="Notificaciones" id="menu_notifications_list" parent="alistamientos_menu_2" action="notificaciones_action_window"/>
+    <menuitem name="COVID" id="menu_covid_list" parent="alistamientos_menu_2" action="covid_action_window"/>
+<!--
+    <menuitem name="Server to list" id="alistamientos" parent="alistamientos.menu_2"
+              action="alistamientos.action_server"/>
+-->
+  </data>
+</odoo>
