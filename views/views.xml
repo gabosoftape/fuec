@@ -2,13 +2,12 @@
   <data>
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="alistamientos_list">
-      <field name="name">Tree alistamientos</field>
-      <field name="model">gpscontrol.alistamientos</field>
+    <record model="ir.ui.view" id="fuec_list">
+      <field name="name">Tree fuec</field>
+      <field name="model">gpscontrol.fuec</field>
       <field name="arch" type="xml">
         <tree>
           <field name="folio"/>
-          <field name="partner_id"/>
           <field name="vehiculo"/>
           <field name="state"/>
         </tree>
@@ -17,11 +16,11 @@
 
     <!-- formulario alistamientos-->
 
-    <record id="alistamientos_form" model="ir.ui.view">
-            <field name="name">Formulario alistamientos</field>
-            <field name="model">gpscontrol.alistamientos</field>
+    <record id="fuec_form" model="ir.ui.view">
+            <field name="name">Formulario Fuec</field>
+            <field name="model">gpscontrol.fuec</field>
             <field name="arch" type="xml">
-                <form string="Alistamientos" attrs="{'readonly':[('state','=','creado')]}">
+                <form string="FUEC" attrs="{'readonly':[('state','=','creado')]}">
                     <header>
                         <field name="state" invisible="1"/>
                     </header>
@@ -29,201 +28,68 @@
                         <div class="oe_title">
                             <h1>Folio: <field name="folio" readonly="1"/></h1>
                         </div>
-                             <div class="oe_title">
-                                <label class="oe_edit_only" for="partner_id" string="Responsable"/>
-                                <h1><field name="partner_id" options="{'no_create': False,'no_create_edit':False}" attrs="{'readonly':[('state','in',('cancelado','creado'))]}"/></h1>
-                             </div>
-                        <group>
-                            <group>
-                                <field name="fecha" attrs="{'readonly':[('state','in',('cancelado','nuevo','creado'))]}"/>
-                            </group>
-                            <group>
-                                <field name="vehiculo" required="1"/>
-                            </group>
-                        </group>
-                        <group string="Alistamiento">
-                            <group>
-                               <field name="documentos_conductor" required="1"/>
-                                <field name="desc_documentos_conductor" attrs="{'invisible':[('documentos_conductor','=',True)], 'required':[('documentos_conductor','=',False)]}"/>
-                                <field widget="image" height="64" name="img_documentos_conductor" attrs="{'invisible':[('documentos_conductor','=',True)], 'required':[('documentos_conductor','=',False)]}"/>
-                            </group>
-                            <group>
-                                <field name="documentos_vehiculo" required="1"/>
-                                <field name="desc_documentos_vehiculo" attrs="{'invisible':[('documentos_vehiculo','=',True)], 'required':[('documentos_vehiculo','=',False)]}"/>
-                                <field widget="image" height="64" name="img_documentos_vehiculo" attrs="{'invisible':[('documentos_vehiculo','=',True)], 'required':[('documentos_vehiculo','=',False)]}"/>
-                            </group>
-                            <group>
-                                <field name="calcomania" required="1"/>
-                                <field name="desc_calcomania" attrs="{'invisible':[('calcomania','=',True)], 'required':[('calcomania','=',False)]}"/>
-                                <field widget="image" height="64" name="img_calcomania" attrs="{'invisible':[('calcomania','=',True)], 'required':[('calcomania','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="pito" required="1"/>
-                                <field name="desc_pito" attrs="{'invisible':[('pito','=',True)], 'required':[('pito','=',False)]}"/>
-                               <field widget="image" height="64" name="img_pito" attrs="{'invisible':[('pito','=',True)], 'required':[('pito','=',False)]}"/></group>
-                            <group>
-                                <field name="disp_velocidad" required="1"/>
-                                <field name="desc_disp_velocidad" attrs="{'invisible':[('disp_velocidad','=',True)], 'required':[('disp_velocidad','=',False)]}"/>
-                                <field widget="image" height="64" name="img_disp_velocidad" attrs="{'invisible':[('disp_velocidad','=',True)], 'required':[('disp_velocidad','=',False)]}"/></group>
-                            <group>
-                                <field name="estado_esc_p_conductor" required="1"/>
-                               <field name="desc_estado_esc_p_conductor" attrs="{'invisible':[('estado_esc_p_conductor','=',True)], 'required':[('estado_esc_p_conductor','=',False)]}"/>
-                               <field widget="image" height="64" name="img_estado_esc_p_conductor" attrs="{'invisible':[('estado_esc_p_conductor','=',True)], 'required':[('estado_esc_p_conductor','=',False)]}"/></group>
-                            <group>
-                               <field name="estado_esc_p_pasajero" required="1"/>
-                               <field name="desc_estado_esc_p_pasajero" attrs="{'invisible':[('estado_esc_p_pasajero','=',True)], 'required':[('estado_esc_p_pasajero','=',False)]}"/>
-                               <field widget="image" height="64" name="img_estado_esc_p_pasajero" attrs="{'invisible':[('estado_esc_p_pasajero','=',True)], 'required':[('estado_esc_p_pasajero','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="equipo_carretera" required="1"/>
-                               <field name="desc_equipo_carretera" attrs="{'invisible':[('equipo_carretera','=',True)], 'required':[('equipo_carretera','=',False)]}"/>
-                               <field widget="image" height="64" name="img_equipo_carretera" attrs="{'invisible':[('equipo_carretera','=',True)], 'required':[('equipo_carretera','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="herramientas" required="1"/>
-                               <field name="desc_herramientas" attrs="{'invisible':[('herramientas','=',True)], 'required':[('herramientas','=',False)]}"/>
-                               <field widget="image" height="64" name="img_herramientas" attrs="{'invisible':[('herramientas','=',True)], 'required':[('herramientas','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="linterna" required="1"/>
-                               <field name="desc_linterna" attrs="{'invisible':[('linterna','=',True)],'required':[('linterna','=',False)]}"/>
-                               <field widget="image" height="64" name="img_linterna" attrs="{'invisible':[('linterna','=',True)],'required':[('linterna','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="extintor" required="1"/>
-                               <field name="desc_extintor" attrs="{'invisible':[('extintor','=',True)], 'required':[('extintor','=',False)]}"/>
-                               <field widget="image" height="64" name="img_extintor" attrs="{'invisible':[('extintor','=',True)], 'required':[('extintor','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="botiquin" required="1"/>
-                               <field name="desc_botiquin" attrs="{'invisible':[('botiquin','=',True)], 'required':[('botiquin','=',False)]}"/>
-                               <field widget="image" height="64" name="img_botiquin" attrs="{'invisible':[('botiquin','=',True)], 'required':[('botiquin','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="repuesto" required="1"/>
-                               <field name="desc_repuesto" attrs="{'invisible':[('repuesto','=',True)], 'required':[('repuesto','=',False)]}"/>
-                               <field widget="image" height="64" name="img_repuesto" attrs="{'invisible':[('repuesto','=',True)], 'required':[('repuesto','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="retrovisores" required="1"/>
-                               <field name="desc_retrovisores" attrs="{'invisible':[('retrovisores','=',True)], 'required':[('retrovisores','=',False)]}"/>
-                               <field widget="image" height="64" name="img_retrovisores" attrs="{'invisible':[('retrovisores','=',True)], 'required':[('retrovisores','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="cinturones" required="1"/>
-                               <field name="desc_cinturones" attrs="{'invisible':[('cinturones','=',True)], 'required':[('cinturones','=',False)]}"/>
-                               <field widget="image" height="64" name="img_cinturones" attrs="{'invisible':[('cinturones','=',True)], 'required':[('cinturones','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="motor" required="1"/>
-                               <field name="desc_motor" attrs="{'invisible':[('motor','=',True)], 'required':[('motor','=',False)]}"/>
-                               <field widget="image" height="64" name="img_motor" attrs="{'invisible':[('motor','=',True)], 'required':[('motor','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="llantas" required="1"/>
-                               <field name="desc_llantas" attrs="{'invisible':[('llantas','=',True)], 'required':[('llantas','=',False)]}"/>
-                               <field widget="image" height="64" name="img_llantas" attrs="{'invisible':[('llantas','=',True)], 'required':[('llantas','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="baterias" required="1"/>
-                               <field name="desc_baterias" attrs="{'invisible':[('baterias','=',True)], 'required':[('baterias','=',False)]}"/>
-                               <field widget="image" height="64" name="img_baterias" attrs="{'invisible':[('baterias','=',True)], 'required':[('baterias','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="transmision" required="1"/>
-                               <field name="desc_transmision" attrs="{'invisible':[('transmision','=',True)], 'required':[('transmision','=',False)]}"/>
-                               <field widget="image" height="64" name="img_transmision" attrs="{'invisible':[('transmision','=',True)], 'required':[('transmision','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="tension" required="1"/>
-                               <field name="desc_tension" attrs="{'invisible':[('tension','=',True)], 'required':[('tension','=',False)]}"/>
-                               <field widget="image" height="64" name="img_tension" attrs="{'invisible':[('tension','=',True)], 'required':[('tension','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="tapas" required="1"/>
-                               <field name="desc_tapas" attrs="{'invisible':[('tapas','=',True)], 'required':[('tapas','=',False)]}"/>
-                               <field widget="image" height="64" name="img_tapas" attrs="{'invisible':[('tapas','=',True)], 'required':[('tapas','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="niveles" required="1"/>
-                               <field name="desc_niveles" attrs="{'invisible':[('niveles','=',True)], 'required':[('niveles','=',False)]}"/>
-                               <field widget="image" height="64" name="img_niveles" attrs="{'invisible':[('niveles','=',True)], 'required':[('niveles','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="filtros" required="1"/>
-                               <field name="desc_filtros" attrs="{'invisible':[('filtros','=',True)], 'required':[('filtros','=',False)]}"/>
-                               <field widget="image" height="64" name="img_filtros" attrs="{'invisible':[('filtros','=',True)], 'required':[('filtros','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="parabrisas" required="1"/>
-                               <field name="desc_parabrisas" attrs="{'invisible':[('parabrisas','=',True)], 'required':[('parabrisas','=',False)]}"/>
-                               <field widget="image" height="64" name="img_parabrisas" attrs="{'invisible':[('parabrisas','=',True)], 'required':[('parabrisas','=',False)]}"/>
-</group>
-                            <group>
-                               <field name="frenos" required="1"/>
-                               <field name="desc_frenos" attrs="{'invisible':[('frenos','=',True)], 'required':[('frenos','=',False)]}"/>
-                               <field widget="image" height="64" name="img_frenos" attrs="{'invisible':[('frenos','=',True)], 'required':[('frenos','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="frenos_emergencia" required="1"/>
-                               <field name="desc_frenos_emergencia" attrs="{'invisible':[('frenos_emergencia','=',True)], 'required':[('frenos_emergencia','=',False)]}"/>
-                               <field widget="image" height="64" name="img_frenos_emergencia" attrs="{'invisible':[('frenos_emergencia','=',True)], 'required':[('frenos_emergencia','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="aire" required="1"/>
-                               <field name="desc_aire" attrs="{'invisible':[('aire','=',True)], 'required':[('aire','=',False)]}"/>
-                               <field widget="image" height="64" name="img_aire" attrs="{'invisible':[('aire','=',True)], 'required':[('aire','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="luces" required="1"/>
-                               <field name="desc_luces" attrs="{'invisible':[('luces','=',True)], 'required':[('luces','=',False)]}"/>
-                               <field widget="image" height="64" name="img_luces" attrs="{'invisible':[('luces','=',True)], 'required':[('luces','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="silleteria" required="1"/>
-                               <field name="desc_silleteria" attrs="{'invisible':[('silleteria','=',True)], 'required':[('silleteria','=',False)]}"/>
-                               <field widget="image" height="64" name="img_silleteria" attrs="{'invisible':[('silleteria','=',True)], 'required':[('silleteria','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="silla_conductor" required="1"/>
-                               <field name="desc_silla_conductor" attrs="{'invisible':[('silla_conductor','=',True)], 'required':[('silla_conductor','=',False)]}"/>
-                               <field widget="image" height="64" name="img_silla_conductor" attrs="{'invisible':[('silla_conductor','=',True)], 'required':[('silla_conductor','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="aseo" required="1"/>
-                               <field name="desc_aseo" attrs="{'invisible':[('aseo','=',True)], 'required':[('aseo','=',False)]}"/>
-                               <field widget="image" height="64" name="img_aseo" attrs="{'invisible':[('aseo','=',True)], 'required':[('aseo','=',False)]}"/>
-                            </group>
-                            <group>
-                               <field name="celular" required="1"/>
-                               <field name="desc_celular" attrs="{'invisible':[('celular','=',True)], 'required':[('celular','=',False)]}"/>
-                               <field widget="image" height="64" name="img_celular" attrs="{'invisible':[('celular','=',True)], 'required':[('celular','=',False)]}"/>
-</group>
-                            <group>
-                               <field name="ruteros" required="1"/>
-                               <field name="desc_ruteros" attrs="{'invisible':[('ruteros','=',True)], 'required':[('ruteros','=',False)]}"/>
-                               <field widget="image" height="64" name="img_ruteros" attrs="{'invisible':[('ruteros','=',True)], 'required':[('ruteros','=',False)]}"/>
-                            </group>
+                         <group string="FUEC">
+                            <field name="user_rel" />
+                            <field name="contract_id" />
+                            <field name="contratista" />
+                            <field name="responsable"/>
+                            <field name="contract_object" />
+                            <field name="ruta" />
+                            <field name="descripcion" />
+                            <field name="convenio" />
+                            <field name="ut_externa" />
+                            <field name="fecha_ini" />
+                            <field name="fecha_end"/>
+                            <field name="vehiculo" />
+                             <field name="conductores" />
                         </group>
                     </sheet>
                 </form>
             </field>
         </record>
 
-    <record id="seq_folio_alistamientos" model="ir.sequence">
-        <field name="name">Secuencia Alistamientos</field>
-        <field name="code">gpscontrol.alistamientos</field>
-        <field name="prefix">SCA</field>
+    <record id="seq_folio_fuec" model="ir.sequence">
+        <field name="name">Secuencia Fuec</field>
+        <field name="code">gpscontrol.fuec</field>
+        <field name="prefix">SCF</field>
         <field name="padding">10</field>
         <field name="company_id" eval="False" />
     </record>
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="alistamientos_action_window">
-      <field name="name">Control de Alistamientos</field>
-      <field name="res_model">gpscontrol.alistamientos</field>
+    <record model="ir.actions.act_window" id="fuec_action_window">
+      <field name="name">Control de Fuec</field>
+      <field name="res_model">gpscontrol.fuec</field>
       <field name="view_mode">tree,form</field>
-        <field name="view_id" ref="alistamientos_list"/>
+        <field name="view_id" ref="fuec_list"/>
     </record>
+      <!-- formulario para imprimir documento fuec-->
+      <record id="fuec_report_wizard_view_form" model="ir.ui.view">
+            <field name="name">Formulario imprimir fuec</field>
+            <field name="model">wizard.fuec_report</field>
+            <field name="arch" type="xml">
+                <form string="Imprimir Reporte">
+
+                       <group string="Selecciona el reporte...">
+                            <group >
+                                <field name="fuec_select" />
+                            </group>
+                        </group>
+
+                    <footer>
+                        <button name="print_fuec_report_pdf" type="object" string="Imprimir Fuec" class="oe_highlight" />
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <act_window
+            id="fuec_report_open_wizard"
+            name="Imprimir Documento"
+            res_model="wizard.fuec_report"
+            view_mode="form"
+            view_id="fuec_report_wizard_view_form"
+            target="new"/>
 
     <!-- server action to the one above -->
 <!--
@@ -240,30 +106,30 @@
       </field>
     </record>
 -->
-     <record id="alistamientos_search" model="ir.ui.view">
-            <field name="name">alistamientos.serch</field>
-            <field name="model">gpscontrol.alistamientos</field>
+     <record id="fuec_search" model="ir.ui.view">
+            <field name="name">fuec.serch</field>
+            <field name="model">gpscontrol.fuec</field>
             <field name="arch" type="xml">
-                <search string="Alistamientos">
+                <search string="Formato Unico de Extracto de Contrato">
                     <field name="folio" />
-                    <field name="partner_id"/>
+                    <field name="contract_id"/>
                     <field name="vehiculo"/>
                 </search>
             </field>
             </record>
     <!-- Top menu item -->
-    <menuitem name="Alistamientos" id="alistamientos_menu_root" web_icon="alistamientos,static/description/icon.png"/>
+    <menuitem name="Fuec" id="fuec_menu_root" web_icon="fuec,static/description/icon.png"/>
     <!-- menu categories -->
     <!--
     <menuitem name="Menu 1" id="alistamientos.menu_1" parent="alistamientos.menu_root"/>
     -->
-    <menuitem name="Administrar" id="alistamientos_menu_1" parent="alistamientos_menu_root"/>
+    <menuitem name="Administrar" id="fuec_menu_1" parent="fuec_menu_root"/>
 
     <!-- actions -->
-    <menuitem name="Admin Alistamientos" id="menu_alistamientos" parent="alistamientos_menu_1" action="alistamientos_action_window"/>
-<!--
-    <menuitem name="Server to list" id="alistamientos" parent="alistamientos.menu_2"
-              action="alistamientos.action_server"/>
--->
+    <menuitem name="Admin Fuec" id="menu_fuec" parent="fuec_menu_1" action="fuec_action_window"/>
+
+    <menuitem name="Imprimir Fuec" id="fuec" parent="menu_fuec"
+              action="fuec_report_open_wizard"/>
+
   </data>
 </odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="fuec_report_template">
+        <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page" >
+                        <div class="row" style="text-align:start!important;">
+                            <div class="col-6">
+                                <b>Informacion Fuec</b>
+                            </div>
+                            <div class="col-6">
+                                <b>Folio: </b><t t-esc="folio"/>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+     </template>
+</odoo>

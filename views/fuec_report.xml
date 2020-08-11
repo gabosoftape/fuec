@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+     <report
+            id="report_fuec_pdf"
+            string="Formato Único de Extracto del Contrato (FUEC) para transporte especial."
+            model="gpscontrol.fuec"
+            report_type="qweb-pdf"
+            file="fuec.fuec_report_template"
+            name="fuec.fuec_report_template"
+            menu = "False"
+
+        />
+        <!--<report
+            id="project_xlsx"
+            model="project.project"
+            string="Project Excel Report"
+            report_type="xlsx"
+            name="alistamientos.project_xlsx"
+            file="alistamientos.project_xlsx"
+            attachment_use="True"
+            menu = "False"
+        /> -->
+    </data>
+</odoo>

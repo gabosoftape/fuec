@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "alistamientos",
+    'name': "Fuec",
 
     'summary': """
-        Una aplicacion de gps control para alistamiento de vehiculos""",
+        Una aplicacion de gps control para formatos unicos de extracto de contrato""",
 
     'description': """
         ...
@@ -19,16 +19,24 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-
+    'depends': [
+        'base',
+        'alistamientos',
+    ],
     # always loaded
     'data': [
-        'security/ir.model.access.csv',
-        'security/enlist_security.xml',
+        'security/fuec_security.xml',
+        'report/fuec_report_pdf_view.xml',
+        'views/fuec_report.xml',
         # 'views/templates.xml',
         'views/views.xml',
-        'views/config.xml',
-
+        'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode
+    'installable': True,
+    'application': True,
+    'sequence': 2,
+    'price': 300,
+    'currency': 'EUR',
 
 }
