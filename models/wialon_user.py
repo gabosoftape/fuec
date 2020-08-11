@@ -1,6 +1,7 @@
 from odoo import models, fields
 
-class fuecExpandPseudouser(models.Model):
+
+class wialon_pseudouser(models.Model):
     _inherit = 'gpscontrol.wialon_pseudouser'
 
     firma = fields.Binary('Firma')
