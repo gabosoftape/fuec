@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
-        <record model="ir.ui.view" id="view_wialonuser_form_inherit_alistamientos">
+        <record model="ir.ui.view" id="view_wialonuser_form_alistamientos">
             <field name="name">Vista usuario heredada</field>
             <field name="model">gpscontrol.wialon_pseudouser</field>
             <field name="arch" type="xml">

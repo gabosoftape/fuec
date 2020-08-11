@@ -28,7 +28,7 @@
         'security/fuec_security.xml',
         'report/fuec_report_pdf_view.xml',
         'views/fuec_report.xml',
-        # 'views/templates.xml',
+        'views/user.xml',
         'views/views.xml',
         'security/ir.model.access.csv',
     ],
