@@ -16,7 +16,7 @@
 
    <!-- Contratistas list view definition -->
 
-    <record model="ir.ui.view" id="fuec_contratistas__list">
+    <record model="ir.ui.view" id="fuec_contratistas_list">
       <field name="name">Contratistas fuec</field>
       <field name="model">gpscontrol.contratista_fuec</field>
       <field name="arch" type="xml">
@@ -30,7 +30,7 @@
 
       <!-- Responsables list view definition -->
 
-    <record model="ir.ui.view" id="fuec_responsables__list">
+    <record model="ir.ui.view" id="fuec_responsables_list">
       <field name="name">Responsables fuec</field>
       <field name="model">gpscontrol.responsable_fuec</field>
       <field name="arch" type="xml">
@@ -44,7 +44,7 @@
 
       <!-- Rutas list view definition -->
 
-    <record model="ir.ui.view" id="fuec_rutas__list">
+    <record model="ir.ui.view" id="fuec_rutas_list">
       <field name="name">Rutas fuec</field>
       <field name="model">gpscontrol.ruta_fuec</field>
       <field name="arch" type="xml">
@@ -104,7 +104,7 @@
         <field name="view_id" ref="fuec_list"/>
     </record>
     <!-- Contratistas fuec -->
-    <record model="ir.actions.act_window" id="fuec_contratista_action_window">
+    <record model="ir.actions.act_window" id="fuec_contratistas_action_window">
       <field name="name">Control de Fuec Contratistas</field>
       <field name="res_model">gpscontrol._contratista_fuec</field>
       <field name="view_mode">tree,form</field>
@@ -112,14 +112,14 @@
     </record>
 
       <!-- Responsables -->
-    <record model="ir.actions.act_window" id="fuec_responsable_action_window">
+    <record model="ir.actions.act_window" id="fuec_responsables_action_window">
       <field name="name">Control de Fuec Responsables</field>
       <field name="res_model">gpscontrol.responsable_fuec</field>
       <field name="view_mode">tree,form</field>
         <field name="view_id" ref="fuec_responsables_list"/>
     </record>
       <!-- Rutas -->
-    <record model="ir.actions.act_window" id="fuec_ruta_action_window">
+    <record model="ir.actions.act_window" id="fuec_rutas_action_window">
       <field name="name">Control de Fuec Rutas</field>
       <field name="res_model">gpscontrol.ruta_fuec</field>
       <field name="view_mode">tree,form</field>
@@ -187,12 +187,15 @@
     <menuitem name="Menu 1" id="alistamientos.menu_1" parent="alistamientos.menu_root"/>
     -->
     <menuitem name="Administrar" id="fuec_menu_1" parent="fuec_menu_root"/>
-
+    <menuitem name="Configuracion" id="fuec_menu_2" parent="fuec_menu_root"/>
     <!-- actions -->
     <menuitem name="Admin Fuec" id="menu_fuec" parent="fuec_menu_1" action="fuec_action_window"/>
 
     <menuitem name="Imprimir Fuec" id="fuec" parent="menu_fuec"
               action="fuec_report_open_wizard"/>
 
+    <menuitem name="Contratistas" id="menu_contratistas_fuec" parent="fuec_menu_2" action="fuec_contratistas_action_window"/>
+    <menuitem name="Responsables" id="menu_responsables_fuec" parent="fuec_menu_2" action="fuec_responsables_action_window"/>
+    <menuitem name="Rutas" id="menu_rutas_fuec" parent="fuec_menu_2" action="fuec_rutas_action_window"/>
   </data>
 </odoo>
