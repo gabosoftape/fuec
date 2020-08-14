@@ -9,23 +9,6 @@ class contratistaFuec(models.Model):
 
      empresa = fields.Char('Empresa')
      nit = fields.Char('Nit')
-     id_type = fields.Selection(
-          string=u'Tipo de Documento',
-          selection=[
-               ('CC', 'CEDULA DE CIUDADANÍA'),
-               ('CE', 'CEDULA DE EXTRANJERÍA'),
-               ('PA', 'PASAPORTE'),
-               ('SC', 'SALVO CONDUCTO'),
-               ('RC', 'REGISTRO CIVIL '),
-               ('PE', 'PERMISO ESPECIAL DE PERMANENCIA'),
-               ('TI', 'TARJETA DE IDENTIDAD'),
-               ('AS', 'ADULTO SIN IDENTIFICAR'),
-               ('MS', 'MENOR SIN IDENTIFICAR'),
-          ],
-          required=False,
-          help=u'Identificacion del Cliente',
-     )
-     id_document = fields.Integer(string='No. Documento', default=None)
      nombre = fields.Char('Nombre de contacto')
      email = fields.Char("Email")
      telefono = fields.Char("Telefono")
@@ -68,7 +51,7 @@ class rutaFuec(models.Model):
 
      nombre = fields.Char('Ruta')
      detalle = fields.Text('Detalle')
-
+     contrato = fields.Char('Contrato')
 
 
 
