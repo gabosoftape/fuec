@@ -106,7 +106,7 @@
     <!-- Contratistas fuec -->
     <record model="ir.actions.act_window" id="fuec_contratistas_action_window">
       <field name="name">Control de Fuec Contratistas</field>
-      <field name="res_model">gpscontrol._contratista_fuec</field>
+      <field name="res_model">gpscontrol.contratista_fuec</field>
       <field name="view_mode">tree,form</field>
         <field name="view_id" ref="fuec_contratistas_list"/>
     </record>
