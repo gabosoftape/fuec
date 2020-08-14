@@ -14,6 +14,47 @@
       </field>
     </record>
 
+   <!-- Contratistas list view definition -->
+
+    <record model="ir.ui.view" id="fuec_contratistas__list">
+      <field name="name">Contratistas fuec</field>
+      <field name="model">gpscontrol.contratista_fuec</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="create_uid"/>
+          <field name="nombre"/>
+          <field name="nit"/>
+        </tree>
+      </field>
+    </record>
+
+      <!-- Responsables list view definition -->
+
+    <record model="ir.ui.view" id="fuec_responsables__list">
+      <field name="name">Responsables fuec</field>
+      <field name="model">gpscontrol.responsable_fuec</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="create_uid"/>
+          <field name="nombre"/>
+          <field name="id_document"/>
+        </tree>
+      </field>
+    </record>
+
+      <!-- Rutas list view definition -->
+
+    <record model="ir.ui.view" id="fuec_rutas__list">
+      <field name="name">Rutas fuec</field>
+      <field name="model">gpscontrol.ruta_fuec</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="create_uid"/>
+          <field name="nombre"/>
+          <field name="detalle"/>
+        </tree>
+      </field>
+    </record>
     <!-- formulario alistamientos-->
 
     <record id="fuec_form" model="ir.ui.view">
@@ -62,8 +103,30 @@
       <field name="view_mode">tree,form</field>
         <field name="view_id" ref="fuec_list"/>
     </record>
+    <!-- Contratistas fuec -->
+    <record model="ir.actions.act_window" id="fuec_contratista_action_window">
+      <field name="name">Control de Fuec Contratistas</field>
+      <field name="res_model">gpscontrol._contratista_fuec</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="fuec_contratistas_list"/>
+    </record>
+
+      <!-- Responsables -->
+    <record model="ir.actions.act_window" id="fuec_responsable_action_window">
+      <field name="name">Control de Fuec Responsables</field>
+      <field name="res_model">gpscontrol.responsable_fuec</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="fuec_responsables_list"/>
+    </record>
+      <!-- Rutas -->
+    <record model="ir.actions.act_window" id="fuec_ruta_action_window">
+      <field name="name">Control de Fuec Rutas</field>
+      <field name="res_model">gpscontrol.ruta_fuec</field>
+      <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="fuec_rutas_list"/>
+    </record>
       <!-- formulario para imprimir documento fuec-->
-      <record id="fuec_report_wizard_view_form" model="ir.ui.view">
+    <record id="fuec_report_wizard_view_form" model="ir.ui.view">
             <field name="name">Formulario imprimir fuec</field>
             <field name="model">wizard.fuec_report</field>
             <field name="arch" type="xml">
