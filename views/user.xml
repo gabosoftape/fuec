@@ -28,12 +28,14 @@
                                 <field name="logo" widget="image" options="{'preview_image': 'logo'}" class="oe_avatar"/>
                                 <field name="firma" widget="image" options="{'preview_image': 'firma'}" class="oe_avatar"/>
                                 <field name="razonsocial"/>
-                                <field name="website"/>
-                                <field name="nit"/>
-                                <field name="fuec_code_hab"/>
-                                <field name="telefono"/>
-                                <field name="fuec_resolucion"/>
+                                <field name="id_type"/>
+                                <field name="id_document"/>
                                 <field name="email"/>
+                                <field name="website"/>
+                                <field name="direccion"/>
+                                <field name="celular"/>
+                                <field name="fuec_code_hab"/>
+                                <field name="fuec_resolucion"/>
                                 <field name="fuec_fecha_hab"/>
                             </group>
                         </group>
