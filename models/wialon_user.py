@@ -14,3 +14,20 @@ class wialon_pseudouser(models.Model):
     fuec_resolucion = fields.Char("No. de resolucion")
     email = fields.Char("Email")
     fuec_fecha_hab = fields.Date("Fecha de habilitacion")
+    id_type = fields.Selection(
+        string=u'Tipo de Documento',
+        selection=[
+            ('CC', 'CEDULA DE CIUDADANÍA'),
+            ('CE', 'CEDULA DE EXTRANJERÍA'),
+            ('PA', 'PASAPORTE'),
+            ('SC', 'SALVO CONDUCTO'),
+            ('RC', 'REGISTRO CIVIL '),
+            ('PE', 'PERMISO ESPECIAL DE PERMANENCIA'),
+            ('TI', 'TARJETA DE IDENTIDAD'),
+            ('AS', 'ADULTO SIN IDENTIFICAR'),
+            ('MS', 'MENOR SIN IDENTIFICAR'),
+        ],
+        required=False,
+        help=u'Identificacion del Cliente',
+    )
+    id_document = fields.Integer(string='No. Documento', default=None)
