@@ -26,7 +26,7 @@
                     <div class="col-6">
                         <img src="http://50.116.2.74/fuec/images/mintransporte.png" style="max-height: 100px;" alt=""/>
                     </div>
-                    <div class="col-6 text-right" style="margin-top:22px;">
+                    <div class="col-6 text-right">
                         <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
                     </div>
                 </div>
@@ -190,7 +190,7 @@
                             </td>
                         </tr>
                     </table>
-                    <div style="padding:2%; font-size:11px; border-top:0.02em solid #000; border-left:0.01em solid #000; border-right:0.01em solid #000; border-bottom:0.01em solid #000;">
+                    <div style="padding:2rem; font-size:11px; border-top:0.02em solid #000; border-left:0.01em solid #000; border-right:0.01em solid #000; border-bottom:0.01em solid #000;">
                         <div style="text-align:center;">
                             <h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
                         </div>
