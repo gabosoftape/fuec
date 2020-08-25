@@ -2,7 +2,7 @@
 <odoo>
     <template id="fuec_layout_pdf">
         <div class="header">
-            <div class="row" style="padding-to:2rem;">
+            <div class="row" style="padding-top:2rem;">
                 <div class="col-6">
                     <img src="http://50.116.2.74/fuec/images/mintransporte.png" style="max-height: 100px;" alt=""/>
                 </div>
