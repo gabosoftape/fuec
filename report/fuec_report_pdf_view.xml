@@ -30,18 +30,17 @@
                         <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
                     </div>
                 </div>
-                <div class="row zero_min_height">
+                <div class="row">
                     <div class="col-12">
                          <br />
-                        <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br />PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
+                        <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
                         <br />
-                        <b style="color:red;">'.$consecutivofuec.'</b>
+                        <b style="color:red;">@cosecutivofuec</b>
                         <p>&amp;nbsp;</p>
                     </div>
                 </div>
             </div>
-
-            <div class="article o_report_layout_standard" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+            <div class="article">
                 <!-- aqui va todoo el contenido del doc -->
                 <div class="page" >
                     <table style="width:100%;">
