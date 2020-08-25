@@ -213,7 +213,7 @@
                                     <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
                                 </div>
                                  <div class="col-3 text-center">
-                                    <img class="firma" t-attf-src="data:image/png;base64,#{firma}" />
+                                    <img class="firma" t-attf-src="data:image/png;base64,#{firma}" style="width:100%; max-width: 200px; max-height: 200px;"/>
                                 </div>
                             </div>
                         </div>
