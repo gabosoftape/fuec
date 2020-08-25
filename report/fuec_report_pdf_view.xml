@@ -117,12 +117,12 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">-</td>
+                                        <td class="text-center col-2">-</td>
+                                        <td class="text-center col-2">-</td>
+                                        <td class="text-center col-2">-</td>
+                                        <td class="text-center col-2">-</td>
+                                        <td class="text-center col-2">-</td>
+                                        <td class="text-center col-2">-</td>
                                     </tr>
 
                                 </tbody>
@@ -131,7 +131,7 @@
                             <hr/>
                             <div class="row" style="text-align:center;">
                                 <div class="col-12 text-center">
-                                    <b>Cconductores</b>
+                                    <b>Conductores</b>
                                 </div>
                             </div>
                             <table cellpadding="1" cellspacing="1" border="1" style="text-align:start;">
@@ -145,10 +145,10 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">-</td>
-                                        <td class="text-center">-</td>
+                                        <td class="text-center col-3">-</td>
+                                        <td class="text-center col-3">-</td>
+                                        <td class="text-center col-3">-</td>
+                                        <td class="text-center col-3">-</td>
                                     </tr>
 
                                 </tbody>
