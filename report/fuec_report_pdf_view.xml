@@ -31,6 +31,7 @@
                             </div>
                         </div>
                         <div style="color:black!important;">
+                            </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-8">
                                     <b>Razon social:</b>
@@ -38,27 +39,39 @@
                                 <div class="col-4">
                                     <b>@type_id</b>: @no_id
                                 </div>
+                            </div>
+                            <div class="row" style="text-align:start;">
                                 <div class="col-8">
                                     <b>Contratante:</b>
                                 </div>
                                 <div class="col-4">
                                     <b>@type_id</b>: @no_id
                                 </div>
+                            </div>
+                            <div class="row" style="text-align:start;">
                                 <div class="col-12">
                                     <b>Objeto del contrato:</b>
                                 </div>
+                            </div>
+                            <div class="row" style="text-align:start;">
                                 <div class="col-8">
                                     <b>Responsable:</b>
                                 </div>
                                 <div class="col-4">
                                     <b>@type_id</b>: @no_id
                                 </div>
+                            </div>
+                            <div class="row" style="text-align:start;">
                                 <div class="col-12">
                                     <b>Origen - Destino:</b>
                                 </div>
+                            </div>
+                            <div class="row" style="text-align:start;">
                                 <div class="col-12">
                                     <b>Descripcion del recorrido:</b>
                                 </div>
+                            </div>
+                            <div class="row" style="text-align:start;">
                                 <div class="col-3">
                                     <b>Convenio</b> @x
                                 </div>
@@ -71,9 +84,13 @@
                                 <div class="col-3">
                                     <b>UT con:</b> @x
                                 </div>
+                            </div>
+                            <div class="row" style="text-align:start;">
                                 <div class="col-12 text-center">
                                     <b>Vigencia del contrato</b>
                                 </div>
+                            </div>
+                            <div class="row" style="text-align:start;">
                                 <div class="col-6">
                                     <b>Desde:</b>@x
                                 </div>
