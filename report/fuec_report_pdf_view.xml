@@ -30,7 +30,7 @@
                         <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="text-align:center;">
                     <div class="col-12 text-center">
                         <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
                         <b style="color:red;">@cosecutivofuec</b>
@@ -41,155 +41,151 @@
             <div class="article">
                 <!-- aqui va todoo el contenido del doc -->
                 <div class="page" >
-                    <table style="width:100%;">
-                            <tr>
-                                <td colspan="4">
+                    <table style="width:100%; text-align:start;" cellpadding="1" cellspacing="1" border="1">
+                        <tr>
+                                <td >
                                     <b>RAZÓN SOCIAL </b>
-                                    '.strtoupper($rowempresa['razonsocial']).'
                                 </td>
-                                <td colspan="2">
-                                    <b>'.strtoupper($rowtipodocumento['tipodocumento']).'</b>
-                                    '.strtoupper($rowempresa['documento']).'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6">
-                                    <b>CONTRATO No. </b>
-                                    '.$rowfuec['contratoid'].'
+                                <td >
+                                    <b>@tipodocumento</b>
+                                    @#documento
                                 </td>
                             </tr>
-                            <tr>
-                                <td colspan="4">
-                                    <b>CONTRATANTE </b>
-                                    '.strtoupper($rownombrescontratista['nombres']).'
-                                </td>
-                                <td colspan="2">
-                                    <b>NIT</b>
-                                    '.strtoupper($rowfuec['contratistaid']).'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6">
-                                    <b>OBJETO DEL CONTRATO </b> <br />
-                                    '.ucfirst($objeto).'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4">
-                                    <b>RESPONSABLE </b>
-                                    '.strtoupper($rowresponsable['nombres']).'
-                                </td>
-                                <td colspan="2">
-                                    <b>'.strtoupper($rowresponsable['empresa']).'</b>
-                                    '.strtoupper($rowresponsable['nit']).'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6">
-                                    <b>ORIGEN-DESTINO </b>
-                                    '.ucwords($rowfuec['route']).'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6">
-                                    <b>DESCRIPCION DEL RECORRIDO </b>
-                                    '.ucfirst($rowfuec['route_desc']).'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="1">
-                                    Convenio <b>'.$chckd1.'</b>
-                                </td>
-                                <td colspan="1">
-                                    Consorcio <b>'.$chckd2.'</b>
-                                </td>
-                                <td colspan="1">
-                                    Unión temporal <b>'.$chckd3.'</b>
-                                </td>
-                                <td colspan="3">
-                                    Con: <b>'.$rowfuec['utcon'].'</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6" style="text-align:center;">
-                                    <b>VIGENCIA DEL CONTRATO</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">
-                                    <label for="type_cvn1"><b>FECHA INICIAL</b></label> '.substr($rowfuec['start'],0,10).'
-                                </td>
+                        <tr>
+                            <td >
+                                <b>CONTRATO No. </b>
+                                9898989
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>CONTRATANTE </b>
+                                @contratante
+                            </td>
+                            <td >
+                                <b>NIT</b>
+                                @nit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <b>OBJETO DEL CONTRATO </b> <br />
+                                @contract-obj
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <b>RESPONSABLE </b>
+                                @responsable
+                            </td>
+                            <td >
+                                <b>@responsable-tipo-documento</b>
+                                @responsable-nro-doc
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <b>ORIGEN-DESTINO </b>
+                                @ruta_name
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <b>DESCRIPCION DEL RECORRIDO </b>
+                                @ruta_desc
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Convenio <b>@x</b>
+                            </td>
+                            <td>
+                                Consorcio <b>@x</b>
+                            </td>
+                            <td>
+                                Unión temporal <b>@x</b>
+                            </td>
+                            <td>
+                                Con: <b>@ut_con</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;">
+                                <b>VIGENCIA DEL CONTRATO</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="type_cvn1"><b>FECHA INICIAL</b></label> @fechaini
+                            </td>
 
-                                <td colspan="3">
-                                    <label for="type_cvn1"><b>FECHA VENCIMIENTO</b></label> '.substr($rowfuec['end'],0,10).'
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="6" style="text-align:center;">
-                                    <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>PLACA</b>
-                                </td>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>MODELO</b>
-                                </td>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>MARCA</b>
-                                </td>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>CLASE</b>
-                                </td>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>NÚMERO INTERNO</b>
-                                </td>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>NÚMERO DE OPERACIÓN</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                '.$tabla.'
-                            </tr>
-                            <tr>
-                                <td colspan="6" style="text-align:center;">
-                                    <b>CONDUCTORES</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" style="text-align:center;">
-                                    <b>NOMBRES Y APELLIDOS</b>
-                                </td>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>No. CÉDULA</b>
-                                </td>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>No. LICENCIA CONDUCCION</b>
-                                </td>
-                                <td colspan="1" style="text-align:center;">
-                                    <b>VIGENCIA</b>
-                                </td>
-                            </tr>
+                            <td>
+                                <label for="type_cvn1"><b>FECHA VENCIMIENTO</b></label>@fecha_end
+                            </td>
+                        </tr>
+                        <tr>
+                            <td  style="text-align:center;">
+                                <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;">
+                                <b>PLACA</b>
+                            </td>
+                            <td style="text-align:center;">
+                                <b>MODELO</b>
+                            </td>
+                            <td style="text-align:center;">
+                                <b>MARCA</b>
+                            </td>
+                            <td style="text-align:center;">
+                                <b>CLASE</b>
+                            </td>
+                            <td style="text-align:center;">
+                                <b>NÚMERO INTERNO</b>
+                            </td>
+                            <td style="text-align:center;">
+                                <b>NÚMERO DE OPERACIÓN</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td  style="text-align:center;">
+                                <b>CONDUCTORES</b>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;">
+                                <b>NOMBRES Y APELLIDOS</b>
+                            </td>
+                            <td style="text-align:center;">
+                                <b>No. CÉDULA</b>
+                            </td>
+                            <td style="text-align:center;">
+                                <b>No. LICENCIA CONDUCCION</b>
+                            </td>
+                            <td style="text-align:center;">
+                                <b>VIGENCIA</b>
+                            </td>
+                        </tr>
                     </table>
                 </div>
                 <div class="page">
                     <table>
                         <tr>
                             <td style="width: 25%;" >
-                                '.$codigoqr.'
+                                @qrcode
                             </td>
                             <td style="text-align:center; width: 25%;" >
-                                '.ucwords($rowempresa['razonsocial']).'<br />
-                                '.$rowempresa['address'].'<br />
-                                '.$rowempresa['telefono'].'<br />
-                                '.strtolower($rowempresa['email']).'<br />
+                                @razonsocal_corp<br />
+                                @address_corp<br />
+                                @telefono<br />
+                                @email<br />
                             </td>
-                            <td colspan="1" style="text-align:center; width: 25%;">
+                            <td style="text-align:center; width: 25%;">
                                 <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
                             </td>
-                            <td colspan="1" style="text-align:center; width: 25%; font-size:11px;">
-                                <img src="http://50.116.2.74/fuec/images/firmas/'.($rowempresa['firma']).'" style="width:100%; max-width: 200px; max-height: 200px;"/><br/>
+                            <td style="text-align:center; width: 25%; font-size:11px;">
+                                <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" style="width:100%; max-width: 200px; max-height: 200px;"/><br/>
                                 <b>Representante legal FIRMA Y SELLO DIGITAL</b>
                             </td>
                         </tr>
