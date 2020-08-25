@@ -17,7 +17,7 @@ class FuecReportButton(models.TransientModel):
             fuec = self.env['gpscontrol.fuec'].search([('folio', '=', folio)])
         user_id = fuec.create_uid
         pseudouser = self.env['gpscontrol.wialon_pseudouser'].search(
-            [('user_id', '=', user_id)])
+            [('user_id', '=', user_id.id)])
         folio = fuec.folio
         contract_id = fuec.contract_id
         razonsocial = pseudouser.razonsocial
