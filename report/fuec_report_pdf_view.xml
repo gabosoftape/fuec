@@ -23,7 +23,7 @@
             </style>
             <div class="header">
                 <div class="row">
-                    <div class="col-6 mb4">
+                    <div class="col-6">
                         <img src="http://50.116.2.74/fuec/images/mintransporte.png" style="max-height: 100px;" alt=""/>
                     </div>
                     <div class="col-6 text-right" style="margin-top:22px;">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 text-center">
                         <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
                         <b style="color:red;">@cosecutivofuec</b>
                         <p>&amp;nbsp;</p>
