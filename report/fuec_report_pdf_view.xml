@@ -18,7 +18,7 @@
                                 <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br />PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
                                 <br />
                                 <b style="color:red;">'.$consecutivofuec.'</b>
-                                <p>&nbsp;</p>
+                                <p>&amp;nbsp;</p>
                             </td>
                         </tr>
                         <tr>
