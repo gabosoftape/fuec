@@ -2,158 +2,159 @@
 <odoo>
     <template id="fuec_report_template">
         <t t-call="web.html_container">
-            <t t-call="web.external_layout">
+            <div class="header">
+                <div class="row">
+                    <div class="col-3 mb4">
+                        <img src="http://50.116.2.74/fuec/images/mintransporte.png" alt="" height="45"/>
+                    </div>
+                    <div class="col-9 text-right" style="margin-top:22px;">
+                        <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
+                    </div>
+                </div>
+                <div class="row zero_min_height">
+                    <div class="col-12">
+                         <br />
+                        <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br />PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
+                        <br />
+                        <b style="color:red;">'.$consecutivofuec.'</b>
+                        <p>&amp;nbsp;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article o_report_layout_standard" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+                <!-- aqui va todoo el contenido del doc -->
                 <div class="page" >
                     <table style="width:100%;">
-                        <tr>
-                            <td colspan="3">
-                                <img src="http://50.116.2.74/fuec/images/mintransporte.png" alt=""/>
-                            </td>
-                            <td colspan="3" style="text-align:center;">
-                                <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6" style="text-align:center;">
-                                <br />
-                                <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br />PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
-                                <br />
-                                <b style="color:red;">'.$consecutivofuec.'</b>
-                                <p>&amp;nbsp;</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">
-                                <b>RAZÓN SOCIAL </b>
-                                '.strtoupper($rowempresa['razonsocial']).'
-                            </td>
-                            <td colspan="2">
-                                <b>'.strtoupper($rowtipodocumento['tipodocumento']).'</b>
-                                '.strtoupper($rowempresa['documento']).'
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">
-                                <b>CONTRATO No. </b>
-                                '.$rowfuec['contratoid'].'
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">
-                                <b>CONTRATANTE </b>
-                                '.strtoupper($rownombrescontratista['nombres']).'
-                            </td>
-                            <td colspan="2">
-                                <b>NIT</b>
-                                '.strtoupper($rowfuec['contratistaid']).'
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">
-                                <b>OBJETO DEL CONTRATO </b> <br />
-                                '.ucfirst($objeto).'
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">
-                                <b>RESPONSABLE </b>
-                                '.strtoupper($rowresponsable['nombres']).'
-                            </td>
-                            <td colspan="2">
-                                <b>'.strtoupper($rowresponsable['empresa']).'</b>
-                                '.strtoupper($rowresponsable['nit']).'
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">
-                                <b>ORIGEN-DESTINO </b>
-                                '.ucwords($rowfuec['route']).'
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6">
-                                <b>DESCRIPCION DEL RECORRIDO </b>
-                                '.ucfirst($rowfuec['route_desc']).'
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="1">
-                                Convenio <b>'.$chckd1.'</b>
-                            </td>
-                            <td colspan="1">
-                                Consorcio <b>'.$chckd2.'</b>
-                            </td>
-                            <td colspan="1">
-                                Unión temporal <b>'.$chckd3.'</b>
-                            </td>
-                            <td colspan="3">
-                                Con: <b>'.$rowfuec['utcon'].'</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6" style="text-align:center;">
-                                <b>VIGENCIA DEL CONTRATO</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">
-                                <label for="type_cvn1"><b>FECHA INICIAL</b></label> '.substr($rowfuec['start'],0,10).'
-                            </td>
+                            <tr>
+                                <td colspan="4">
+                                    <b>RAZÓN SOCIAL </b>
+                                    '.strtoupper($rowempresa['razonsocial']).'
+                                </td>
+                                <td colspan="2">
+                                    <b>'.strtoupper($rowtipodocumento['tipodocumento']).'</b>
+                                    '.strtoupper($rowempresa['documento']).'
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <b>CONTRATO No. </b>
+                                    '.$rowfuec['contratoid'].'
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <b>CONTRATANTE </b>
+                                    '.strtoupper($rownombrescontratista['nombres']).'
+                                </td>
+                                <td colspan="2">
+                                    <b>NIT</b>
+                                    '.strtoupper($rowfuec['contratistaid']).'
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <b>OBJETO DEL CONTRATO </b> <br />
+                                    '.ucfirst($objeto).'
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <b>RESPONSABLE </b>
+                                    '.strtoupper($rowresponsable['nombres']).'
+                                </td>
+                                <td colspan="2">
+                                    <b>'.strtoupper($rowresponsable['empresa']).'</b>
+                                    '.strtoupper($rowresponsable['nit']).'
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <b>ORIGEN-DESTINO </b>
+                                    '.ucwords($rowfuec['route']).'
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6">
+                                    <b>DESCRIPCION DEL RECORRIDO </b>
+                                    '.ucfirst($rowfuec['route_desc']).'
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1">
+                                    Convenio <b>'.$chckd1.'</b>
+                                </td>
+                                <td colspan="1">
+                                    Consorcio <b>'.$chckd2.'</b>
+                                </td>
+                                <td colspan="1">
+                                    Unión temporal <b>'.$chckd3.'</b>
+                                </td>
+                                <td colspan="3">
+                                    Con: <b>'.$rowfuec['utcon'].'</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" style="text-align:center;">
+                                    <b>VIGENCIA DEL CONTRATO</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <label for="type_cvn1"><b>FECHA INICIAL</b></label> '.substr($rowfuec['start'],0,10).'
+                                </td>
 
-                            <td colspan="3">
-                                <label for="type_cvn1"><b>FECHA VENCIMIENTO</b></label> '.substr($rowfuec['end'],0,10).'
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="6" style="text-align:center;">
-                                <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="1" style="text-align:center;">
-                                <b>PLACA</b>
-                            </td>
-                            <td colspan="1" style="text-align:center;">
-                                <b>MODELO</b>
-                            </td>
-                            <td colspan="1" style="text-align:center;">
-                                <b>MARCA</b>
-                            </td>
-                            <td colspan="1" style="text-align:center;">
-                                <b>CLASE</b>
-                            </td>
-                            <td colspan="1" style="text-align:center;">
-                                <b>NÚMERO INTERNO</b>
-                            </td>
-                            <td colspan="1" style="text-align:center;">
-                                <b>NÚMERO DE OPERACIÓN</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            '.$tabla.'
-                        </tr>
-                        <tr>
-                            <td colspan="6" style="text-align:center;">
-                                <b>CONDUCTORES</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" style="text-align:center;">
-                                <b>NOMBRES Y APELLIDOS</b>
-                            </td>
-                            <td colspan="1" style="text-align:center;">
-                                <b>No. CÉDULA</b>
-                            </td>
-                            <td colspan="1" style="text-align:center;">
-                                <b>No. LICENCIA CONDUCCION</b>
-                            </td>
-                            <td colspan="1" style="text-align:center;">
-                                <b>VIGENCIA</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            '.$tabla1.'
-                        </tr>
+                                <td colspan="3">
+                                    <label for="type_cvn1"><b>FECHA VENCIMIENTO</b></label> '.substr($rowfuec['end'],0,10).'
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" style="text-align:center;">
+                                    <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>PLACA</b>
+                                </td>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>MODELO</b>
+                                </td>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>MARCA</b>
+                                </td>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>CLASE</b>
+                                </td>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>NÚMERO INTERNO</b>
+                                </td>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>NÚMERO DE OPERACIÓN</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                '.$tabla.'
+                            </tr>
+                            <tr>
+                                <td colspan="6" style="text-align:center;">
+                                    <b>CONDUCTORES</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="text-align:center;">
+                                    <b>NOMBRES Y APELLIDOS</b>
+                                </td>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>No. CÉDULA</b>
+                                </td>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>No. LICENCIA CONDUCCION</b>
+                                </td>
+                                <td colspan="1" style="text-align:center;">
+                                    <b>VIGENCIA</b>
+                                </td>
+                            </tr>
                     </table>
                     <table>
                         <tr>
@@ -405,7 +406,30 @@
                         </ul>
                     </div>
                 </div>
-            </t>
+            </div>
+
+            <div class="footer o_standard_footer">
+                <div class="text-center" style="border-top: 1px solid black;">
+                    <ul class="list-inline mb4">
+                        <!-- using the list-inline-item class from bootstrap causes weird behaviours in pdf report
+                             adding d-inline class fixes the problem-->
+                        <li t-if="company.phone" class="list-inline-item d-inline">Phone: <span t-field="company.phone"/></li>
+                        <li t-if="company.email" class="list-inline-item d-inline">Email: <span t-field="company.email"/></li>
+                        <li t-if="company.website" class="list-inline-item d-inline">Web: <span t-field="company.website"/></li>
+                        <li t-if="company.vat" class="list-inline-item d-inline"><t t-esc="company.country_id.vat_label or 'Tax ID'"/>: <span t-field="company.vat"/></li>
+                    </ul>
+
+                    <div name="financial_infos">
+                        report footer
+                    </div>
+
+                    <div class="text-muted">
+                        Page: <span class="page"/> / <span class="topage"/>
+                    </div>
+                </div>
+            </div>
         </t>
+
+
      </template>
 </odoo>
