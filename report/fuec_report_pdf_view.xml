@@ -94,91 +94,90 @@
                         Con: <b>@ut_con</b>
                     </div>
                 </div>
-                <!-- aqui va todoo el contenido del doc -->
-                <div class="page" >
-                    <table style="width:100%; text-align:start;" cellpadding="1" cellspacing="1" border="1">
-                        <tr>
-                            <td style="text-align:center;">
-                                <b>VIGENCIA DEL CONTRATO</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label for="type_cvn1"><b>FECHA INICIAL</b></label> @fechaini
-                            </td>
-
-                            <td>
-                                <label for="type_cvn1"><b>FECHA VENCIMIENTO</b></label>@fecha_end
-                            </td>
-                        </tr>
-                        <tr>
-                            <td  style="text-align:center;">
-                                <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align:center;">
-                                <b>PLACA</b>
-                            </td>
-                            <td style="text-align:center;">
-                                <b>MODELO</b>
-                            </td>
-                            <td style="text-align:center;">
-                                <b>MARCA</b>
-                            </td>
-                            <td style="text-align:center;">
-                                <b>CLASE</b>
-                            </td>
-                            <td style="text-align:center;">
-                                <b>NÚMERO INTERNO</b>
-                            </td>
-                            <td style="text-align:center;">
-                                <b>NÚMERO DE OPERACIÓN</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td  style="text-align:center;">
-                                <b>CONDUCTORES</b>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="text-align:center;">
-                                <b>NOMBRES Y APELLIDOS</b>
-                            </td>
-                            <td style="text-align:center;">
-                                <b>No. CÉDULA</b>
-                            </td>
-                            <td style="text-align:center;">
-                                <b>No. LICENCIA CONDUCCION</b>
-                            </td>
-                            <td style="text-align:center;">
-                                <b>VIGENCIA</b>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="row">
+                    <div class="col-12">
+                        <b>VIGENCIA DEL CONTRATO</b>
+                    </div>
                 </div>
-                <div class="page">
-                    <table>
-                        <tr>
-                            <td style="width: 25%;" >
-                                @qrcode
-                            </td>
-                            <td style="text-align:center; width: 25%;" >
-                                @razonsocal_corp<br />
-                                @address_corp<br />
-                                @telefono<br />
-                                @email<br />
-                            </td>
-                            <td style="text-align:center; width: 25%;">
-                                <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
-                            </td>
-                            <td style="text-align:center; width: 25%; font-size:11px;">
-                                <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" style="width:100%; max-width: 200px; max-height: 200px;"/><br/>
-                                <b>Representante legal FIRMA Y SELLO DIGITAL</b>
-                            </td>
-                        </tr>
-                    </table>
-                    <div style="padding:2rem; font-size:11px; border-top:0.02em solid #000; border-left:0.01em solid #000; border-right:0.01em solid #000; border-bottom:0.01em solid #000;">
+                <div class="row">
+                    <div class="col-6">
+                        <b>FECHA INICIAL</b>
+                    </div>
+                    <div class="col-6">
+                        <b>FECHA VENCIMIENTO</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                        <b>PLACA</b>
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                        <b>MODELO</b>
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                         <b>MARCA</b>
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                         <b>CLASE</b>
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                        <b>NÚMERO INTERNO</b>
+                    </div>
+                    <div class="col-2" style="text-align:center;">
+                        <b>NÚMERO DE OPERACIÓN</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                         <b>CONDUCTORES</b>
+                    </div>
+                    <div class="12">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:center;">
+                                        <b>NOMBRES Y APELLIDOS</b>
+                                    </td>
+                                    <td style="text-align:center;">
+                                        <b>No. CÉDULA</b>
+                                    </td>
+                                    <td style="text-align:center;">
+                                        <b>No. LICENCIA CONDUCCION</b>
+                                    </td>
+                                    <td style="text-align:center;">
+                                        <b>VIGENCIA</b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <table>
+                            <tr>
+                                <td style="width: 25%;" >
+                                    @qrcode
+                                </td>
+                                <td style="text-align:center; width: 25%;" >
+                                    @razonsocal_corp<br />
+                                    @address_corp<br />
+                                    @telefono<br />
+                                    @email<br />
+                                </td>
+                                <td style="text-align:center; width: 25%;">
+                                    <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
+                                </td>
+                                <td style="text-align:center; width: 25%; font-size:11px;">
+                                    <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" style="width:100%; max-width: 200px; max-height: 200px;"/><br/>
+                                    <b>Representante legal FIRMA Y SELLO DIGITAL</b>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="padding:2rem; font-size:11px; border-top:0.02em solid #000; border-left:0.01em solid #000; border-right:0.01em solid #000; border-bottom:0.01em solid #000;">
                         <div style="text-align:center;">
                             <h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
                         </div>
@@ -405,7 +404,10 @@
                             </li>
                         </ul>
                     </div>
+                    </div>
                 </div>
+                <!-- aqui va todoo el contenido del doc -->
+
             </div>
         </t>
 
