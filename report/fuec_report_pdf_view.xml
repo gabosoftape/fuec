@@ -16,94 +16,90 @@
             <t t-raw="0"/>
         </div>
 
-        <div class="footer o_standard_footer">
-            <div class="text-center" style="border-top: 1px solid black;">
-                <div t-if="report_type == 'pdf'" class="text-muted">
-                    Página: <span class="page"/> / <span class="topage"/>
-                </div>
-            </div>
-        </div>
-
     </template>
     <template id="fuec_report_template">
         <t t-call="web.html_container">
             <t t-call="fuec.fuec_layout_pdf">
                 <div class="page">
-                    <div class="row" style="text-align:center;">
-                    <div class="col-12 text-center">
-                        <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
-                        <br/>
-                        <b style="color:red;">@cosecutivofuec</b>
-                        <p>&amp;nbsp;</p>
-                    </div>
-                </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <b>RAZÓN SOCIAL </b>
-                        </div>
-                        <div class="col-6">
-                             <b>@tipodocumento</b>
-                                @#documento
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                           <b>CONTRATO No. </b>
-                                    9898989
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                           <b>CONTRATANTE </b>
-                                    @contratante
-                        </div>
-                        <div class="col-6">
-                             <b>NIT</b>
-                                    @nit
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <b>OBJETO DEL CONTRATO </b> <br />
-                                    @contract-obj
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <b>RESPONSABLE </b>
-                             @responsable
-                        </div>
-                        <div class="col-6">
-                             <b>@responsable-tipo-documento</b>
-                                @responsable-nro-doc
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <b>ORIGEN-DESTINO </b>
-                            @ruta_name
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <b>DESCRIPCION DEL RECORRIDO </b>
-                                    @ruta_desc
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            Convenio <b>@x</b>
-                        </div>
-                        <div class="col-3">
-                            Consorcio <b>@x</b>
-                        </div>
-                        <div class="col-3">
-                            Unión temporal <b>@x</b>
-                        </div>
-                        <div class="col-3">
-                            Con: <b>@ut_con</b>
-                        </div>
-                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <div class="col-12 text-center">
+                                    <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
+                                    <br/>
+                                    <b style="color:red;">@cosecutivofuec</b>
+                                    <p>&amp;nbsp;</p>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-6">
+                                    <b>RAZÓN SOCIAL </b>
+                                </div>
+                                <div class="col-6">
+                                     <b>@tipodocumento</b>
+                                        @#documento
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-12">
+                                   <b>CONTRATO No. </b>
+                                            9898989
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-6">
+                                   <b>CONTRATANTE </b>
+                                            @contratante
+                                </div>
+                                <div class="col-6">
+                                     <b>NIT</b>
+                                            @nit
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-12">
+                                    <b>OBJETO DEL CONTRATO </b> <br />
+                                            @contract-obj
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-6">
+                                    <b>RESPONSABLE </b>
+                                     @responsable
+                                </div>
+                                <div class="col-6">
+                                     <b>@responsable-tipo-documento</b>
+                                        @responsable-nro-doc
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-12">
+                                    <b>ORIGEN-DESTINO </b>
+                                    @ruta_name
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-12">
+                                    <b>DESCRIPCION DEL RECORRIDO </b>
+                                            @ruta_desc
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-3">
+                                    Convenio <b>@x</b>
+                                </div>
+                                <div class="col-3">
+                                    Consorcio <b>@x</b>
+                                </div>
+                                <div class="col-3">
+                                    Unión temporal <b>@x</b>
+                                </div>
+                                <div class="col-3">
+                                    Con: <b>@ut_con</b>
+                                </div>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="row">
                         <div class="col-12">
                             <b>VIGENCIA DEL CONTRATO</b>
