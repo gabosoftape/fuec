@@ -4,10 +4,10 @@
         <t t-call="web.html_container">
             <div class="header">
                 <div class="row">
-                    <div class="col-3 mb4">
-                        <img src="http://50.116.2.74/fuec/images/mintransporte.png" alt=""/>
+                    <div class="col-6 mb4">
+                        <img src="http://50.116.2.74/fuec/images/mintransporte.png" style="max-height: 100px;" alt=""/>
                     </div>
-                    <div class="col-9 text-right" style="margin-top:22px;">
+                    <div class="col-6 text-right" style="margin-top:22px;">
                         <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
                     </div>
                 </div>
