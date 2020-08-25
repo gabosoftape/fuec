@@ -2,7 +2,7 @@
 <odoo>
     <template id="fuec_layout_pdf">
         <div class="header">
-            <div class="row">
+            <div class="row" style="padding-to:2rem;">
                 <div class="col-6">
                     <img src="http://50.116.2.74/fuec/images/mintransporte.png" style="max-height: 100px;" alt=""/>
                 </div>
@@ -21,7 +21,7 @@
         <t t-call="web.html_container">
                 <t t-call="fuec.fuec_layout_pdf">
                     <div class="page">
-                        <div class="row" style="text-align:start!important;">
+                        <div class="row" style="text-align:center!important;">
                             <div class="col-12">
                                  <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
                                     <br/>
@@ -52,39 +52,6 @@
                                     <tr>
                                         <td>Documentos Conductor (Cédula, Licencia Conducción, Carné empresa)</td>
                                         <t t-if="documentos_conductor">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Documentos vehiculo (Licencia transito, tarjeta operación, SOAT, poliza RCC y RCE, Revisión tecnicomecánica anual y bimestral, extracto contrato)</td>
-                                        <t t-if="documentos_vehiculo">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Calcomania " Como conduzco"</td>
-                                        <t t-if="calcomania">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Pito</td>
-                                        <t t-if="pito">
                                             <td class="text-center">-</td>
                                             <td class="text-center">X</td>
                                         </t>
