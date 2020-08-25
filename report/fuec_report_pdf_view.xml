@@ -98,51 +98,51 @@
                                     Con: <b>@ut_con</b>
                                 </div>
                             </tr>
+                            <tr>
+                                <div class="col-12">
+                                    <b>VIGENCIA DEL CONTRATO</b>
+                                </div>
+                            </tr>
+                            <tr>
+                                 <div class="col-6">
+                                    <b>FECHA INICIAL</b>
+                                </div>
+                                <div class="col-6">
+                                    <b>FECHA VENCIMIENTO</b>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="col-12">
+                                    <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
+                                </div>
+                                <div class="col-2" style="text-align:center;">
+                                    <b>PLACA</b>
+                                </div>
+                                <div class="col-2" style="text-align:center;">
+                                    <b>MODELO</b>
+                                </div>
+                                <div class="col-2" style="text-align:center;">
+                                     <b>MARCA</b>
+                                </div>
+                                <div class="col-2" style="text-align:center;">
+                                     <b>CLASE</b>
+                                </div>
+                                <div class="col-2" style="text-align:center;">
+                                    <b>NÚMERO INTERNO</b>
+                                </div>
+                                <div class="col-2" style="text-align:center;">
+                                    <b>NÚMERO DE OPERACIÓN</b>
+                                </div>
+                            </tr>
                         </tbody>
                     </table>
                     <div class="row">
                         <div class="col-12">
-                            <b>VIGENCIA DEL CONTRATO</b>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <b>FECHA INICIAL</b>
-                        </div>
-                        <div class="col-6">
-                            <b>FECHA VENCIMIENTO</b>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
-                        </div>
-                        <div class="col-2" style="text-align:center;">
-                            <b>PLACA</b>
-                        </div>
-                        <div class="col-2" style="text-align:center;">
-                            <b>MODELO</b>
-                        </div>
-                        <div class="col-2" style="text-align:center;">
-                             <b>MARCA</b>
-                        </div>
-                        <div class="col-2" style="text-align:center;">
-                             <b>CLASE</b>
-                        </div>
-                        <div class="col-2" style="text-align:center;">
-                            <b>NÚMERO INTERNO</b>
-                        </div>
-                        <div class="col-2" style="text-align:center;">
-                            <b>NÚMERO DE OPERACIÓN</b>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                             <b>CONDUCTORES</b>
+                            <b>CONDUCTORES</b>
                         </div>
                         <div class="12">
                             <table>
-                                <tbody>
+                                <thead>
                                     <tr>
                                         <td style="text-align:center;">
                                             <b>NOMBRES Y APELLIDOS</b>
@@ -157,6 +157,9 @@
                                             <b>VIGENCIA</b>
                                         </td>
                                     </tr>
+                                </thead>
+                                <tbody>
+
                                 </tbody>
                             </table>
                         </div>
