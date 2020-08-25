@@ -70,40 +70,65 @@
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12">
-                                    <b>Objeto del contrato:</b> <t t-esc="contract_id"/>
+                                    <b>Objeto del contrato:</b> <t t-esc="contract_object"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-8">
-                                    <b>Responsable:</b>
+                                    <b>Responsable:</b> <t t-esc="responsable.nombre"/>
                                 </div>
                                 <div class="col-4">
-                                    <b>@type_id</b>: @no_id
+                                    <b><t t-esc="responsable.id_type"/></b>: <t t-esc="responsable.id_document"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12">
-                                    <b>Origen - Destino:</b>
+                                    <b>Origen - Destino:</b> <t t-esc="ruta.nombre"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12">
-                                    <b>Descripcion del recorrido:</b>
+                                    <b>Descripcion del recorrido:</b> <t t-esc="ruta.detalle"/>
                                 </div>
                             </div>
-                            <div class="row" style="text-align:start;">
-                                <div class="col-3">
-                                    <b>Convenio</b> @x
-                                </div>
-                                <div class="col-3">
-                                    <b>Consorcio</b> @x
-                                </div>
-                                <div class="col-3">
-                                    <b>Union temporal</b> @x
-                                </div>
-                                <div class="col-3">
-                                    <b>UT con:</b> @x
-                                </div>
+                            <div t-if="convenio" class="row" style="text-align:start;">
+                                <t t-if="convenio == 'cv'">
+                                    <div class="col-4">
+                                        <b>Convenio</b> X
+                                    </div>
+                                    <div class="col-4">
+                                        <b>Consorcio</b>
+                                    </div>
+                                    <div class="col-4">
+                                        <b>Union temporal</b>
+                                    </div>
+                                </t>
+                                <t t-if="convenio == 'cv'">
+                                    <div class="col-4">
+                                        <b>Convenio</b>
+                                    </div>
+                                    <div class="col-4">
+                                        <b>Consorcio</b> X
+                                    </div>
+                                    <div class="col-4">
+                                        <b>Union temporal</b>
+                                    </div>
+                                </t>
+                                <t t-else="">
+                                    <div class="col-3">
+                                        <b>Convenio</b>
+                                    </div>
+                                    <div class="col-3">
+                                        <b>Consorcio</b>
+                                    </div>
+                                    <div class="col-3">
+                                        <b>Union temporal</b> X
+                                    </div>
+                                    <div class="col-3">
+                                        <b>UT Con: </b> <t t-esc="ut_con"/>
+                                    </div>
+                                </t>
+
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12 text-center">
@@ -112,10 +137,10 @@
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-6">
-                                    <b>Desde:</b>@x
+                                    <b>Desde:</b><t t-esc="inicio_contrato"/>
                                 </div>
                                 <div class="col-6">
-                                    <b>Hasta:</b> @x
+                                    <b>Hasta:</b><t t-esc="fin_contrato"/>
                                 </div>
                             </div>
                             <hr/>
@@ -138,8 +163,8 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center col-2">-</td>
-                                        <td class="text-center col-2">-</td>
+                                        <td class="text-center col-2"><t t-esc="vehiculo.name"/></td>
+                                        <td class="text-center col-2"><t t-esc="vehiculo.id_wialon"/></td>
                                         <td class="text-center col-2">-</td>
                                         <td class="text-center col-2">-</td>
                                         <td class="text-center col-2">-</td>
@@ -165,27 +190,30 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td class="text-center col-3">-</td>
-                                        <td class="text-center col-3">-</td>
-                                        <td class="text-center col-3">-</td>
-                                        <td class="text-center col-3">-</td>
-                                    </tr>
+                                    <t t-foreach="conductores" t-as="conductor">
+                                        <tr>
+                                            <td class="text-center col-3"><t t-esc="conductor.name"/></td>
+                                            <td class="text-center col-3"><t t-esc="conductor.id"/></td>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                        </tr>
+                                    </t>
+
                                 </tbody>
 
                             </table>
                              <div class="row" style="text-align:center;">
                                 <div class="col-3 text-center">
-                                    <b>@qr</b>
+                                    <b><t t-esc="qr"/></b>
                                 </div>
                                  <div class="col-3 text-center">
-                                    <b>@info-company</b>
+                                    <b><t t-esc="vehiculo.name"/></b>
                                 </div>
                                  <div class="col-3 text-center">
-                                    <b>@ST</b>
+                                    <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
                                 </div>
                                  <div class="col-3 text-center">
-                                    <b>@firma</b>
+                                    <img class="firma" t-attf-src="data:image/png;base64,#{firma}" />
                                 </div>
                             </div>
                         </div>
