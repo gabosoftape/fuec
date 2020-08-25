@@ -22,31 +22,19 @@
                 <t t-call="fuec.fuec_layout_pdf">
                     <div class="page">
                         <div class="row" style="text-align:start!important;">
-                            <div class="col-6">
-                                <b>Informacion Alistamiento</b>
-                            </div>
-                            <div class="col-6">
-                                <b>Fecha: </b><t t-esc="fecha"/>
+                            <div class="col-12">
+                                 <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
+                                    <br/>
+                                    <b style="color:red;">@cosecutivofuec</b>
+                                    <p>&amp;nbsp;</p>
                             </div>
                         </div>
                         <div style="color:black!important;">
                             <div class="row" style="text-align:start;">
-                                <div class="col-4">
+                                <div class="col-12">
                                     <h5><b>Alistamiento: </b></h5>
                                     <h5>
                                         <t t-esc="folio"/>
-                                    </h5>
-                                </div>
-                                <div class="col-4">
-                                    <h5><b>Vehiculo:</b></h5>
-                                    <h5>
-                                        <t t-esc="vehiculo"/>
-                                    </h5>
-                                </div>
-                                <div class="col-4">
-                                    <h5><b>Conductor: </b></h5>
-                                    <h5>
-                                        <t t-esc="conductor" />
                                     </h5>
                                 </div>
                             </div>
