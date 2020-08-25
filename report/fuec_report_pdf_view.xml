@@ -19,7 +19,8 @@
                 </div>
             </div>
             <div class="article">
-                <div class="row" style="text-align:center;">
+                <div class="page">
+                    <div class="row" style="text-align:center;">
                     <div class="col-12 text-center">
                         <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
                         <br/>
@@ -27,385 +28,389 @@
                         <p>&amp;nbsp;</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-6">
-                        <b>RAZÓN SOCIAL </b>
+                    <div class="row">
+                        <div class="col-6">
+                            <b>RAZÓN SOCIAL </b>
+                        </div>
+                        <div class="col-6">
+                             <b>@tipodocumento</b>
+                                @#documento
+                        </div>
                     </div>
-                    <div class="col-6">
-                         <b>@tipodocumento</b>
-                            @#documento
+                    <div class="row">
+                        <div class="col-12">
+                           <b>CONTRATO No. </b>
+                                    9898989
+                        </div>
                     </div>
-                </div>
-                 <div class="row">
-                    <div class="col-12">
-                       <b>CONTRATO No. </b>
-                                9898989
+                    <div class="row">
+                        <div class="col-6">
+                           <b>CONTRATANTE </b>
+                                    @contratante
+                        </div>
+                        <div class="col-6">
+                             <b>NIT</b>
+                                    @nit
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                       <b>CONTRATANTE </b>
-                                @contratante
+                    <div class="row">
+                        <div class="col-12">
+                            <b>OBJETO DEL CONTRATO </b> <br />
+                                    @contract-obj
+                        </div>
                     </div>
-                    <div class="col-6">
-                         <b>NIT</b>
-                                @nit
+                    <div class="row">
+                        <div class="col-6">
+                            <b>RESPONSABLE </b>
+                             @responsable
+                        </div>
+                        <div class="col-6">
+                             <b>@responsable-tipo-documento</b>
+                                @responsable-nro-doc
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <b>OBJETO DEL CONTRATO </b> <br />
-                                @contract-obj
+                    <div class="row">
+                        <div class="col-12">
+                            <b>ORIGEN-DESTINO </b>
+                            @ruta_name
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <b>RESPONSABLE </b>
-                         @responsable
+                    <div class="row">
+                        <div class="col-12">
+                            <b>DESCRIPCION DEL RECORRIDO </b>
+                                    @ruta_desc
+                        </div>
                     </div>
-                    <div class="col-6">
-                         <b>@responsable-tipo-documento</b>
-                            @responsable-nro-doc
+                    <div class="row">
+                        <div class="col-3">
+                            Convenio <b>@x</b>
+                        </div>
+                        <div class="col-3">
+                            Consorcio <b>@x</b>
+                        </div>
+                        <div class="col-3">
+                            Unión temporal <b>@x</b>
+                        </div>
+                        <div class="col-3">
+                            Con: <b>@ut_con</b>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <b>ORIGEN-DESTINO </b>
-                        @ruta_name
+                    <div class="row">
+                        <div class="col-12">
+                            <b>VIGENCIA DEL CONTRATO</b>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <b>DESCRIPCION DEL RECORRIDO </b>
-                                @ruta_desc
+                    <div class="row">
+                        <div class="col-6">
+                            <b>FECHA INICIAL</b>
+                        </div>
+                        <div class="col-6">
+                            <b>FECHA VENCIMIENTO</b>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        Convenio <b>@x</b>
+                    <div class="row">
+                        <div class="col-12">
+                            <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
+                        </div>
+                        <div class="col-2" style="text-align:center;">
+                            <b>PLACA</b>
+                        </div>
+                        <div class="col-2" style="text-align:center;">
+                            <b>MODELO</b>
+                        </div>
+                        <div class="col-2" style="text-align:center;">
+                             <b>MARCA</b>
+                        </div>
+                        <div class="col-2" style="text-align:center;">
+                             <b>CLASE</b>
+                        </div>
+                        <div class="col-2" style="text-align:center;">
+                            <b>NÚMERO INTERNO</b>
+                        </div>
+                        <div class="col-2" style="text-align:center;">
+                            <b>NÚMERO DE OPERACIÓN</b>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        Consorcio <b>@x</b>
+                    <div class="row">
+                        <div class="col-12">
+                             <b>CONDUCTORES</b>
+                        </div>
+                        <div class="12">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align:center;">
+                                            <b>NOMBRES Y APELLIDOS</b>
+                                        </td>
+                                        <td style="text-align:center;">
+                                            <b>No. CÉDULA</b>
+                                        </td>
+                                        <td style="text-align:center;">
+                                            <b>No. LICENCIA CONDUCCION</b>
+                                        </td>
+                                        <td style="text-align:center;">
+                                            <b>VIGENCIA</b>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="col-3">
-                        Unión temporal <b>@x</b>
-                    </div>
-                    <div class="col-3">
-                        Con: <b>@ut_con</b>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <b>VIGENCIA DEL CONTRATO</b>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <b>FECHA INICIAL</b>
-                    </div>
-                    <div class="col-6">
-                        <b>FECHA VENCIMIENTO</b>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <b>CARACTERÍSTICAS DEL VEHÍCULO </b>
-                    </div>
-                    <div class="col-2" style="text-align:center;">
-                        <b>PLACA</b>
-                    </div>
-                    <div class="col-2" style="text-align:center;">
-                        <b>MODELO</b>
-                    </div>
-                    <div class="col-2" style="text-align:center;">
-                         <b>MARCA</b>
-                    </div>
-                    <div class="col-2" style="text-align:center;">
-                         <b>CLASE</b>
-                    </div>
-                    <div class="col-2" style="text-align:center;">
-                        <b>NÚMERO INTERNO</b>
-                    </div>
-                    <div class="col-2" style="text-align:center;">
-                        <b>NÚMERO DE OPERACIÓN</b>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                         <b>CONDUCTORES</b>
-                    </div>
-                    <div class="12">
-                        <table>
-                            <tbody>
+                    <div class="row">
+                        <div class="col-12">
+                            <table>
                                 <tr>
-                                    <td style="text-align:center;">
-                                        <b>NOMBRES Y APELLIDOS</b>
+                                    <td style="width: 25%;" >
+                                        @qrcode
                                     </td>
-                                    <td style="text-align:center;">
-                                        <b>No. CÉDULA</b>
+                                    <td style="text-align:center; width: 25%;" >
+                                        @razonsocal_corp<br />
+                                        @address_corp<br />
+                                        @telefono<br />
+                                        @email<br />
                                     </td>
-                                    <td style="text-align:center;">
-                                        <b>No. LICENCIA CONDUCCION</b>
+                                    <td style="text-align:center; width: 25%;">
+                                        <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
                                     </td>
-                                    <td style="text-align:center;">
-                                        <b>VIGENCIA</b>
+                                    <td style="text-align:center; width: 25%; font-size:11px;">
+                                        <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" style="width:100%; max-width: 200px; max-height: 200px;"/><br/>
+                                        <b>Representante legal FIRMA Y SELLO DIGITAL</b>
                                     </td>
                                 </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <table>
-                            <tr>
-                                <td style="width: 25%;" >
-                                    @qrcode
-                                </td>
-                                <td style="text-align:center; width: 25%;" >
-                                    @razonsocal_corp<br />
-                                    @address_corp<br />
-                                    @telefono<br />
-                                    @email<br />
-                                </td>
-                                <td style="text-align:center; width: 25%;">
-                                    <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
-                                </td>
-                                <td style="text-align:center; width: 25%; font-size:11px;">
-                                    <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" style="width:100%; max-width: 200px; max-height: 200px;"/><br/>
-                                    <b>Representante legal FIRMA Y SELLO DIGITAL</b>
-                                </td>
-                            </tr>
-                        </table>
-                        <div style="padding:2rem; font-size:11px; border-top:0.02em solid #000; border-left:0.01em solid #000; border-right:0.01em solid #000; border-bottom:0.01em solid #000;">
-                        <div style="text-align:center;">
-                            <h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
+                            </table>
                         </div>
-                        <ul style="margin-left:-100px !important;">
-                            <li>
-                                El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
-                            </li>
-                            <li>
-                                <br />
-                                a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
-                                <br />
-                                <table style="width:100%">
-                                    <tr>
-                                        <td>
-                                            Antioquia-Choco
-                                        </td>
-                                        <td class="tdCenter">
-                                            305
-                                        </td>
-                                        <td>
-                                            Huila-Caquetá
-                                        </td>
-                                        <td class="tdCenter">
-                                            441
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Atlántico
-                                        </td>
-                                        <td class="tdCenter">
-                                            208
-                                        </td>
-                                        <td>
-                                            Magdalena
-                                        </td>
-                                        <td class="tdCenter">
-                                            247
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Bolívar-San Andrés y Providencia
-                                        </td>
-                                        <td class="tdCenter">
-                                            213
-                                        </td>
-                                        <td>
-                                            Meta-Vaupés-Vichada
-                                        </td>
-                                        <td class="tdCenter">
-                                            550
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Boyacá-Casanare
-                                        </td>
-                                        <td class="tdCenter">
-                                            415
-                                        </td>
-                                        <td>
-                                            Nariño-Putumayo
-                                        </td>
-                                        <td class="tdCenter">
-                                            352
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Caldas
-                                        </td>
-                                        <td class="tdCenter">
-                                            317
-                                        </td>
-                                        <td>
-                                            N/Santander-Arauca
-                                        </td>
-                                        <td class="tdCenter">
-                                            454
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Cauca
-                                        </td>
-                                        <td class="tdCenter">
-                                            319
-                                        </td>
-                                        <td>
-                                            Quindio
-                                        </td>
-                                        <td class="tdCenter">
-                                            363
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            César
-                                        </td>
-                                        <td class="tdCenter">
-                                            220
-                                        </td>
-                                        <td>
-                                            Risaralda
-                                        </td>
-                                        <td class="tdCenter">
-                                            366
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Córdoba-Sucre
-                                        </td>
-                                        <td class="tdCenter">
-                                            223
-                                        </td>
-                                        <td>
-                                            Santander
-                                        </td>
-                                        <td class="tdCenter">
-                                            468
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Cundinamarca
-                                        </td>
-                                        <td class="tdCenter">
-                                            425
-                                        </td>
-                                        <td>
-                                            Tolima
-                                        </td>
-                                        <td class="tdCenter">
-                                            473
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            Guajira
-                                        </td>
-                                        <td class="tdCenter">
-                                            241
-                                        </td>
-                                        <td>
-                                             Valle del Cauca
-                                        </td>
-                                        <td class="tdCenter">
-                                            376
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br /><br />
-                            </li>
-                            <li>
-                                b) Los cuatro dígitos siguientes señalarán el número de resolución mediante la cual se otorgó la habilitación de la Empresa. En caso que la resolución no tenga estos dígitos, los faltantes serán completados con ceros a la izquierda;<br /><br />
-                            </li>
-                            <li>
-                                c) Los dos siguientes dígitos, corresponderán a los dos últimos del año en que la empresa fue habilitada;<br /><br />
-                            </li>
-                            <li>
-                                d) Acontinuación, cuatro dígitos que corresponderán al año en el que se expide el extracto del contrato;<br /><br />
-                            </li>
-                            <li>
-                                e) Posteriormente, cuatro dígitos que identifican el número del contrato. La numeración debe ser consecutiva, establecida por cada empresa y continuará con la numeración dada a los contratos de prestación del servicios celebrados para el transporte de estudiantes, empleados, turistas, usuarios del servicio de salud, grupos específicos de usuarios, en vigencia de la resolución 3068 de 2014.<br /><br />
-                            </li>
-                            <li>
-                                f) Finalmente, los cuatro últimos dígitos corresponderán al número consecutivo del extracto de contrato que se expida para la ejecución de cada contrato. Se debe expedir un nuevo extracto por vencimiento del plazo inicial del mismo o por cambio del vehículo.<br /><br />
-                            </li>
-                            <li>
-                                <b>EJEMPLO:</b><br />
-                                <br />
-                                Empresa habilitada por la Dirección Territorial Cundinamarca en el año 2012 con resolución de habilitación No. 0155, que expide el primer extracto del contrato en el año 2015, del contrato 255. El número del Formato Unico de Extracto del Contrato "FUEC" será : 425015512201502550001.
-                                <br />
-                            </li>
-                            <li>
-                                <hr />
-                                <p><b>Nota:</b> El vehiculo se encuentra en perfecto estado Mecánico y de aseo.</p>
-                                <p>Para verificar la autenticidad de esta planilla consultar la pagina web https://monitoringinnovation.com/contactus opcion consultas, ingresando el siguiente codigo XXKFFUEK</p>
-                                <br />
-                                <table style="width:100%">
-                                    <tr>
-                                        <td colspan="4" class="tdCenter">
-                                            <b>INFORMACION POR RUTA ESTIMADA</b>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" class="tdCenter">
-                                            Distancia recorrida estimada
-                                        </td>
-                                        <td colspan="2" class="tdCenter">
-                                            Sin informacion
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" class="tdCenter">
-                                            Duracion total estimada
-                                        </td>
-                                        <td colspan="2" class="tdCenter">
-                                            Sin informacion
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" class="tdCenter">
-                                            Peajes
-                                        </td>
-                                        <td colspan="2" class="tdCenter">
-                                            Sin informacion
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" class="tdCenter">
-                                            Consumo de combustible estimado
-                                        </td>
-                                        <td colspan="2" class="tdCenter">
-                                            Sin informacion
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br />
-                                <p><b>Resol. 315/2013 Art. PROTOCOLO DE ALISTAMIENTO DIARIO,</b> Se deja constancia en este documento que participaron del proceso de alistamiento diaro el(los) conductor(es) mencionado(s) en este FUEC bajo la supervicion de la empresa a travéz deusos tecnológicos amparados por la ley 1450, art. 230 y del decreto ley 019 de 2012, art. 4.</p>
-                                <br />
-                            </li>
-                        </ul>
-                    </div>
                     </div>
                 </div>
+                <div class="page">
+                    <div style="padding:2rem; font-size:11px; border-top:0.02em solid #000; border-left:0.01em solid #000; border-right:0.01em solid #000; border-bottom:0.01em solid #000;">
+                            <div style="text-align:center;">
+                                <h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
+                            </div>
+                            <ul style="margin-left:-100px !important;">
+                                <li>
+                                    El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
+                                </li>
+                                <li>
+                                    <br />
+                                    a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
+                                    <br />
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td>
+                                                Antioquia-Choco
+                                            </td>
+                                            <td class="tdCenter">
+                                                305
+                                            </td>
+                                            <td>
+                                                Huila-Caquetá
+                                            </td>
+                                            <td class="tdCenter">
+                                                441
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Atlántico
+                                            </td>
+                                            <td class="tdCenter">
+                                                208
+                                            </td>
+                                            <td>
+                                                Magdalena
+                                            </td>
+                                            <td class="tdCenter">
+                                                247
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Bolívar-San Andrés y Providencia
+                                            </td>
+                                            <td class="tdCenter">
+                                                213
+                                            </td>
+                                            <td>
+                                                Meta-Vaupés-Vichada
+                                            </td>
+                                            <td class="tdCenter">
+                                                550
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Boyacá-Casanare
+                                            </td>
+                                            <td class="tdCenter">
+                                                415
+                                            </td>
+                                            <td>
+                                                Nariño-Putumayo
+                                            </td>
+                                            <td class="tdCenter">
+                                                352
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Caldas
+                                            </td>
+                                            <td class="tdCenter">
+                                                317
+                                            </td>
+                                            <td>
+                                                N/Santander-Arauca
+                                            </td>
+                                            <td class="tdCenter">
+                                                454
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Cauca
+                                            </td>
+                                            <td class="tdCenter">
+                                                319
+                                            </td>
+                                            <td>
+                                                Quindio
+                                            </td>
+                                            <td class="tdCenter">
+                                                363
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                César
+                                            </td>
+                                            <td class="tdCenter">
+                                                220
+                                            </td>
+                                            <td>
+                                                Risaralda
+                                            </td>
+                                            <td class="tdCenter">
+                                                366
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Córdoba-Sucre
+                                            </td>
+                                            <td class="tdCenter">
+                                                223
+                                            </td>
+                                            <td>
+                                                Santander
+                                            </td>
+                                            <td class="tdCenter">
+                                                468
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Cundinamarca
+                                            </td>
+                                            <td class="tdCenter">
+                                                425
+                                            </td>
+                                            <td>
+                                                Tolima
+                                            </td>
+                                            <td class="tdCenter">
+                                                473
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Guajira
+                                            </td>
+                                            <td class="tdCenter">
+                                                241
+                                            </td>
+                                            <td>
+                                                 Valle del Cauca
+                                            </td>
+                                            <td class="tdCenter">
+                                                376
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br /><br />
+                                </li>
+                                <li>
+                                    b) Los cuatro dígitos siguientes señalarán el número de resolución mediante la cual se otorgó la habilitación de la Empresa. En caso que la resolución no tenga estos dígitos, los faltantes serán completados con ceros a la izquierda;<br /><br />
+                                </li>
+                                <li>
+                                    c) Los dos siguientes dígitos, corresponderán a los dos últimos del año en que la empresa fue habilitada;<br /><br />
+                                </li>
+                                <li>
+                                    d) Acontinuación, cuatro dígitos que corresponderán al año en el que se expide el extracto del contrato;<br /><br />
+                                </li>
+                                <li>
+                                    e) Posteriormente, cuatro dígitos que identifican el número del contrato. La numeración debe ser consecutiva, establecida por cada empresa y continuará con la numeración dada a los contratos de prestación del servicios celebrados para el transporte de estudiantes, empleados, turistas, usuarios del servicio de salud, grupos específicos de usuarios, en vigencia de la resolución 3068 de 2014.<br /><br />
+                                </li>
+                                <li>
+                                    f) Finalmente, los cuatro últimos dígitos corresponderán al número consecutivo del extracto de contrato que se expida para la ejecución de cada contrato. Se debe expedir un nuevo extracto por vencimiento del plazo inicial del mismo o por cambio del vehículo.<br /><br />
+                                </li>
+                                <li>
+                                    <b>EJEMPLO:</b><br />
+                                    <br />
+                                    Empresa habilitada por la Dirección Territorial Cundinamarca en el año 2012 con resolución de habilitación No. 0155, que expide el primer extracto del contrato en el año 2015, del contrato 255. El número del Formato Unico de Extracto del Contrato "FUEC" será : 425015512201502550001.
+                                    <br />
+                                </li>
+                                <li>
+                                    <hr />
+                                    <p><b>Nota:</b> El vehiculo se encuentra en perfecto estado Mecánico y de aseo.</p>
+                                    <p>Para verificar la autenticidad de esta planilla consultar la pagina web https://monitoringinnovation.com/contactus opcion consultas, ingresando el siguiente codigo XXKFFUEK</p>
+                                    <br />
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td colspan="4" class="tdCenter">
+                                                <b>INFORMACION POR RUTA ESTIMADA</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="tdCenter">
+                                                Distancia recorrida estimada
+                                            </td>
+                                            <td colspan="2" class="tdCenter">
+                                                Sin informacion
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="tdCenter">
+                                                Duracion total estimada
+                                            </td>
+                                            <td colspan="2" class="tdCenter">
+                                                Sin informacion
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="tdCenter">
+                                                Peajes
+                                            </td>
+                                            <td colspan="2" class="tdCenter">
+                                                Sin informacion
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="tdCenter">
+                                                Consumo de combustible estimado
+                                            </td>
+                                            <td colspan="2" class="tdCenter">
+                                                Sin informacion
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br />
+                                    <p><b>Resol. 315/2013 Art. PROTOCOLO DE ALISTAMIENTO DIARIO,</b> Se deja constancia en este documento que participaron del proceso de alistamiento diaro el(los) conductor(es) mencionado(s) en este FUEC bajo la supervicion de la empresa a travéz deusos tecnológicos amparados por la ley 1450, art. 230 y del decreto ley 019 de 2012, art. 4.</p>
+                                    <br />
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+
                 <!-- aqui va todoo el contenido del doc -->
 
             </div>
