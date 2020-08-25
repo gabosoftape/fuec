@@ -128,6 +128,46 @@
                                 </tbody>
 
                             </table>
+                            <hr/>
+                            <div class="row" style="text-align:center;">
+                                <div class="col-12 text-center">
+                                    <b>Cconductores</b>
+                                </div>
+                            </div>
+                            <table cellpadding="1" cellspacing="1" border="1" style="text-align:start;">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Nombres y Apellidos</th>
+                                        <th class="text-center">No. Identificacion</th>
+                                        <th class="text-center">No. Licencia</th>
+                                        <th class="text-center">Vigencia</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center">-</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                             <div class="row" style="text-align:center;">
+                                <div class="col-3 text-center">
+                                    <b>@qr</b>
+                                </div>
+                                 <div class="col-3 text-center">
+                                    <b>@info-company</b>
+                                </div>
+                                 <div class="col-3 text-center">
+                                    <b>@ST</b>
+                                </div>
+                                 <div class="col-3 text-center">
+                                    <b>@firma</b>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <br/>
