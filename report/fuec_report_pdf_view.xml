@@ -27,15 +27,58 @@
                                     <br/>
                                     <b style="color:red;">@cosecutivofuec</b>
                                     <p>&amp;nbsp;</p>
+                                <hr/>
                             </div>
                         </div>
                         <div style="color:black!important;">
                             <div class="row" style="text-align:start;">
+                                <div class="col-8">
+                                    <b>Razon social:</b>
+                                </div>
+                                <div class="col-4">
+                                    <b>@type_id</b>: @no_id
+                                </div>
+                                <div class="col-8">
+                                    <b>Contratante:</b>
+                                </div>
+                                <div class="col-4">
+                                    <b>@type_id</b>: @no_id
+                                </div>
                                 <div class="col-12">
-                                    <h5><b>Alistamiento: </b></h5>
-                                    <h5>
-                                        <t t-esc="folio"/>
-                                    </h5>
+                                    <b>Objeto del contrato:</b>
+                                </div>
+                                <div class="col-8">
+                                    <b>Responsable:</b>
+                                </div>
+                                <div class="col-4">
+                                    <b>@type_id</b>: @no_id
+                                </div>
+                                <div class="col-12">
+                                    <b>Origen - Destino:</b>
+                                </div>
+                                <div class="col-12">
+                                    <b>Descripcion del recorrido:</b>
+                                </div>
+                                <div class="col-3">
+                                    <b>Convenio</b> @x
+                                </div>
+                                <div class="col-3">
+                                    <b>Consorcio</b> @x
+                                </div>
+                                <div class="col-3">
+                                    <b>Union temporal</b> @x
+                                </div>
+                                <div class="col-3">
+                                    <b>UT con:</b> @x
+                                </div>
+                                <div class="col-12 text-center">
+                                    <b>Vigencia del contrato</b>
+                                </div>
+                                <div class="col-6">
+                                    <b>Desde:</b>@x
+                                </div>
+                                <div class="col-6">
+                                    <b>Hasta:</b> @x
                                 </div>
                             </div>
                             <hr/>
@@ -49,149 +92,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Documentos Conductor (Cédula, Licencia Conducción, Carné empresa)</td>
-                                        <t t-if="documentos_conductor">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Dispositivo de velocidad</td>
-                                        <t t-if="disp_velocidad">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Estado de escalera puerta de conductor</td>
-                                        <t t-if="estado_esc_p_conductor">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Estado escalera puerta de pasajero</td>
-                                        <t t-if="estado_esc_p_pasajero">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Equipo de Carretera (Gato, Llave de pernos, 2 señales carretera,   2 Tacos)</td>
-                                        <t t-if="equipo_carretera">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Herramientas en buen estado</td>
-                                        <t t-if="herramientas">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Linterna</td>
-                                        <t t-if="linterna">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Extintor (vigente, pasador, manometro, corrosión)</td>
-                                        <t t-if="extintor">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Botiquin</td>
-                                        <t t-if="botiquin">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Llanta de repuesto</td>
-                                        <t t-if="repuesto">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Espejos retrovisores (3)</td>
-                                        <t t-if="retrovisores">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Cinturon de seguridad conductor y pasajeros</td>
-                                        <t t-if="cinturones">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Motor : No existan fugas</td>
-                                        <t t-if="motor">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
                                     <tr>
                                         <td>Estado de llantas (desgaste, presion de aire)Estado de llantas (desgaste, presion de aire)</td>
                                         <t t-if="llantas">
@@ -261,61 +161,6 @@
                                     <tr>
                                         <td>Revision de filtros</td>
                                         <t t-if="filtros">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Estado limpiaprabrisas y nivel de agua</td>
-                                        <t t-if="parabrisas">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Sistema de Frenos</td>
-                                        <t t-if="frenos">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Freno emergencias</td>
-                                        <t t-if="frenos_emergencia">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Estado Aire Acondicionado</td>
-                                        <t t-if="aire">
-                                            <td class="text-center">-</td>
-                                            <td class="text-center">X</td>
-                                        </t>
-                                        <t t-else="">
-                                            <td class="text-center">X</td>
-                                            <td class="text-center">-</td>
-                                        </t>
-                                    </tr>
-                                    <tr>
-                                        <td>Luces (altas, medias, bajas, direccionales, estacionarias y reversa)</td>
-                                        <t t-if="luces">
                                             <td class="text-center">-</td>
                                             <td class="text-center">X</td>
                                         </t>
