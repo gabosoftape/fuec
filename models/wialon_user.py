@@ -19,6 +19,7 @@ class wialon_pseudouser(models.Model):
             ('TI', 'TARJETA DE IDENTIDAD'),
             ('AS', 'ADULTO SIN IDENTIFICAR'),
             ('MS', 'MENOR SIN IDENTIFICAR'),
+            ('NT', 'NIT'),
         ],
         required=False,
         help=u'Identificacion del Cliente',
