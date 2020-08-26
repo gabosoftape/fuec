@@ -54,7 +54,7 @@
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-8">
-                                    <b>Responsable:</b> <t t-esc="responsable.nombre"/>
+                                    <b>Responsable:</b> <t t-esc="responsable"/>
                                 </div>
                                 <div class="col-4">
                                     <b><t t-esc="responsable.id_type"/></b>: <t t-esc="responsable.id_document"/>
@@ -62,12 +62,12 @@
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12">
-                                    <b>Origen - Destino:</b> <t t-esc="ruta.nombre"/>
+                                    <b>Origen - Destino:</b> <t t-esc="ruta"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12">
-                                    <b>Descripcion del recorrido:</b> <t t-esc="ruta.detalle"/>
+                                    <b>Descripcion del recorrido:</b> <t t-esc="ruta"/>
                                 </div>
                             </div>
                             <div t-if="convenio" class="row" style="text-align:start;">
