@@ -142,8 +142,8 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center col-2"><t t-esc="vehiculo.name"/></td>
-                                        <td class="text-center col-2"><t t-esc="vehiculo.id_wialon"/></td>
+                                        <td class="text-center col-2">-</td>
+                                        <td class="text-center col-2">-</td>
                                         <td class="text-center col-2">-</td>
                                         <td class="text-center col-2">-</td>
                                         <td class="text-center col-2">-</td>
