@@ -22,7 +22,7 @@
                 <t t-call="fuec.fuec_layout_pdf">
                     <div class="page" style="text-align:center!important; page-break-after: always;">
                         <div class="row">
-                            <div class="col-12" style="font-size:12px;">
+                            <div class="col-12" style="font-size:14px;">
                                  <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br/>PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
                                     <br/>
                                     <b style="color:red;"><t t-esc="contract_id"/></b>
