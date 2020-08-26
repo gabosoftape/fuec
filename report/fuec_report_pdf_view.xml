@@ -216,12 +216,13 @@
                     </div>
                     <br/>
                     <br></br>
+                    <wbr>
                     <div class="page">
                         	<div>
                                 <div style="text-align:center;">
                                     <h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
                                 </div>
-                                <ul style="margin-left:-100px !important;">
+                                <ul style="margin-left:100px !important;">
                                     <li>
                                         El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
                                     </li>
