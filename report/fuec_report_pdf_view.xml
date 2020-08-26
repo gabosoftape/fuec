@@ -116,10 +116,10 @@
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-6">
-                                    <b>Desde: &nbsp; </b><t t-esc="inicio_contrato"/>
+                                    <b>Desde: &amp;nbsp; </b><t t-esc="inicio_contrato"/>
                                 </div>
                                 <div class="col-6">
-                                    <b>Hasta: &nbsp; </b><t t-esc="fin_contrato"/>
+                                    <b>Hasta: <p>&amp;nbsp;</p> </b><t t-esc="fin_contrato"/>
                                 </div>
                             </div>
                             <hr/>
