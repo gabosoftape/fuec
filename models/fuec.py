@@ -25,9 +25,7 @@ class fuec(models.Model):
     # Descripcion del recorrido
     descripcion = fields.Char("Descripcion del recorrido")
     # convenios
-    convenio = fields.Selection([('cv', 'Convenio'),
-                                        ('cs', 'Consorcio'),
-                                        ('ut', 'Union temporal')], string="Convenio")
+    convenio = fields.Selection([('cv', 'Convenio'), ('cs', 'Consorcio'), ('ut', 'Union temporal')], string="Convenio")
     ut_externa = fields.Char('Ut con: ')
     # fecha inicio
     fecha_ini = fields.Datetime('Fecha Inicio', default=lambda *a: fields.Datetime.now())
