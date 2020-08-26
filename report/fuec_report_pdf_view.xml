@@ -171,8 +171,8 @@
                                 <tbody>
                                     <t t-foreach="conductores" t-as="conductor">
                                         <tr>
-                                            <td class="text-center col-3"><t t-esc="conductor.name"/></td>
-                                            <td class="text-center col-3"><t t-esc="conductor.id"/></td>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
                                             <td class="text-center col-3">-</td>
                                             <td class="text-center col-3">-</td>
                                         </tr>
