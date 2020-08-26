@@ -169,14 +169,31 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <t t-foreach="conductores" t-as="conductor">
+
                                         <tr>
                                             <td class="text-center col-3">-</td>
                                             <td class="text-center col-3">-</td>
                                             <td class="text-center col-3">-</td>
                                             <td class="text-center col-3">-</td>
                                         </tr>
-                                    </t>
+                                        <tr>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">-</td>
+                                        </tr>
 
                                 </tbody>
 
