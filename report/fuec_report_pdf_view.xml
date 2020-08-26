@@ -110,7 +110,7 @@
 
                             </div>
                             <div class="row" style="text-align:start;">
-                                <div class="col-12 text-center mt-5 p-5">
+                                <div class="col-12 text-center mt-2">
                                     <b>Vigencia del contrato</b>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@
                                     <b>Desde: &amp;nbsp; </b><t t-esc="inicio_contrato"/>
                                 </div>
                                 <div class="col-6">
-                                    <b>Hasta: <p>&amp;nbsp;</p> </b><t t-esc="fin_contrato"/>
+                                    <b>Hasta: &amp;nbsp; </b><t t-esc="fin_contrato"/>
                                 </div>
                             </div>
                             <hr/>
@@ -218,10 +218,10 @@
                     <br></br>
                     <div class="page">
                         	<div>
-                                <div style="text-align:center;">
+                                <div style="text-align:center; mb-3">
                                     <h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
                                 </div>
-                                <ul style="margin-left:100px !important;">
+                                <ul style="margin-left:10px !important;">
                                     <li>
                                         El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
                                     </li>
