@@ -57,7 +57,7 @@
                                     <b>Responsable:</b> <t t-esc="responsable"/>
                                 </div>
                                 <div class="col-4">
-                                    <b><t t-esc="responsable.id_type"/></b>: <t t-esc="responsable.id_document"/>
+                                    <b><t t-esc="responsable"/></b>: <t t-esc="responsable"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
