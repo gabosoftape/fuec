@@ -186,7 +186,7 @@
                                     <b><t t-esc="qr"/></b>
                                 </div>
                                  <div class="col-3 text-center">
-                                    <b><t t-esc="vehiculo.name"/></b>
+                                    <b><t t-esc="vehiculo"/></b>
                                 </div>
                                  <div class="col-3 text-center">
                                     <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
