@@ -128,7 +128,7 @@
                                     <b>Caracteristicas del vehiculo</b>
                                 </div>
                             </div>
-                            <table cellpadding="1" cellspacing="1" border="1" style="text-align:start;">
+                            <table>
                                 <thead>
                                     <tr>
                                         <th class="text-center">Placa</th>
@@ -142,12 +142,12 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="text-center col-2">-</td>
-                                        <td class="text-center col-2">-</td>
-                                        <td class="text-center col-2">-</td>
-                                        <td class="text-center col-2">-</td>
-                                        <td class="text-center col-2">-</td>
-                                        <td class="text-center col-2">-</td>
+                                        <td class="text-center col-2">Informacion Test</td>
+                                        <td class="text-center col-2">Informacion Test</td>
+                                        <td class="text-center col-2">Informacion Test</td>
+                                        <td class="text-center col-2">Informacion Test</td>
+                                        <td class="text-center col-2">Informacion Test</td>
+                                        <td class="text-center col-2">Informacion Test</td>
                                     </tr>
 
                                 </tbody>
