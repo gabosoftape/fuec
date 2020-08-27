@@ -142,12 +142,24 @@
 							  <tbody>
 								<t t-foreach="vehiculo" t-as="vehi">
 									<tr>
-									<th scope="row"><t t-esc="vehi"/></th>
-									<td><t t-esc="vehi.id"/></td>
-									<td><t t-esc="vehi.name"/></td>
-									<td><t t-esc="vehi.id_wialon"/></td>
-									<td><t t-esc="vehi.id_wialon"/></td>
-									<td><t t-esc="vehi.id_wialon"/></td>
+										<td>
+											<t t-esc="vehi.id"/>
+										</td>
+										<td>
+											<t t-esc="vehi.name"/>
+										</td>
+										<td>
+											<t t-esc="vehi.id_wialon"/>
+										</td>
+										<td>
+											<t t-esc="vehi.id_wialon"/>
+										</td>
+										<td>
+											<t t-esc="vehi.id_wialon"/>
+										</td>
+										<td>
+											<t t-esc="vehi.id_wialon"/>
+										</td>
 									</tr>
 								</t>
 							  </tbody>
@@ -169,12 +181,16 @@
 								</tr>
 							  </thead>
 							  <tbody>
-								<tr>
-								  <th scope="row">1</th>
-								  <td>Mark</td>
-								  <td>Otto</td>
-								  <td>@fat</td>
-								</tr>
+								<t t-if="conductores">
+									<t t-foreach="conductores" t-as="cond">
+										<tr>
+										  <th scope="col"><t t-esc="cond.id"/></th>
+										  <td><t t-esc="cond.name"/></td>
+										  <td><t t-esc="cond.telefono"/></td>
+										  <td><t t-esc="cond.id_wia"/></td>
+										</tr>
+									</t>
+								</t>
 							  </tbody>
 							</table>
 							 <div class="row" style="text-align:center;">
