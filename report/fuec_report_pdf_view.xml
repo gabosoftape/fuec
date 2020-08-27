@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                             <hr/>
-                            <div class="row" style="text-align:center;">
+                            <div class="row p-3" style="text-align:center;">
                                 <div class="col-12 text-center">
                                     <b>Caracteristicas del vehiculo</b>
                                 </div>
@@ -168,46 +168,40 @@
                             </table>
 
                             <hr/>
-                            <div class="row" style="text-align:center;">
+                            <div class="row p-2" style="text-align:center;">
                                 <div class="col-12 text-center">
                                     <b>Conductores</b>
                                 </div>
                             </div>
-                            <table cellpadding="10" cellspacing="1" border="1" style="text-align:start;">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">Nombres y Apellidos</th>
-                                        <th class="text-center">No. Identificacion</th>
-                                        <th class="text-center">No. Licencia</th>
-                                        <th class="text-center">Vigencia</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                        <tr>
-                                            <td class="text-center col-3">informacion test</td>
-                                            <td class="text-center col-3">informacion test</td>
-                                            <td class="text-center col-3">informacion test</td>
-                                            <td class="text-center col-3">informacion test</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                        </tr>
-                                </tbody>
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Nombres y Apellidos</th>
+                                  <th scope="col">No. Identificacion</th>
+                                  <th scope="col">No. Licencia</th>
+                                  <th scope="col">Vigencia</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
                             </table>
                              <div class="row" style="text-align:center;">
                                 <div class="col-3 text-center">
