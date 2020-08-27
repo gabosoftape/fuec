@@ -64,5 +64,5 @@ class FuecReportButton(models.TransientModel):
             'contract_object': fuec.contract_object,
         }
         #Datos
-        print(data)
+        #print(data)
         return self.env.ref('fuec.report_fuec_pdf').report_action(self, data=data)

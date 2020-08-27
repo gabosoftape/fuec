@@ -41,33 +41,33 @@
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-8">
-                                    <b>Contratante:</b> <t t-esc="contratista"/>
+                                    <b>Contratante:</b> <t t-esc="contratista.nombre"/>
                                 </div>
                                 <div class="col-4">
-                                    <b>NIT</b>:
+                                    <b>NIT</b>: <t t-esc="contratista.nit"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12">
-                                    <b>Objeto del contrato:</b> <t t-esc="contract_object"/>
+                                    <b>Objeto del contrato:</b> <t t-esc="fuec.contract_object"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-8">
-                                    <b>Responsable:</b> <t t-esc="responsable"/>
+                                    <b>Responsable:</b> <t t-esc="responsable.nombre"/>
                                 </div>
                                 <div class="col-4">
-                                    <b><t t-esc="responsable"/></b>: <t t-esc="responsable"/>
+                                    <b><t t-esc="responsable"/></b>: <t t-esc="responsable.id_type"/> <t t-esc="responsable.id_document"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12">
-                                    <b>Origen - Destino:</b> <t t-esc="ruta"/>
+                                    <b>Origen - Destino:</b> <t t-esc="ruta.nombre"/>
                                 </div>
                             </div>
                             <div class="row" style="text-align:start;">
                                 <div class="col-12">
-                                    <b>Descripcion del recorrido:</b> <t t-esc="ruta"/>
+                                    <b>Descripcion del recorrido:</b> <t t-esc="ruta.detalle"/>
                                 </div>
                             </div>
                             <div t-if="convenio" class="row" style="text-align:start;">
@@ -140,6 +140,7 @@
                                 </tr>
                               </thead>
                               <tbody>
+
                                 <tr>
                                   <th scope="row">1</th>
                                   <td>Mark</td>
@@ -147,22 +148,6 @@
                                   <td>@mdo</td>
                                   <td>Thornton</td>
                                   <td>@fat</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td>Larry</td>
-                                  <td>the Bird</td>
-                                  <td>@twitter</td>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -189,18 +174,6 @@
                                   <td>Otto</td>
                                   <td>@fat</td>
                                 </tr>
-                                <tr>
-                                  <th scope="row">2</th>
-                                  <td>Jacob</td>
-                                  <td>Thornton</td>
-                                  <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">3</th>
-                                  <td>Larry</td>
-                                  <td>the Bird</td>
-                                  <td>@twitter</td>
-                                </tr>
                               </tbody>
                             </table>
                              <div class="row" style="text-align:center;">
@@ -208,7 +181,7 @@
                                     <b><t t-esc="qr"/></b>
                                 </div>
                                  <div class="col-3 text-center">
-                                    <b><t t-esc="vehiculo"/></b>
+                                    <b><t t-esc="pseudouser"/></b>
                                 </div>
                                  <div class="col-3 text-center">
                                     <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
