@@ -17,12 +17,12 @@
         </div>
 
     </template>
-    <template id="fuec_report_template">
+    <template id="fuec_report_template" style="font-size:26px!important;">
         <t t-call="web.html_container">
                 <t t-call="fuec.fuec_layout_pdf">
-                    <div class="page" style="text-align:center!important; page-break-after: always;font-size:14px!important;">
+                    <div class="page" style="text-align:center!important; page-break-after: always;">
                         <div class="row">
-                            <div class="col-12" style="font-size:14px!important;">
+                            <div class="col-12">
                                  <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br/>PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
                                     <br/>
                                     <b style="color:red;"><t t-esc="contract_id"/></b>
