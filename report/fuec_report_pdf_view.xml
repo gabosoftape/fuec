@@ -130,21 +130,21 @@
 							<table class="table">
 							  <thead>
 								<tr>
-								  <th scope="col">Placa</th>
-								  <th scope="col">Modelo</th>
-								  <th scope="col">Marca</th>
-								  <th scope="col">Clase</th>
-								  <th scope="col">No. Interno</th>
-								  <th scope="col">No. Operación</th>
+								  <th style="height:100px" scope="col">Placa</th>
+								  <th style="height:100px" scope="col">Modelo</th>
+								  <th style="height:100px" scope="col">Marca</th>
+								  <th style="height:100px" scope="col">Clase</th>
+								  <th style="height:100px" scope="col">No. Interno</th>
+								  <th style="height:100px" scope="col">No. Operación</th>
 								</tr>
 							  </thead>
 							  <tbody>
 								<t t-foreach="vehiculo" t-as="vehi">
 									<tr>
 									<th scope="row"><t t-esc="vehi"/></th>
-									<td><t t-esc="vehi"/></td>
-									<td><t t-esc="vehi"/></td>
-									<td><t t-esc="vehi"/></td>
+									<td><t t-esc="vehi.id"/></td>
+									<td><t t-esc="vehi.name"/></td>
+									<td><t t-esc="vehi.id_wialon"/></td>
 									<td><t t-esc="vehi"/></td>
 									<td><t t-esc="vehi"/></td>
 									</tr>
