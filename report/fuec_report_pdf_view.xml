@@ -128,29 +128,45 @@
                                     <b>Caracteristicas del vehiculo</b>
                                 </div>
                             </div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">Placa</th>
-                                        <th class="text-center">Modelo</th>
-                                        <th class="text-center">Marca</th>
-                                        <th class="text-center">Clase</th>
-                                        <th class="text-center">No. Interno</th>
-                                        <th class="text-center">No. Operación</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center col-2">Informacion Test</td>
-                                        <td class="text-center col-2">Informacion Test</td>
-                                        <td class="text-center col-2">Informacion Test</td>
-                                        <td class="text-center col-2">Informacion Test</td>
-                                        <td class="text-center col-2">Informacion Test</td>
-                                        <td class="text-center col-2">Informacion Test</td>
-                                    </tr>
-                                </tbody>
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Placa</th>
+                                  <th scope="col">Modelo</th>
+                                  <th scope="col">Marca</th>
+                                  <th scope="col">Clase</th>
+                                  <th scope="col">No. Interno</th>
+                                  <th scope="col">No. Operación</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                </tr>
+                              </tbody>
                             </table>
+
                             <hr/>
                             <div class="row" style="text-align:center;">
                                 <div class="col-12 text-center">
@@ -167,7 +183,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-
                                         <tr>
                                             <td class="text-center col-3">informacion test</td>
                                             <td class="text-center col-3">informacion test</td>
@@ -192,9 +207,7 @@
                                             <td class="text-center col-3">-</td>
                                             <td class="text-center col-3">-</td>
                                         </tr>
-
                                 </tbody>
-
                             </table>
                              <div class="row" style="text-align:center;">
                                 <div class="col-3 text-center">
