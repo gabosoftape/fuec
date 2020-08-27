@@ -145,8 +145,8 @@
 									<td><t t-esc="vehi.id"/></td>
 									<td><t t-esc="vehi.name"/></td>
 									<td><t t-esc="vehi.id_wialon"/></td>
-									<td><t t-esc="vehi"/></td>
-									<td><t t-esc="vehi"/></td>
+									<td><t t-esc="vehi.id_wialon"/></td>
+									<td><t t-esc="vehi.id_wialon"/></td>
 									</tr>
 								</t>
 							  </tbody>
