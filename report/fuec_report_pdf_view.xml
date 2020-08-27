@@ -40,33 +40,33 @@
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-8">
-									<b>Contratante:</b> <t t-esc="contratista.nombre"/>
+									<b>Contratante:</b> <t t-esc="contratista_nombre"/>
 								</div>
 								<div class="col-4">
-									<b>NIT</b>: <t t-esc="contratista.nit"/>
+									<b>NIT</b>: <t t-esc="contratista_nit"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12">
-									<b>Objeto del contrato:</b> <t t-esc="fuec.contract_object"/>
+									<b>Objeto del contrato:</b> <t t-esc="contract_object"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-8">
-									<b>Responsable:</b> <t t-esc="responsable.nombre"/>
+									<b>Responsable:</b> <t t-esc="responsable_nombre"/>
 								</div>
 								<div class="col-4">
-									<b><t t-esc="responsable.id_type"/> </b>:  <t t-esc="responsable.id_document"/>
+									<b><t t-esc="responsable.id_type"/> </b>:  <t t-esc="responsable_id_document"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12">
-									<b>Origen - Destino:</b> <t t-esc="ruta.nombre"/>
+									<b>Origen - Destino:</b> <t t-esc="ruta_nombre"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12">
-									<b>Descripcion del recorrido:</b> <t t-esc="ruta.detalle"/>
+									<b>Descripcion del recorrido:</b> <t t-esc="ruta_detalle"/>
 								</div>
 							</div>
 							<div t-if="convenio" class="row" style="text-align:start;">
