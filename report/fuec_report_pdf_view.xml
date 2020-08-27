@@ -56,7 +56,7 @@
 									<b>Responsable:</b> <t t-esc="responsable_nombre"/>
 								</div>
 								<div class="col-4">
-									<b><t t-esc="responsable.id_type"/> </b>:  <t t-esc="responsable_id_document"/>
+									<b><t t-esc="responsable_id_type"/> </b>:  <t t-esc="responsable_id_document"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
