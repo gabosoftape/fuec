@@ -40,10 +40,10 @@
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-8">
-									<b>Contratante:</b> <t t-esc="contratista.nombre"/>
+									<b>Contratante:</b> <t t-esc="contratista_nombre"/>
 								</div>
 								<div class="col-4">
-									<b>NIT</b>: <t t-esc="contratista.nit"/>
+									<b>NIT</b>: <t t-esc="contratista_nit"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
@@ -53,10 +53,10 @@
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-8">
-									<b>Responsable:</b> <t t-esc="responsable.nombre"/>
+									<b>Responsable:</b> <t t-esc="responsable_nombre"/>
 								</div>
 								<div class="col-4">
-									<b><t t-esc="responsable.id_type"/> </b>:  <t t-esc="responsable.id_document"/>
+									<b><t t-esc="responsable.id_type"/> </b>:  <t t-esc="responsable_id_document"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
