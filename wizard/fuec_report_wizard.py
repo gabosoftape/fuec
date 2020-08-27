@@ -36,7 +36,16 @@ class FuecReportButton(models.TransientModel):
         fin_contrato = fuec.fecha_end
         vehiculo = fuec.vehiculo
         conductores = fuec.conductores
-        qr = qrcode.make("Hola desde Recursos Python!")
+        qr = qrcode.QRCode(
+            version=1,
+            error_correction=qrcode.constants.ERROR_CORRECT_L,
+            box_size=10,
+            border=4,
+        )
+        qr.add_data('Some data')
+        qr.make(fit=True)
+
+        img = qr.make_image(fill_color="black", back_color="white")
         firma = pseudouser.firma
         data = {
             'report_type': 'pdf',
@@ -58,7 +67,7 @@ class FuecReportButton(models.TransientModel):
             'fin_contrato': fin_contrato,
             'vehiculo': vehiculo,
             'conductores': conductores,
-            'qr': qr,
+            'qr': img,
             'pseudouser': pseudouser,
             'firma': firma,
             'contract_object': fuec.contract_object,
