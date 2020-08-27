@@ -245,153 +245,55 @@
                                           <td>247</td>
                                         </tr>
                                         <tr>
-                                          <th scope="row">Magdalena </th>
-                                          <td>247</td>
+                                          <th scope="row">Bolívar-San Andrés y Providencia</th>
+                                          <td>213</td>
+                                          <th scope="row">Meta-Vaupés-Vichada</th>
+                                          <td>550</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Boyacá-Casanare</th>
+                                          <td>415</td>
+                                          <th scope="row">Nariño-Putumayo</th>
+                                          <td>352</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Caldas</th>
+                                          <td>317</td>
+                                          <th scope="row">N/Santander-Arauca</th>
+                                          <td>454</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Cauca</th>
+                                          <td>319</td>
+                                          <th scope="row">Quindio</th>
+                                          <td>363</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">César</th>
+                                          <td>220</td>
+                                          <th scope="row">Risaralda</th>
+                                          <td>366</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Córdoba-Sucre</th>
+                                          <td>223</td>
+                                          <th scope="row">Santander</th>
+                                          <td>468</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Cundinamarca</th>
+                                          <td>425</td>
+                                          <th scope="row">Tolima</th>
+                                          <td>473</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Guajira</th>
+                                          <td>241</td>
+                                          <th scope="row">Valle del Cauca</th>
+                                          <td>376</td>
                                         </tr>
                                       </tbody>
                                     </table>
-                                        <table style="width:100%">
-                                            <tr>
-                                                <td>
-                                                    Antioquia-Choco
-                                                </td>
-                                                <td class="tdCenter">
-                                                    305
-                                                </td>
-                                                <td>
-                                                    Huila-Caquetá
-                                                </td>
-                                                <td class="tdCenter">
-                                                    441
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Atlántico
-                                                </td>
-                                                <td class="tdCenter">
-                                                    208
-                                                </td>
-                                                <td>
-                                                    Magdalena
-                                                </td>
-                                                <td class="tdCenter">
-                                                    247
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Bolívar-San Andrés y Providencia
-                                                </td>
-                                                <td class="tdCenter">
-                                                    213
-                                                </td>
-                                                <td>
-                                                    Meta-Vaupés-Vichada
-                                                </td>
-                                                <td class="tdCenter">
-                                                    550
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Boyacá-Casanare
-                                                </td>
-                                                <td class="tdCenter">
-                                                    415
-                                                </td>
-                                                <td>
-                                                    Nariño-Putumayo
-                                                </td>
-                                                <td class="tdCenter">
-                                                    352
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Caldas
-                                                </td>
-                                                <td class="tdCenter">
-                                                    317
-                                                </td>
-                                                <td>
-                                                    N/Santander-Arauca
-                                                </td>
-                                                <td class="tdCenter">
-                                                    454
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Cauca
-                                                </td>
-                                                <td class="tdCenter">
-                                                    319
-                                                </td>
-                                                <td>
-                                                    Quindio
-                                                </td>
-                                                <td class="tdCenter">
-                                                    363
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    César
-                                                </td>
-                                                <td class="tdCenter">
-                                                    220
-                                                </td>
-                                                <td>
-                                                    Risaralda
-                                                </td>
-                                                <td class="tdCenter">
-                                                    366
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Córdoba-Sucre
-                                                </td>
-                                                <td class="tdCenter">
-                                                    223
-                                                </td>
-                                                <td>
-                                                    Santander
-                                                </td>
-                                                <td class="tdCenter">
-                                                    468
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Cundinamarca
-                                                </td>
-                                                <td class="tdCenter">
-                                                    425
-                                                </td>
-                                                <td>
-                                                    Tolima
-                                                </td>
-                                                <td class="tdCenter">
-                                                    473
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    Guajira
-                                                </td>
-                                                <td class="tdCenter">
-                                                    241
-                                                </td>
-                                                <td>
-                                                     Valle del Cauca
-                                                </td>
-                                                <td class="tdCenter">
-                                                    376
-                                                </td>
-                                            </tr>
-                                        </table>
                                         <br /><br />
 
                                     <li>
@@ -409,13 +311,12 @@
                                     <li>
                                         f) Finalmente, los cuatro últimos dígitos corresponderán al número consecutivo del extracto de contrato que se expida para la ejecución de cada contrato. Se debe expedir un nuevo extracto por vencimiento del plazo inicial del mismo o por cambio del vehículo.<br /><br />
                                     </li>
-                                    <li>
+                                    <p>
                                         <b>EJEMPLO:</b><br />
                                         <br />
                                         Empresa habilitada por la Dirección Territorial Cundinamarca en el año 2012 con resolución de habilitación No. 0155, que expide el primer extracto del contrato en el año 2015, del contrato 255. El número del Formato Unico de Extracto del Contrato "FUEC" será : 425015512201502550001.
                                         <br />
-                                    </li>
-                                    <li>
+                                    </p>
                                         <hr />
                                         <p><b>Nota:</b> El vehiculo se encuentra en perfecto estado Mecánico y de aseo.</p>
                                         <p>Para verificar la autenticidad de esta planilla consultar la pagina web https://monitoringinnovation.com/contactus opcion consultas, ingresando el siguiente codigo XXKFFUEK</p>
@@ -462,7 +363,7 @@
                                         <br />
                                         <p><b>Resol. 315/2013 Art. PROTOCOLO DE ALISTAMIENTO DIARIO,</b> Se deja constancia en este documento que participaron del proceso de alistamiento diaro el(los) conductor(es) mencionado(s) en este FUEC bajo la supervicion de la empresa a travéz deusos tecnológicos amparados por la ley 1450, art. 230 y del decreto ley 019 de 2012, art. 4.</p>
                                         <br />
-                                    </li>
+
                                 </ul>
                             </div>
                     </div>
