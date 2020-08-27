@@ -149,9 +149,7 @@
                                         <td class="text-center col-2">Informacion Test</td>
                                         <td class="text-center col-2">Informacion Test</td>
                                     </tr>
-
                                 </tbody>
-
                             </table>
                             <hr/>
                             <div class="row" style="text-align:center;">
@@ -159,7 +157,7 @@
                                     <b>Conductores</b>
                                 </div>
                             </div>
-                            <table cellpadding="1" cellspacing="1" border="1" style="text-align:start;">
+                            <table cellpadding="10" cellspacing="1" border="1" style="text-align:start;">
                                 <thead>
                                     <tr>
                                         <th class="text-center">Nombres y Apellidos</th>
@@ -171,10 +169,10 @@
                                 <tbody>
 
                                         <tr>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
-                                            <td class="text-center col-3">-</td>
+                                            <td class="text-center col-3">informacion test</td>
+                                            <td class="text-center col-3">informacion test</td>
+                                            <td class="text-center col-3">informacion test</td>
+                                            <td class="text-center col-3">informacion test</td>
                                         </tr>
                                         <tr>
                                             <td class="text-center col-3">-</td>
@@ -223,12 +221,13 @@
                                 </div>
                                 <br/>
                                 <ul style="margin-left:10px !important;">
-                                    <li>
+                                    <p>
                                         El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
-                                    </li>
-
+                                    </p>
+                                    <li>
                                         a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
-                                        <br />
+                                    </li>
+                                    <br />
                                         <table style="width:100%">
                                             <tr>
                                                 <td>
