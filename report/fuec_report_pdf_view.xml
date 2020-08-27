@@ -1,356 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="fuec_layout_pdf">
-        <div class="header">
-            <div class="row" style="padding-top:2rem;">
-                <div class="col-6">
-                    <img src="http://50.116.2.74/fuec/images/mintransporte.png" style="max-height: 100px;" alt=""/>
-                </div>
-                <div class="col-6 text-right">
-                    <img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
-                </div>
-            </div>
-        </div>
+	<template id="fuec_layout_pdf">
+		<div class="header">
+			<div class="row" style="padding-top:2rem;">
+				<div class="col-6">
+					<img src="http://50.116.2.74/fuec/images/mintransporte.png" style="max-height: 100px;" alt=""/>
+				</div>
+				<div class="col-6 text-right">
+					<img src="http://50.116.2.74/fuec/images/logos/Rolan_logo.jpg" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
+				</div>
+			</div>
+		</div>
 
-        <div class="article o_report_layout_standard">
-            <t t-raw="0"/>
-        </div>
+		<div class="article o_report_layout_standard">
+			<t t-raw="0"/>
+		</div>
+	</template>
+	<template id="fuec_report_template" >
+		<t t-call="web.html_container">
+				<t t-call="fuec.fuec_layout_pdf">
+					<div class="page" style="text-align:center!important; page-break-after: always;font-size:24px!important;">
+						<div class="row">
+							<div class="col-12">
+								 <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br/>PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
+									<br/>
+									<b style="color:red;"><t t-esc="contract_id"/></b>
+									<p>&amp;nbsp;</p>
+								<hr/>
+							</div>
+						</div>
+						<div style="color:black!important;">
+							<div class="row" style="text-align:start;">
+								<div class="col-8">
+									<b>Razon social: </b> <t t-esc="razonsocial"/>
+								</div>
+								<div class="col-4">
+									<b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
+								</div>
+							</div>
+							<div class="row" style="text-align:start;">
+								<div class="col-8">
+									<b>Contratante:</b> <t t-esc="contratista.nombre"/>
+								</div>
+								<div class="col-4">
+									<b>NIT</b>: <t t-esc="contratista.nit"/>
+								</div>
+							</div>
+							<div class="row" style="text-align:start;">
+								<div class="col-12">
+									<b>Objeto del contrato:</b> <t t-esc="fuec.contract_object"/>
+								</div>
+							</div>
+							<div class="row" style="text-align:start;">
+								<div class="col-8">
+									<b>Responsable:</b> <t t-esc="responsable.nombre"/>
+								</div>
+								<div class="col-4">
+									<b><t t-esc="responsable"/></b>: <t t-esc="responsable.id_type"/> <t t-esc="responsable.id_document"/>
+								</div>
+							</div>
+							<div class="row" style="text-align:start;">
+								<div class="col-12">
+									<b>Origen - Destino:</b> <t t-esc="ruta.nombre"/>
+								</div>
+							</div>
+							<div class="row" style="text-align:start;">
+								<div class="col-12">
+									<b>Descripcion del recorrido:</b> <t t-esc="ruta.detalle"/>
+								</div>
+							</div>
+							<div t-if="convenio" class="row" style="text-align:start;">
+								<t t-if="convenio == 'cv'">
+									<div class="col-4">
+										<b>Convenio</b> X
+									</div>
+									<div class="col-4">
+										<b>Consorcio</b>
+									</div>
+									<div class="col-4">
+										<b>Union temporal</b>
+									</div>
+								</t>
+								<t t-if="convenio == 'cs'">
+									<div class="col-4">
+										<b>Convenio</b>
+									</div>
+									<div class="col-4">
+										<b>Consorcio</b> X
+									</div>
+									<div class="col-4">
+										<b>Union temporal</b>
+									</div>
+								</t>
+								<t t-else="">
+									<div class="col-3">
+										<b>Convenio</b>
+									</div>
+									<div class="col-3">
+										<b>Consorcio</b>
+									</div>
+									<div class="col-3">
+										<b>Union temporal</b> X
+									</div>
+									<div class="col-3">
+										<b>UT Con: </b> <t t-esc="ut_con"/>
+									</div>
+								</t>
 
-    </template>
-    <template id="fuec_report_template" >
-        <t t-call="web.html_container">
-                <t t-call="fuec.fuec_layout_pdf">
-                    <div class="page" style="text-align:center!important; page-break-after: always;font-size:24px!important;">
-                        <div class="row">
-                            <div class="col-12">
-                                 <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br/>PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
-                                    <br/>
-                                    <b style="color:red;"><t t-esc="contract_id"/></b>
-                                    <p>&amp;nbsp;</p>
-                                <hr/>
-                            </div>
-                        </div>
-                        <div style="color:black!important;">
-                            <div class="row" style="text-align:start;">
-                                <div class="col-8">
-                                    <b>Razon social: </b> <t t-esc="razonsocial"/>
-                                </div>
-                                <div class="col-4">
-                                    <b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
-                                </div>
-                            </div>
-                            <div class="row" style="text-align:start;">
-                                <div class="col-8">
-                                    <b>Contratante:</b> <t t-esc="contratista.nombre"/>
-                                </div>
-                                <div class="col-4">
-                                    <b>NIT</b>: <t t-esc="contratista.nit"/>
-                                </div>
-                            </div>
-                            <div class="row" style="text-align:start;">
-                                <div class="col-12">
-                                    <b>Objeto del contrato:</b> <t t-esc="fuec.contract_object"/>
-                                </div>
-                            </div>
-                            <div class="row" style="text-align:start;">
-                                <div class="col-8">
-                                    <b>Responsable:</b> <t t-esc="responsable.nombre"/>
-                                </div>
-                                <div class="col-4">
-                                    <b><t t-esc="responsable"/></b>: <t t-esc="responsable.id_type"/> <t t-esc="responsable.id_document"/>
-                                </div>
-                            </div>
-                            <div class="row" style="text-align:start;">
-                                <div class="col-12">
-                                    <b>Origen - Destino:</b> <t t-esc="ruta.nombre"/>
-                                </div>
-                            </div>
-                            <div class="row" style="text-align:start;">
-                                <div class="col-12">
-                                    <b>Descripcion del recorrido:</b> <t t-esc="ruta.detalle"/>
-                                </div>
-                            </div>
-                            <div t-if="convenio" class="row" style="text-align:start;">
-                                <t t-if="convenio == 'cv'">
-                                    <div class="col-4">
-                                        <b>Convenio</b> X
-                                    </div>
-                                    <div class="col-4">
-                                        <b>Consorcio</b>
-                                    </div>
-                                    <div class="col-4">
-                                        <b>Union temporal</b>
-                                    </div>
-                                </t>
-                                <t t-if="convenio == 'cs'">
-                                    <div class="col-4">
-                                        <b>Convenio</b>
-                                    </div>
-                                    <div class="col-4">
-                                        <b>Consorcio</b> X
-                                    </div>
-                                    <div class="col-4">
-                                        <b>Union temporal</b>
-                                    </div>
-                                </t>
-                                <t t-else="">
-                                    <div class="col-3">
-                                        <b>Convenio</b>
-                                    </div>
-                                    <div class="col-3">
-                                        <b>Consorcio</b>
-                                    </div>
-                                    <div class="col-3">
-                                        <b>Union temporal</b> X
-                                    </div>
-                                    <div class="col-3">
-                                        <b>UT Con: </b> <t t-esc="ut_con"/>
-                                    </div>
-                                </t>
+							</div>
+							<div class="row" style="text-align:start;">
+								<div class="col-12 text-center mt-2">
+									<b>Vigencia del contrato</b>
+								</div>
+							</div>
+							<div class="row" style="text-align:start;">
+								<div class="col-6">
+									<b>Desde: &amp;nbsp; </b><t t-esc="inicio_contrato"/>
+								</div>
+								<div class="col-6">
+									<b>Hasta: &amp;nbsp; </b><t t-esc="fin_contrato"/>
+								</div>
+							</div>
+							<hr/>
+							<div class="row p-3" style="text-align:center;">
+								<div class="col-12 text-center">
+									<b>Caracteristicas del vehiculo</b>
+								</div>
+							</div>
+							<table class="table">
+							  <thead>
+								<tr>
+								  <th scope="col">Placa</th>
+								  <th scope="col">Modelo</th>
+								  <th scope="col">Marca</th>
+								  <th scope="col">Clase</th>
+								  <th scope="col">No. Interno</th>
+								  <th scope="col">No. Operación</th>
+								</tr>
+							  </thead>
+							  <tbody>
 
-                            </div>
-                            <div class="row" style="text-align:start;">
-                                <div class="col-12 text-center mt-2">
-                                    <b>Vigencia del contrato</b>
-                                </div>
-                            </div>
-                            <div class="row" style="text-align:start;">
-                                <div class="col-6">
-                                    <b>Desde: &amp;nbsp; </b><t t-esc="inicio_contrato"/>
-                                </div>
-                                <div class="col-6">
-                                    <b>Hasta: &amp;nbsp; </b><t t-esc="fin_contrato"/>
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="row p-3" style="text-align:center;">
-                                <div class="col-12 text-center">
-                                    <b>Caracteristicas del vehiculo</b>
-                                </div>
-                            </div>
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th scope="col">Placa</th>
-                                  <th scope="col">Modelo</th>
-                                  <th scope="col">Marca</th>
-                                  <th scope="col">Clase</th>
-                                  <th scope="col">No. Interno</th>
-                                  <th scope="col">No. Operación</th>
-                                </tr>
-                              </thead>
-                              <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@mdo</td>
+								  <td>Thornton</td>
+								  <td>@fat</td>
+								</tr>
+							  </tbody>
+							</table>
 
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                  <td>Thornton</td>
-                                  <td>@fat</td>
-                                </tr>
-                              </tbody>
-                            </table>
+							<hr/>
+							<div class="row p-2" style="text-align:center;">
+								<div class="col-12 text-center">
+									<b>Conductores</b>
+								</div>
+							</div>
+							<table class="table">
+							  <thead>
+								<tr>
+								  <th scope="col">Nombres y Apellidos</th>
+								  <th scope="col">No. Identificacion</th>
+								  <th scope="col">No. Licencia</th>
+								  <th scope="col">Vigencia</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td>Mark</td>
+								  <td>Otto</td>
+								  <td>@fat</td>
+								</tr>
+							  </tbody>
+							</table>
+							 <div class="row" style="text-align:center;">
+								<div class="col-3 text-center">
+									<b><t t-esc="qr"/></b>
+								</div>
+								 <div class="col-3 text-center">
+									<b><t t-esc="pseudouser"/></b>
+								</div>
+								 <div class="col-3 text-center">
+									<img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
+								</div>
+								 <div class="col-3 text-center">
+									<img class="firma" t-attf-src="data:image/png;base64,#{firma}" style="width:100%; max-width: 200px; max-height: 200px;"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br/>
+					<br></br>
+					<div class="page" style="font-size:24px!important;">
+							<div>
+								<div style="text-align:center; mb-3">
+									<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
+								</div>
+								<br/>
+								<ul style="margin-left:10px !important;">
+									<p>
+										El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
+									</p>
+									<li>
+										a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
+									</li>
+									<br />
+									<table class="table table-sm">
+									  <thead>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <th scope="row">Antioquia-Choco</th>
+										  <td>305</td>
+										  <th scope="row">Huila-Caquetá</th>
+										  <td>441</td>
+										</tr>
+										<tr>
+										  <th scope="row">Atlántico</th>
+										  <td>208</td>
+										  <th scope="row">Magdalena </th>
+										  <td>247</td>
+										</tr>
+										<tr>
+										  <th scope="row">Bolívar-San Andrés y Providencia</th>
+										  <td>213</td>
+										  <th scope="row">Meta-Vaupés-Vichada</th>
+										  <td>550</td>
+										</tr>
+										<tr>
+										  <th scope="row">Boyacá-Casanare</th>
+										  <td>415</td>
+										  <th scope="row">Nariño-Putumayo</th>
+										  <td>352</td>
+										</tr>
+										<tr>
+										  <th scope="row">Caldas</th>
+										  <td>317</td>
+										  <th scope="row">N/Santander-Arauca</th>
+										  <td>454</td>
+										</tr>
+										<tr>
+										  <th scope="row">Cauca</th>
+										  <td>319</td>
+										  <th scope="row">Quindio</th>
+										  <td>363</td>
+										</tr>
+										<tr>
+										  <th scope="row">César</th>
+										  <td>220</td>
+										  <th scope="row">Risaralda</th>
+										  <td>366</td>
+										</tr>
+										<tr>
+										  <th scope="row">Córdoba-Sucre</th>
+										  <td>223</td>
+										  <th scope="row">Santander</th>
+										  <td>468</td>
+										</tr>
+										<tr>
+										  <th scope="row">Cundinamarca</th>
+										  <td>425</td>
+										  <th scope="row">Tolima</th>
+										  <td>473</td>
+										</tr>
+										<tr>
+										  <th scope="row">Guajira</th>
+										  <td>241</td>
+										  <th scope="row">Valle del Cauca</th>
+										  <td>376</td>
+										</tr>
+									  </tbody>
+									</table>
+										<br /><br />
 
-                            <hr/>
-                            <div class="row p-2" style="text-align:center;">
-                                <div class="col-12 text-center">
-                                    <b>Conductores</b>
-                                </div>
-                            </div>
-                            <table class="table">
-                              <thead>
-                                <tr>
-                                  <th scope="col">Nombres y Apellidos</th>
-                                  <th scope="col">No. Identificacion</th>
-                                  <th scope="col">No. Licencia</th>
-                                  <th scope="col">Vigencia</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@fat</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                             <div class="row" style="text-align:center;">
-                                <div class="col-3 text-center">
-                                    <b><t t-esc="qr"/></b>
-                                </div>
-                                 <div class="col-3 text-center">
-                                    <b><t t-esc="pseudouser"/></b>
-                                </div>
-                                 <div class="col-3 text-center">
-                                    <img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
-                                </div>
-                                 <div class="col-3 text-center">
-                                    <img class="firma" t-attf-src="data:image/png;base64,#{firma}" style="width:100%; max-width: 200px; max-height: 200px;"/>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <br></br>
-                    <div class="page" style="font-size:24px!important;">
-                        	<div>
-                                <div style="text-align:center; mb-3">
-                                    <h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
-                                </div>
-                                <br/>
-                                <ul style="margin-left:10px !important;">
-                                    <p>
-                                        El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
-                                    </p>
-                                    <li>
-                                        a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
-                                    </li>
-                                    <br />
-                                    <table class="table table-sm">
-                                      <thead>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                          <th scope="row">Antioquia-Choco</th>
-                                          <td>305</td>
-                                          <th scope="row">Huila-Caquetá</th>
-                                          <td>441</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Atlántico</th>
-                                          <td>208</td>
-                                          <th scope="row">Magdalena </th>
-                                          <td>247</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Bolívar-San Andrés y Providencia</th>
-                                          <td>213</td>
-                                          <th scope="row">Meta-Vaupés-Vichada</th>
-                                          <td>550</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Boyacá-Casanare</th>
-                                          <td>415</td>
-                                          <th scope="row">Nariño-Putumayo</th>
-                                          <td>352</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Caldas</th>
-                                          <td>317</td>
-                                          <th scope="row">N/Santander-Arauca</th>
-                                          <td>454</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Cauca</th>
-                                          <td>319</td>
-                                          <th scope="row">Quindio</th>
-                                          <td>363</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">César</th>
-                                          <td>220</td>
-                                          <th scope="row">Risaralda</th>
-                                          <td>366</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Córdoba-Sucre</th>
-                                          <td>223</td>
-                                          <th scope="row">Santander</th>
-                                          <td>468</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Cundinamarca</th>
-                                          <td>425</td>
-                                          <th scope="row">Tolima</th>
-                                          <td>473</td>
-                                        </tr>
-                                        <tr>
-                                          <th scope="row">Guajira</th>
-                                          <td>241</td>
-                                          <th scope="row">Valle del Cauca</th>
-                                          <td>376</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                        <br /><br />
+									<li>
+										b) Los cuatro dígitos siguientes señalarán el número de resolución mediante la cual se otorgó la habilitación de la Empresa. En caso que la resolución no tenga estos dígitos, los faltantes serán completados con ceros a la izquierda;<br /><br />
+									</li>
+									<li>
+										c) Los dos siguientes dígitos, corresponderán a los dos últimos del año en que la empresa fue habilitada;<br /><br />
+									</li>
+									<li>
+										d) Acontinuación, cuatro dígitos que corresponderán al año en el que se expide el extracto del contrato;<br /><br />
+									</li>
+									<li>
+										e) Posteriormente, cuatro dígitos que identifican el número del contrato. La numeración debe ser consecutiva, establecida por cada empresa y continuará con la numeración dada a los contratos de prestación del servicios celebrados para el transporte de estudiantes, empleados, turistas, usuarios del servicio de salud, grupos específicos de usuarios, en vigencia de la resolución 3068 de 2014.<br /><br />
+									</li>
+									<li>
+										f) Finalmente, los cuatro últimos dígitos corresponderán al número consecutivo del extracto de contrato que se expida para la ejecución de cada contrato. Se debe expedir un nuevo extracto por vencimiento del plazo inicial del mismo o por cambio del vehículo.<br /><br />
+									</li>
+									<p>
+										<b>EJEMPLO:</b><br />
+										<br />
+										Empresa habilitada por la Dirección Territorial Cundinamarca en el año 2012 con resolución de habilitación No. 0155, que expide el primer extracto del contrato en el año 2015, del contrato 255. El número del Formato Unico de Extracto del Contrato "FUEC" será : 425015512201502550001.
+										<br />
+									</p>
+										<hr />
+										<p><b>Nota:</b> El vehiculo se encuentra en perfecto estado Mecánico y de aseo.</p>
+										<p>Para verificar la autenticidad de esta planilla consultar la pagina web https://monitoringinnovation.com/contactus opcion consultas, ingresando el siguiente codigo XXKFFUEK</p>
+										<br />
+										<table style="width:100%">
+											<tr>
+												<td colspan="4" class="tdCenter">
+													<b>INFORMACION POR RUTA ESTIMADA</b>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="tdCenter">
+													Distancia recorrida estimada
+												</td>
+												<td colspan="2" class="tdCenter">
+													Sin informacion
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="tdCenter">
+													Duracion total estimada
+												</td>
+												<td colspan="2" class="tdCenter">
+													Sin informacion
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="tdCenter">
+													Peajes
+												</td>
+												<td colspan="2" class="tdCenter">
+													Sin informacion
+												</td>
+											</tr>
+											<tr>
+												<td colspan="2" class="tdCenter">
+													Consumo de combustible estimado
+												</td>
+												<td colspan="2" class="tdCenter">
+													Sin informacion
+												</td>
+											</tr>
+										</table>
+										<br />
+										<p><b>Resol. 315/2013 Art. PROTOCOLO DE ALISTAMIENTO DIARIO,</b> Se deja constancia en este documento que participaron del proceso de alistamiento diaro el(los) conductor(es) mencionado(s) en este FUEC bajo la supervicion de la empresa a travéz deusos tecnológicos amparados por la ley 1450, art. 230 y del decreto ley 019 de 2012, art. 4.</p>
+										<br />
 
-                                    <li>
-                                        b) Los cuatro dígitos siguientes señalarán el número de resolución mediante la cual se otorgó la habilitación de la Empresa. En caso que la resolución no tenga estos dígitos, los faltantes serán completados con ceros a la izquierda;<br /><br />
-                                    </li>
-                                    <li>
-                                        c) Los dos siguientes dígitos, corresponderán a los dos últimos del año en que la empresa fue habilitada;<br /><br />
-                                    </li>
-                                    <li>
-                                        d) Acontinuación, cuatro dígitos que corresponderán al año en el que se expide el extracto del contrato;<br /><br />
-                                    </li>
-                                    <li>
-                                        e) Posteriormente, cuatro dígitos que identifican el número del contrato. La numeración debe ser consecutiva, establecida por cada empresa y continuará con la numeración dada a los contratos de prestación del servicios celebrados para el transporte de estudiantes, empleados, turistas, usuarios del servicio de salud, grupos específicos de usuarios, en vigencia de la resolución 3068 de 2014.<br /><br />
-                                    </li>
-                                    <li>
-                                        f) Finalmente, los cuatro últimos dígitos corresponderán al número consecutivo del extracto de contrato que se expida para la ejecución de cada contrato. Se debe expedir un nuevo extracto por vencimiento del plazo inicial del mismo o por cambio del vehículo.<br /><br />
-                                    </li>
-                                    <p>
-                                        <b>EJEMPLO:</b><br />
-                                        <br />
-                                        Empresa habilitada por la Dirección Territorial Cundinamarca en el año 2012 con resolución de habilitación No. 0155, que expide el primer extracto del contrato en el año 2015, del contrato 255. El número del Formato Unico de Extracto del Contrato "FUEC" será : 425015512201502550001.
-                                        <br />
-                                    </p>
-                                        <hr />
-                                        <p><b>Nota:</b> El vehiculo se encuentra en perfecto estado Mecánico y de aseo.</p>
-                                        <p>Para verificar la autenticidad de esta planilla consultar la pagina web https://monitoringinnovation.com/contactus opcion consultas, ingresando el siguiente codigo XXKFFUEK</p>
-                                        <br />
-                                        <table style="width:100%">
-                                            <tr>
-                                                <td colspan="4" class="tdCenter">
-                                                    <b>INFORMACION POR RUTA ESTIMADA</b>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="tdCenter">
-                                                    Distancia recorrida estimada
-                                                </td>
-                                                <td colspan="2" class="tdCenter">
-                                                    Sin informacion
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="tdCenter">
-                                                    Duracion total estimada
-                                                </td>
-                                                <td colspan="2" class="tdCenter">
-                                                    Sin informacion
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="tdCenter">
-                                                    Peajes
-                                                </td>
-                                                <td colspan="2" class="tdCenter">
-                                                    Sin informacion
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2" class="tdCenter">
-                                                    Consumo de combustible estimado
-                                                </td>
-                                                <td colspan="2" class="tdCenter">
-                                                    Sin informacion
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <br />
-                                        <p><b>Resol. 315/2013 Art. PROTOCOLO DE ALISTAMIENTO DIARIO,</b> Se deja constancia en este documento que participaron del proceso de alistamiento diaro el(los) conductor(es) mencionado(s) en este FUEC bajo la supervicion de la empresa a travéz deusos tecnológicos amparados por la ley 1450, art. 230 y del decreto ley 019 de 2012, art. 4.</p>
-                                        <br />
+								</ul>
+							</div>
+					</div>
+				</t>
 
-                                </ul>
-                            </div>
-                    </div>
-                </t>
-
-        </t>
+		</t>
 
 
-     </template>
+	 </template>
 </odoo>
