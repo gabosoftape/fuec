@@ -141,7 +141,7 @@
 							  <tbody>
 								<t t-foreach="vehiculo" t-as="vehi">
 									<tr>
-									<th scope="row"><t t-esc="vehi.nombre"/></th>
+									<th scope="row"><t t-esc="vehi"/></th>
 									<td><t t-esc="vehi"/></td>
 									<td><t t-esc="vehi"/></td>
 									<td><t t-esc="vehi"/></td>
