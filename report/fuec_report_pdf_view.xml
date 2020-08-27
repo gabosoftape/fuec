@@ -228,6 +228,24 @@
                                         a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
                                     </li>
                                     <br />
+                                    <table class="table">
+                                      <thead>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">Antioquia-Choco</th>
+                                          <td>305</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Huila-Caquetá</th>
+                                          <td>441</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td>Larry</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                         <table style="width:100%">
                                             <tr>
                                                 <td>
