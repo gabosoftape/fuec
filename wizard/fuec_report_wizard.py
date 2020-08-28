@@ -25,7 +25,7 @@ class FuecReportButton(models.TransientModel):
         id_document = pseudouser.id_document
         contratista_id = fuec.contratista
         contratista = self.env['gpscontrol.contratista_fuec'].search([('id', '=', int(contratista_id))])
-        responsable_id = fuec.responsables
+        responsable_id = fuec.responsable
         responsable = self.env['gpscontrol.responsable_fuec'].search([('id', '=', int(responsable_id))])
         ruta_id = fuec.ruta
         ruta = self.env['gpscontrol.ruta_fuec'].search([('id', '=', int(ruta_id))])
