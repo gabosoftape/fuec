@@ -16,7 +16,7 @@ class fuec(models.Model):
     # contratista
     contratista = fields.Many2one('gpscontrol.contratista_fuec', string="Contratista")
     # responsable
-    responsable = fields.Many2one('gpscontrol.responsable_fuec', string="Responsable")
+    responsables = fields.Many2many('gpscontrol.responsable_fuec', string="Responsable")
     # objeto del contrato
     contract_object = fields.Selection([('1', 'Prestación de servicio... usuarios y/o particulares'),
                                         ('2', 'Prestación de servicio .. empleados, funcionarios o contratistas')], string="Objeto de contrato")
