@@ -73,7 +73,7 @@
                             <field name="user_rel" />
                             <field name="contract_id" />
                             <field name="contratista" />
-                            <field name="responsable"/>
+                            <field name="responsables"/>
                             <field name="contract_object" />
                             <field name="ruta" />
                             <field name="descripcion" />
