@@ -82,8 +82,8 @@
 									<b>Descripcion del recorrido:</b> <t t-esc="ruta_detalle"/>
 								</div>
 							</div>
+							<hr/>
 							<div t-if="convenio" class="row" style="text-align:start;">
-								<hr/>
 								<t t-if="convenio == 'cv'">
 									<div class="col-4 text-center">
 										<b>Convenio</b> X
@@ -122,6 +122,7 @@
 								</t>
 
 							</div>
+							<hr/>
 							<div class="row" style="text-align:start;">
 								<div class="col-12 text-center mt-4">
 									<b>Vigencia del contrato: </b>
