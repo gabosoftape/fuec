@@ -209,7 +209,7 @@
 									<b>{{Informacion de compañia}}</b>
 								</div>
 								 <div class="col-3">
-									<img src="/gabosoft_fuec_portal/static/src/images/supertransporte.jpeg"  style="width:400px; padding-top:2rem;"  alt=""/>
+									<img src="/gabosoft_fuec_portal/static/src/images/supertransporte.jpeg"  style="width:400px; padding-top:5rem;"  alt=""/>
 								</div>
 								 <div class="col-3 text-center">
 									<img class="firma" t-attf-src="data:image/png;base64,#{firma}"/>
