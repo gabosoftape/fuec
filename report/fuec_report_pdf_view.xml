@@ -208,11 +208,11 @@
 								 <div class="col-3 text-center">
 									<b><t t-esc="pseudouser"/></b>
 								</div>
-								 <div class="col-3 text-center">
-									<img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" width="200px" alt=""/>
+								 <div class="col-3">
+									<img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" alt=""/>
 								</div>
 								 <div class="col-3 text-center">
-									<img class="firma" t-attf-src="data:image/png;base64,#{firma}" style="width:100%; max-width: 200px; max-height: 200px;"/>
+									<img class="firma" t-attf-src="data:image/png;base64,#{firma}"/>
 								</div>
 							</div>
 						</div>
