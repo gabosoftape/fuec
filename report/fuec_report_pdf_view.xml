@@ -66,7 +66,7 @@
 									<t t-if="responsables">
 										<t t-foreach="responsables" t-as="responsable">
 											<tr>
-											  <th scope="col"><t t-esc="cond.id"/></th>
+											  <th scope="col"><t t-esc="responsable.id"/></th>
 											  <td><t t-esc="responsable.nombre"/></td>
 											  <td><b><t t-esc="responsable.id_type"/> </b>:  <t t-esc="responsable.id_document"/></td>
 											</tr>
@@ -158,22 +158,22 @@
 								<t t-foreach="vehiculo" t-as="vehi">
 									<tr>
 										<td>
-											<t t-esc="vehi.id"/>
+											<t t-esc="vehi_placa"/>
 										</td>
 										<td>
-											<t t-esc="vehi.name"/>
+											<t t-esc="vehi_modelo"/>
 										</td>
 										<td>
-											<t t-esc="vehi.id_wialon"/>
+											<t t-esc="vehi_marca"/>
 										</td>
 										<td>
-											<t t-esc="vehi.id_wialon"/>
+											<t t-esc="vehi_clase"/>
 										</td>
 										<td>
-											<t t-esc="vehi.id_wialon"/>
+											<t t-esc="vehi_interno"/>
 										</td>
 										<td>
-											<t t-esc="vehi.id_wialon"/>
+											<t t-esc="vehi_operacion"/>
 										</td>
 									</tr>
 								</t>
@@ -199,10 +199,10 @@
 								<t t-if="conductores">
 									<t t-foreach="conductores" t-as="cond">
 										<tr>
-										  <th scope="col"><t t-esc="cond.id"/></th>
-										  <td><t t-esc="cond.name"/></td>
-										  <td><t t-esc="cond.telefono"/></td>
-										  <td><t t-esc="cond.id_wia"/></td>
+										  <th scope="col"><t t-esc="cond[0]"/></th>
+										  <td><t t-esc="cond[1]"/></td>
+										  <td><t t-esc="cond[2]"/></td>
+										  <td><t t-esc="cond[3]"/></td>
 										</tr>
 									</t>
 								</t>
