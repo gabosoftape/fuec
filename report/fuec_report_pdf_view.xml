@@ -54,10 +54,10 @@
 							<div class="row" style="text-align:start;">
 								<div class="col-12">
 									Responsables:
+									<t t-foreach="responsibly" t-as="responsible">
+										<t t-esc="responsible.name"/> <b><t t-esc="responsible.id_type"/> </b>:  <t t-esc="responsible.id_document"/><br/>
+									</t>
 								</div>
-								<t t-foreach="responsibly" t-as="responsible">
-									<t t-esc="responsible.name"/> <b><t t-esc="responsible.id_type"/> </b>:  <t t-esc="responsible.id_document"/><br/>
-								</t>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12">
