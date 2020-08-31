@@ -120,12 +120,15 @@
 										<b>UT Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
-								<hr/>
+
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12 text-center mt-4">
 									<b>Vigencia del contrato: </b>
 								</div>
+							</div>
+							<hr/>
+							<div class="row">
 								<div class="col-6 text-center">
 									<b>Desde: &amp;nbsp; </b><br/>
 									<t t-esc="inicio_contrato"/>
@@ -135,11 +138,8 @@
 									<t t-esc="fin_contrato"/>
 								</div>
 							</div>
-							<div class="row">
-
-							</div>
 							<hr/>
-							<div class="row p-3" style="text-align:center;">
+							<div class="row" style="text-align:center;">
 								<div class="col-12 text-center">
 									<b>Caracteristicas del vehiculo</b>
 								</div>
