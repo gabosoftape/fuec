@@ -203,7 +203,7 @@
 							</table>
 							 <div class="row" style="text-align:center;">
 								<div class="col-3 text-center">
-									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="width:200px;" alt="Codigo QR"/>
+									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="width:340px;" alt="Codigo QR"/>
 								</div>
 								 <div class="col-3 text-center">
 									 <b>{{Razon social}}</b><br/>
@@ -212,7 +212,7 @@
 									 <b>{{Email}}</b><br/>
 								</div>
 								 <div class="col-3 text-center">
-									<img src="/gabosoft_fuec_portal/static/src/images/supertransporte.jpeg"  style="width:200px; padding-top:6rem;"  alt=""/>
+									<img src="/gabosoft_fuec_portal/static/src/images/supertransporte.jpeg"  style="width:340px; padding-top:6rem;"  alt=""/>
 								</div>
 								 <div class="col-3 text-center">
 									<img class="firma" t-attf-src="data:image/png;base64,#{firma}" style="width:200px; padding-top:6rem;"/>
