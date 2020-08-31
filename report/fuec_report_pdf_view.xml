@@ -51,14 +51,29 @@
 									<b>Objeto del contrato:</b> <t t-esc="contract_object"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start;">
-								<div class="col-8">
-									<b>Responsable:</b> <t t-esc="responsable_nombre"/>
+							<div class="row p-2" style="text-align:start;">
+								<div class="col-12">
+									Responsables:
 								</div>
-								<div class="col-4">
-									<b><t t-esc="responsable_id_type"/> </b>:  <t t-esc="responsable_id_document"/>
-
-								</div>
+								<table class="table">
+								  <thead>
+									<tr>
+									  <th scope="col">Nombre</th>
+									  <th scope="col">Tipo y No. Identificacion</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<t t-if="responsables">
+										<t t-foreach="responsables" t-as="responsable">
+											<tr>
+											  <th scope="col"><t t-esc="cond.id"/></th>
+											  <td><t t-esc="responsable.nombre"/></td>
+											  <td><b><t t-esc="responsable.id_type"/> </b>:  <t t-esc="responsable.id_document"/></td>
+											</tr>
+										</t>
+									</t>
+								  </tbody>
+								</table>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12">

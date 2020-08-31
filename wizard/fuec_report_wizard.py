@@ -25,8 +25,8 @@ class FuecReportButton(models.TransientModel):
         id_document = pseudouser.id_document
         contratista_id = fuec.contratista
         contratista = self.env['gpscontrol.contratista_fuec'].search([('id', '=', int(contratista_id))])
-        responsable_id = fuec.responsable
-        responsable = self.env['gpscontrol.responsable_fuec'].search([('id', '=', int(responsable_id))])
+        responsable_id = fuec.responsables
+        responsables = self.env['gpscontrol.responsable_fuec'].search([('id', 'in', responsable_id.ids)])
         ruta_id = fuec.ruta
         ruta = self.env['gpscontrol.ruta_fuec'].search([('id', '=', int(ruta_id))])
         # REMOVER: descripcion_recorrido = fuec.descripcion
@@ -56,9 +56,7 @@ class FuecReportButton(models.TransientModel):
             'id_document': id_document,
             'contratista_nombre': contratista.nombre,
             'contratista_nit': contratista.nit,
-            'responsable_nombre': responsable.nombre,
-            'responsable_id_type': responsable.id_type,
-            'responsable_id_doc': responsable.id_document,
+            'responsables': responsables,
             'ruta_nombre': ruta.nombre,
             'ruta_det': ruta.detalle,
             'convenio': convenio,
