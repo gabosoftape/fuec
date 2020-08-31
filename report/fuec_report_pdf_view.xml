@@ -122,19 +122,20 @@
 
 							</div>
 							<div class="row" style="text-align:start;">
-								<div class="col-12 text-center mt-2">
-									<b>Vigencia del contrato</b>
+								<div class="col-4 text-center mt-4">
+									<b>Vigencia del contrato: </b>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col-6 text-center">
+								<div class="col-4 text-center">
 									<b>Desde: &amp;nbsp; </b><br/>
 									<t t-esc="inicio_contrato"/>
 								</div>
-								<div class="col-6 text-center">
+								<div class="col-4 text-center">
 									<b>Hasta: &amp;nbsp; </b><br/>
 									<t t-esc="fin_contrato"/>
 								</div>
+							</div>
+							<div class="row">
+
 							</div>
 							<hr/>
 							<div class="row p-3" style="text-align:center;">
