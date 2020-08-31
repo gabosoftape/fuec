@@ -37,7 +37,7 @@ class responsableFuec(models.Model):
           required=False,
           help=u'Identificacion del Cliente',
      )
-     id_document = fields.Integer(string='No. Documento', default=None)
+     id_document = fields.Char(string='No. Documento', default=None)
      nombre = fields.Char('Nombre de contacto')
      email = fields.Char("Email")
      telefono = fields.Char("Telefono")
