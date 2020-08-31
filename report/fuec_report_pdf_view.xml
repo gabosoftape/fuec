@@ -52,17 +52,21 @@
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
-									<div class="col-12">
+								<div class="col-12">
+									<div class="row">
 										<b>Responsables:</b>
 									</div>
-									<t t-foreach="responsibly" t-as="responsible">
-										<div class="col-8" style="font-size:12px!important;">
-											<b><t t-esc="responsible.nombre"/></b>
-										</div>
-										<div class="col-4">
-											<b><t t-esc="responsible.id_type"/> </b>:  <t t-esc="responsible.id_document"/><br/>
-										</div>
-									</t>
+									<div class="row">
+										<t t-foreach="responsibly" t-as="responsible">
+											<div class="col-8">
+												<t t-esc="responsible.nombre"/>
+											</div>
+											<div class="col-4">
+												<b><t t-esc="responsible.id_type"/> </b>:  <t t-esc="responsible.id_document"/><br/>
+											</div>
+										</t>
+									</div>
+								</div>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12">
