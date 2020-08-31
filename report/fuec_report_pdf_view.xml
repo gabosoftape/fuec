@@ -55,7 +55,7 @@
 								<div class="col-12">
 									Responsables:
 								</div>
-								<t t-foreach="responsables" t-as="responsible">
+								<t t-foreach="responsibly" t-as="responsible">
 									<tr>
 									  <td><t t-esc="responsible[0]"/></td>
 									  <td><b><t t-esc="responsible[1]"/> </b>:  <t t-esc="responsible[2]"/></td>
