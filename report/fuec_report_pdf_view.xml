@@ -57,14 +57,16 @@
 										<b>Responsables:</b>
 									</div>
 									<div class="row">
-										<t t-foreach="responsibly" t-as="responsible">
-											<div class="col-8">
+										<div class="col-8">
+											<t t-foreach="responsibly" t-as="responsible">
 												<t t-esc="responsible.nombre"/>
-											</div>
-											<div class="col-4">
-												<b><t t-esc="responsible.id_type"/> </b>:  <t t-esc="responsible.id_document"/><br/>
-											</div>
-										</t>
+											</t>
+										</div>
+										<div class="col-4">
+											<t t-foreach="responsibly" t-as="resp">
+												<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
+											</t>
+										</div>
 									</div>
 								</div>
 							</div>
