@@ -206,10 +206,10 @@
 									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="height:100px;" alt="Codigo QR"/>
 								</div>
 								 <div class="col-3 text-center">
-									<b><t t-esc="pseudouser"/></b>
+									<b>{{Informacion de compañia}}</b>
 								</div>
 								 <div class="col-3">
-									<img src="http://50.116.2.74/fuec/images/supertransporte.jpeg" alt=""/>
+									<img src="gabosoft_fuec_portal/static/src/images/supertransporte.jpeg" width="200px" alt=""/>
 								</div>
 								 <div class="col-3 text-center">
 									<img class="firma" t-attf-src="data:image/png;base64,#{firma}"/>
