@@ -139,21 +139,19 @@
 								</div>
 							</div>
 							<hr/>
-							<div class="row" style="text-align:center;">
-								<div class="col-12 text-center">
-									<b>Caracteristicas del vehiculo</b>
-								</div>
-							</div>
 							<table class="table">
 							  <thead>
-								<tr>
-								  <th style="height:100px" scope="col">Placa</th>
-								  <th style="height:100px" scope="col">Modelo</th>
-								  <th style="height:100px" scope="col">Marca</th>
-								  <th style="height:100px" scope="col">Clase</th>
-								  <th style="height:100px" scope="col">No. Interno</th>
-								  <th style="height:100px" scope="col">No. Operación</th>
-								</tr>
+								  <tr>
+									  <b>Caracteristicas del vehiculo</b>
+								  </tr>
+								  <tr>
+									  <th style="height:100px" scope="col">Placa</th>
+									  <th style="height:100px" scope="col">Modelo</th>
+									  <th style="height:100px" scope="col">Marca</th>
+									  <th style="height:100px" scope="col">Clase</th>
+									  <th style="height:100px" scope="col">No. Interno</th>
+									  <th style="height:100px" scope="col">No. Operación</th>
+								  </tr>
 							  </thead>
 							  <tbody>
 									<tr>
