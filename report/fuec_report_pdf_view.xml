@@ -56,10 +56,7 @@
 									Responsables:
 								</div>
 								<t t-foreach="responsibly" t-as="responsible">
-									<tr>
-									  <td><t t-esc="responsible[0]"/></td>
-									  <td><b><t t-esc="responsible[1]"/> </b>:  <t t-esc="responsible[2]"/></td>
-									</tr>
+									<t t-esc="responsible.name"/> <b><t t-esc="responsible.id_type"/> </b>:  <t t-esc="responsible.id_document"/><br/>
 								</t>
 							</div>
 							<div class="row" style="text-align:start;">
