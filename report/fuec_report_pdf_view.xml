@@ -155,7 +155,6 @@
 								</tr>
 							  </thead>
 							  <tbody>
-								<t t-foreach="vehiculo" t-as="vehi">
 									<tr>
 										<td>
 											<t t-esc="vehi_placa"/>
@@ -176,7 +175,6 @@
 											<t t-esc="vehi_operacion"/>
 										</td>
 									</tr>
-								</t>
 							  </tbody>
 							</table>
 
