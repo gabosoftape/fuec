@@ -202,8 +202,8 @@
 							  </tbody>
 							</table>
 							 <div class="row" style="text-align:center;">
-								<div class="col-3 text-center">
-									<b><t t-esc="qr"/></b>
+								<div class="col-3">
+									<img class="" t-attf-src="data:image/png;base64,#{qr}" alt="Codigo QR"/>
 								</div>
 								 <div class="col-3 text-center">
 									<b><t t-esc="pseudouser"/></b>
