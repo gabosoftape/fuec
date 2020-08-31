@@ -63,14 +63,12 @@
 									</tr>
 								  </thead>
 								  <tbody>
-									<t t-if="responsables">
 										<t t-foreach="responsables" t-as="responsable">
 											<tr>
 											  <td><t t-esc="responsable[0]"/></td>
 											  <td><b><t t-esc="responsable[1]"/> </b>:  <t t-esc="responsable[2]"/></td>
 											</tr>
 										</t>
-									</t>
 								  </tbody>
 								</table>
 							</div>
