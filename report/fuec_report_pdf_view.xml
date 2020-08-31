@@ -85,38 +85,38 @@
 							<div t-if="convenio" class="row" style="text-align:start;">
 								<hr/>
 								<t t-if="convenio == 'cv'">
-									<div class="col-4">
+									<div class="col-4 text-center">
 										<b>Convenio</b> X
 									</div>
-									<div class="col-4">
+									<div class="col-4 text-center">
 										<b>Consorcio</b>
 									</div>
-									<div class="col-4">
+									<div class="col-4 text-center">
 										<b>Union temporal</b>
 									</div>
 								</t>
 								<t t-if="convenio == 'cs'">
-									<div class="col-4">
+									<div class="col-4 text-center">
 										<b>Convenio</b>
 									</div>
-									<div class="col-4">
+									<div class="col-4 text-center">
 										<b>Consorcio</b> X
 									</div>
-									<div class="col-4">
+									<div class="col-4 text-center">
 										<b>Union temporal</b>
 									</div>
 								</t>
 								<t t-else="">
-									<div class="col-3">
+									<div class="col-3 text-center">
 										<b>Convenio</b>
 									</div>
-									<div class="col-3">
+									<div class="col-3 text-center">
 										<b>Consorcio</b>
 									</div>
-									<div class="col-3">
+									<div class="col-3 text-center">
 										<b>Union temporal</b> X
 									</div>
-									<div class="col-3">
+									<div class="col-3 text-center">
 										<b>UT Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
@@ -145,12 +145,12 @@
 									  <b>Caracteristicas del vehiculo</b>
 								  </tr>
 								  <tr>
-									  <th style="height:100px" scope="col">Placa</th>
-									  <th style="height:100px" scope="col">Modelo</th>
-									  <th style="height:100px" scope="col">Marca</th>
-									  <th style="height:100px" scope="col">Clase</th>
-									  <th style="height:100px" scope="col">No. Interno</th>
-									  <th style="height:100px" scope="col">No. Operación</th>
+									  <th scope="col">Placa</th>
+									  <th scope="col">Modelo</th>
+									  <th scope="col">Marca</th>
+									  <th scope="col">Clase</th>
+									  <th scope="col">No. Interno</th>
+									  <th scope="col">No. Operación</th>
 								  </tr>
 							  </thead>
 							  <tbody>
