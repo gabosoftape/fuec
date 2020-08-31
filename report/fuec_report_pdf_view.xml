@@ -83,6 +83,7 @@
 								</div>
 							</div>
 							<div t-if="convenio" class="row" style="text-align:start;">
+								<hr/>
 								<t t-if="convenio == 'cv'">
 									<div class="col-4">
 										<b>Convenio</b> X
@@ -119,7 +120,7 @@
 										<b>UT Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
-
+								<hr/>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-4 text-center mt-4">
