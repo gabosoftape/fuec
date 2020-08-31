@@ -66,9 +66,8 @@
 									<t t-if="responsables">
 										<t t-foreach="responsables" t-as="responsable">
 											<tr>
-											  <th scope="col"><t t-esc="responsable.id"/></th>
-											  <td><t t-esc="responsable.nombre"/></td>
-											  <td><b><t t-esc="responsable.id_type"/> </b>:  <t t-esc="responsable.id_document"/></td>
+											  <td><t t-esc="responsable[0]"/></td>
+											  <td><b><t t-esc="responsable[1]"/> </b>:  <t t-esc="responsable[2]"/></td>
 											</tr>
 										</t>
 									</t>
