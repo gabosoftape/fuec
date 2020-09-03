@@ -4,7 +4,7 @@
 		<div class="header">
 			<div class="row" style="padding-top:2rem;">
 				<div class="col-6">
-					<img src="http://50.116.2.74/fuec/images/mintransporte.png" style="max-height: 100px;" alt=""/>
+					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="max-height: 100px;" alt=""/>
 				</div>
 				<div class="col-6 text-right">
 					<img t-attf-src="data:image/png;base64,#{logo}" alt="" style="width:100%; max-width: 300px; max-height: 100px;"/>
