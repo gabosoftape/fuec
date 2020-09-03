@@ -33,3 +33,4 @@ class wialon_pseudouser(models.Model):
     fuec_resolucion = fields.Char("No. de resolucion")
     fuec_fecha_hab = fields.Date("Fecha de habilitacion")
     fuec_end_number = fields.Integer(string="Secuencia final Fuec", default=1)
+    token = fields.Char(string="Token temporal")
