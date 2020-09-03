@@ -24,7 +24,7 @@ class wialon_pseudouser(models.Model):
         required=False,
         help=u'Identificacion del Cliente',
     )
-    id_document = fields.Integer(string='No. Documento', default=None)
+    id_document = fields.Char(string='No. Documento', default=None)
     celular = fields.Char("Celular")
     email = fields.Char("Email")
     website = fields.Char("Sitio Web")
