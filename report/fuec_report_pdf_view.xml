@@ -227,7 +227,7 @@
 					</div>
 					<br/>
 					<br></br>
-					<div class="page" style="font-size:18px!important; border: 3px solid #000000;">
+					<div class="page" style="font-size:20px!important; border: 3px solid #000000;">
 							<div>
 								<div style="text-align:center; mb-3">
 									<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
@@ -241,7 +241,7 @@
 										a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
 									</li>
 									<br />
-									<table class="table table-sm" style="padding-left:30px, padding-right:30px;">
+									<table class="table table-sm" style="padding-left:30px; padding-right:30px;">
 									  <thead>
 									  </thead>
 									  <tbody>
