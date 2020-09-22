@@ -15,7 +15,7 @@
 			<t t-raw="0"/>
 		</div>
 	</template>
-	<template id="fuec_report_template" >
+	<template id="fuec_report_template">
 		<t t-call="web.html_container">
 				<t t-call="fuec.fuec_layout_pdf">
 					<div class="page" style="text-align:center!important; page-break-after: always;font-size:23px!important;border: 3px solid #000000;">
