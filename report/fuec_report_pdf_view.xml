@@ -29,7 +29,7 @@
 							</div>
 						</div>
 						<div style="color:black!important; margin-left:30px; margin-right:30px; margin-bottom:30px;">
-							<div class="row" style="text-align:start; border-top: 1px solid #000;">
+							<div class="row" style="text-align:start; border-top: 1px solid #dadce0;">
 								<div class="col-8">
 									<b>Razon social: </b> <t t-esc="razonsocial"/>
 								</div>
@@ -37,12 +37,12 @@
 									<b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000;">
+							<div class="row" style="text-align:start; border-top: 1px solid #dadce0;">
 								<div class="col-12">
 									<b>Contrato No. </b> <t t-esc="contract_id"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000;">
+							<div class="row" style="text-align:start; border-top: 1px solid #dadce0;">
 								<div class="col-8">
 									<b>Contratante:</b> <t t-esc="contratista_nombre"/>
 								</div>
@@ -50,7 +50,7 @@
 									<b>NIT</b>: <t t-esc="contratista_nit"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000;">
+							<div class="row" style="text-align:start; border-top: 1px solid #dadce0;">
 								<div class="col-12">
 									<b>Objeto del contrato: </b>
 									<t t-if="contract_object == '2'">
@@ -61,7 +61,7 @@
 									</t>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000;">
+							<div class="row" style="text-align:start; border-top: 1px solid #dadce0;">
 								<div class="col-12">
 									<div class="row">
 										<div class="col-12">
