@@ -37,12 +37,12 @@
 									<b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start;">
+							<div class="row" style="text-align:start; border-top: 1px solid #000;">
 								<div class="col-12">
 									<b>Contrato No. </b> <t t-esc="contract_id"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start;">
+							<div class="row" style="text-align:start; border-top: 1px solid #000;">
 								<div class="col-8">
 									<b>Contratante:</b> <t t-esc="contratista_nombre"/>
 								</div>
@@ -50,7 +50,7 @@
 									<b>NIT</b>: <t t-esc="contratista_nit"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start;">
+							<div class="row" style="text-align:start; border-top: 1px solid #000;">
 								<div class="col-12">
 									<b>Objeto del contrato: </b>
 									<t t-if="contract_object == '2'">
@@ -61,7 +61,7 @@
 									</t>
 								</div>
 							</div>
-							<div class="row" style="text-align:start;">
+							<div class="row" style="text-align:start; border-top: 1px solid #000;">
 								<div class="col-12">
 									<div class="row">
 										<div class="col-12">
@@ -82,18 +82,18 @@
 									</div>
 								</div>
 							</div>
-							<div class="row" style="text-align:start;">
+							<div class="row" style="text-align:start; border-top: 1px solid #000;">
 								<div class="col-12">
 									<b>Origen - Destino:</b> <t t-esc="ruta_nombre"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12">
-									<b>Descripcion del recorrido:</b> <t t-esc="ruta_detalle"/>
+									<b>Descripcion del recorrido:</b> <t t-esc="ruta_det"/>
 								</div>
 							</div>
 							<hr/>
-							<div t-if="convenio" class="row" style="text-align:start;">
+							<div t-if="convenio" class="row" style="text-align:start; border-top: 1px solid #000;">
 								<t t-if="convenio == 'cv'">
 									<div class="col-3 text-center">
 										<b>Convenio</b> (X)
@@ -139,7 +139,7 @@
 
 							</div>
 							<hr/>
-							<div class="row" style="text-align:start;">
+							<div class="row" style="text-align:start; border-top: 1px solid #000;">
 								<div class="col-12 text-center mt-4">
 									<b>Vigencia del contrato: </b>
 								</div>
