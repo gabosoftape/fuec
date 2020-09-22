@@ -95,44 +95,44 @@
 							<hr/>
 							<div t-if="convenio" class="row" style="text-align:start;">
 								<t t-if="convenio == 'cv'">
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Convenio</b> (X)
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Consorcio</b>
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Union temporal</b>
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
 								<t t-if="convenio == 'cs'">
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Convenio</b>
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Consorcio</b> (X)
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Union temporal</b>
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
 								<t t-else="">
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Convenio</b>
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Consorcio</b>
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Union temporal</b> (X)
 									</div>
-									<div class="col-3 text-center">
+									<div class="col-3 text-center" style="border-left: 1px solid #fafafa;">
 										<b>Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
