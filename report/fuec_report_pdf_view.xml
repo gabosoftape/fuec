@@ -52,7 +52,13 @@
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12">
-									<b>Objeto del contrato:</b> <t t-esc="contract_object"/>
+									<b>Objeto del contrato: </b>
+									<t t-if="contract_object == '2'">
+										Prestación de servicio de transporte de pasajeros y equipaje al grupo de empleados, funcionarios o contratistas de una empresa
+									</t>
+									<t t-else="">
+										Prestación de servicio de transporte de pasajeros y equipaje al grupo de usuarios y/o particulares
+									</t>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
