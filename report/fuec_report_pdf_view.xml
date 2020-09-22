@@ -19,7 +19,7 @@
 	<template id="fuec_report_template" >
 		<t t-call="web.html_container">
 				<t t-call="fuec.fuec_layout_pdf">
-					<div class="page" style="text-align:center!important; page-break-after: always;font-size:23px!important;border: 2px solid #000000;">
+					<div class="page" style="text-align:center!important; page-break-after: always;font-size:23px!important;border: 3px solid #000000;">
 						<div class="row">
 							<div class="col-12">
 								 <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br/>PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
@@ -29,7 +29,7 @@
 								<hr/>
 							</div>
 						</div>
-						<div style="color:black!important; border: 2px solid #000000;">
+						<div style="color:black!important;">
 							<div class="row" style="text-align:start;">
 								<div class="col-8">
 									<b>Razon social: </b> <t t-esc="razonsocial"/>
@@ -228,7 +228,7 @@
 					</div>
 					<br/>
 					<br></br>
-					<div class="page" style="font-size:24px!important;">
+					<div class="page" style="font-size:24px!important; border: 3px solid #000000;">
 							<div>
 								<div style="text-align:center; mb-3">
 									<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
