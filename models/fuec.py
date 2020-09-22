@@ -34,6 +34,8 @@ class fuec(models.Model):
     vehiculo = fields.Many2one('gpscontrol.wialon_unit', 'Vehiculo', required=True)
     user_rel = fields.Many2one('gpscontrol.wialon_pseudouser', string="Usuario Responsable")
     conductores = fields.Many2many('gpscontrol.wialon_driver', string="Conductores")
+    fuec_series = fields.Char('Serial generado')
+    # acordate actualizar el wizard !!!
 
     @api.model
     def create(self, vals):

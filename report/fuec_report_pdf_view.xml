@@ -23,7 +23,7 @@
 							<div class="col-12">
 								 <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br/>PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
 									<br/>
-									<b>NO. </b><b style="color:red;"><t t-esc="folio"/></b>
+									<b>NO. </b><b style="color:red;"><t t-esc="contract_id"/></b>
 									<p>&amp;nbsp;</p>
 								<hr/>
 							</div>
@@ -42,7 +42,7 @@
 									<b>Contrato No. </b>
 								</div>
 								<div class="col-8 text-center">
-									<t t-esc="contract_id"/>
+									<t t-esc="contrato"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
