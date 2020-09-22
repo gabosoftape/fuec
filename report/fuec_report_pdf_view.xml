@@ -23,7 +23,7 @@
 							<div class="col-12">
 								 <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br/>PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
 									<br/>
-									NO. <b style="color:red;"><t t-esc="contract_id"/></b>
+									<b>NO. </b><b style="color:red;"><t t-esc="contract_id"/></b>
 									<p>&amp;nbsp;</p>
 								<hr/>
 							</div>
@@ -227,7 +227,7 @@
 					</div>
 					<br/>
 					<br></br>
-					<div class="page" style="font-size:24px!important; border: 3px solid #000000;">
+					<div class="page" style="font-size:12px!important; border: 3px solid #000000;">
 							<div>
 								<div style="text-align:center; mb-3">
 									<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
