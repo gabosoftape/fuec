@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<template id="fuec_layout_pdf">
-		<div class="header" style="padding:0!important; border: 2px solid #000000;">
+		<div class="header" style="padding:0!important; border: 1px solid #000000;">
 			<div class="row">
 				<div class="col-6">
 					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 100px; width:460px;" alt=""/>
@@ -35,6 +35,14 @@
 								</div>
 								<div class="col-4">
 									<b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
+								</div>
+							</div>
+							<div class="row" style="text-align:start;">
+								<div class="col-4">
+									<b>Contrato No. </b>
+								</div>
+								<div class="col-8 text-center">
+									<t t-esc="contrato"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
@@ -84,25 +92,31 @@
 							<hr/>
 							<div t-if="convenio" class="row" style="text-align:start;">
 								<t t-if="convenio == 'cv'">
-									<div class="col-4 text-center">
-										<b>Convenio</b> X
+									<div class="col-3 text-center">
+										<b>Convenio</b> (X)
 									</div>
-									<div class="col-4 text-center">
+									<div class="col-3 text-center">
 										<b>Consorcio</b>
 									</div>
-									<div class="col-4 text-center">
+									<div class="col-3 text-center">
 										<b>Union temporal</b>
+									</div>
+									<div class="col-3 text-center">
+										<b>UT Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
 								<t t-if="convenio == 'cs'">
-									<div class="col-4 text-center">
+									<div class="col-3 text-center">
 										<b>Convenio</b>
 									</div>
-									<div class="col-4 text-center">
-										<b>Consorcio</b> X
+									<div class="col-3 text-center">
+										<b>Consorcio</b> (X)
 									</div>
-									<div class="col-4 text-center">
+									<div class="col-3 text-center">
 										<b>Union temporal</b>
+									</div>
+									<div class="col-3 text-center">
+										<b>UT Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
 								<t t-else="">
@@ -113,7 +127,7 @@
 										<b>Consorcio</b>
 									</div>
 									<div class="col-3 text-center">
-										<b>Union temporal</b> X
+										<b>Union temporal</b> (X)
 									</div>
 									<div class="col-3 text-center">
 										<b>UT Con: </b> <t t-esc="ut_con"/>
