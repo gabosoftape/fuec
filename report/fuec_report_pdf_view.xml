@@ -355,47 +355,46 @@
 										<p>Para verificar la autenticidad de esta planilla consultar la pagina web https://monitoringinnovation.com/contactus opcion consultas, ingresando el siguiente codigo XXKFFUEK</p>
 										<br />
 										<div class="row">
+											<div class="col-12">
+												<b>INFORMACION POR RUTA ESTIMADA</b>
+											</div>
 											<div class="col-2"/>
 											<div class="col-8">
 												<table style="width:100%">
-											<tr>
-												<td colspan="4" class="tdCenter">
-													<b>INFORMACION POR RUTA ESTIMADA</b>
-												</td>
-											</tr>
-											<tr>
-												<td colspan="2" class="tdCenter">
-													Distancia recorrida estimada
-												</td>
-												<td colspan="2" class="tdCenter">
-													Sin informacion
-												</td>
-											</tr>
-											<tr>
-												<td colspan="2" class="tdCenter">
-													Duracion total estimada
-												</td>
-												<td colspan="2" class="tdCenter">
-													Sin informacion
-												</td>
-											</tr>
-											<tr>
-												<td colspan="2" class="tdCenter">
-													Peajes
-												</td>
-												<td colspan="2" class="tdCenter">
-													Sin informacion
-												</td>
-											</tr>
-											<tr>
-												<td colspan="2" class="tdCenter">
-													Consumo de combustible estimado
-												</td>
-												<td colspan="2" class="tdCenter">
-													Sin informacion
-												</td>
-											</tr>
-										</table>
+
+													<tr>
+														<td colspan="2" class="tdCenter">
+															Distancia recorrida estimada
+														</td>
+														<td colspan="2" class="tdCenter">
+															Sin informacion
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2" class="tdCenter">
+															Duracion total estimada
+														</td>
+														<td colspan="2" class="tdCenter">
+															Sin informacion
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2" class="tdCenter">
+															Peajes
+														</td>
+														<td colspan="2" class="tdCenter">
+															Sin informacion
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2" class="tdCenter">
+															Consumo de combustible estimado
+														</td>
+														<td colspan="2" class="tdCenter">
+															Sin informacion
+														</td>
+													</tr>
+												</table>
 												<br />
 											</div>
 											<div class="col-2"/>
