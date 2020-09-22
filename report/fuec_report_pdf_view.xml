@@ -24,7 +24,6 @@
 								 <b>FORMATO ÚNICO DE EXTRACTO DEL CONTRATO DEL SERVICIO <br/>PÚBLICO DE TRANSPORTE TERRESTRE AUTOMOTOR ESPECIAL</b>
 									<br/>
 									<b>NO. </b><b style="color:red;"><t t-esc="fuec_series"/></b>
-									<p>&amp;nbsp;</p>
 								<hr/>
 							</div>
 						</div>
