@@ -257,75 +257,80 @@
 									<li>
 										a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
 									</li>
-									<br />
-									<table class="table" style="padding-left:90px!important; padding-right:90px!important;">
-									  <thead>
-									  </thead>
-									  <tbody>
-										<tr>
-										  <th scope="row">Antioquia-Choco</th>
-										  <td>305</td>
-										  <th scope="row">Huila-Caquetá</th>
-										  <td>441</td>
-										</tr>
-										<tr>
-										  <th scope="row">Atlántico</th>
-										  <td>208</td>
-										  <th scope="row">Magdalena </th>
-										  <td>247</td>
-										</tr>
-										<tr>
-										  <th scope="row">Bolívar-San Andrés y Providencia</th>
-										  <td>213</td>
-										  <th scope="row">Meta-Vaupés-Vichada</th>
-										  <td>550</td>
-										</tr>
-										<tr>
-										  <th scope="row">Boyacá-Casanare</th>
-										  <td>415</td>
-										  <th scope="row">Nariño-Putumayo</th>
-										  <td>352</td>
-										</tr>
-										<tr>
-										  <th scope="row">Caldas</th>
-										  <td>317</td>
-										  <th scope="row">N/Santander-Arauca</th>
-										  <td>454</td>
-										</tr>
-										<tr>
-										  <th scope="row">Cauca</th>
-										  <td>319</td>
-										  <th scope="row">Quindio</th>
-										  <td>363</td>
-										</tr>
-										<tr>
-										  <th scope="row">César</th>
-										  <td>220</td>
-										  <th scope="row">Risaralda</th>
-										  <td>366</td>
-										</tr>
-										<tr>
-										  <th scope="row">Córdoba-Sucre</th>
-										  <td>223</td>
-										  <th scope="row">Santander</th>
-										  <td>468</td>
-										</tr>
-										<tr>
-										  <th scope="row">Cundinamarca</th>
-										  <td>425</td>
-										  <th scope="row">Tolima</th>
-										  <td>473</td>
-										</tr>
-										<tr>
-										  <th scope="row">Guajira</th>
-										  <td>241</td>
-										  <th scope="row">Valle del Cauca</th>
-										  <td>376</td>
-										</tr>
-									  </tbody>
-									</table>
-										<br /><br />
-
+									<li>
+										<div class="row">
+											<div class="col-2"/>
+											<div class="col-8">
+												<table class="table table-sm">
+												   <thead>
+												   </thead>
+												  <tbody>
+													<tr>
+													  <th scope="row">Antioquia-Choco</th>
+													  <td>305</td>
+													  <th scope="row">Huila-Caquetá</th>
+													  <td>441</td>
+													</tr>
+													<tr>
+													  <th scope="row">Atlántico</th>
+													  <td>208</td>
+													  <th scope="row">Magdalena </th>
+													  <td>247</td>
+													</tr>
+													<tr>
+													  <th scope="row">Bolívar-San Andrés y Providencia</th>
+													  <td>213</td>
+													  <th scope="row">Meta-Vaupés-Vichada</th>
+													  <td>550</td>
+													</tr>
+													<tr>
+													  <th scope="row">Boyacá-Casanare</th>
+													  <td>415</td>
+													  <th scope="row">Nariño-Putumayo</th>
+													  <td>352</td>
+													</tr>
+													<tr>
+													  <th scope="row">Caldas</th>
+													  <td>317</td>
+													  <th scope="row">N/Santander-Arauca</th>
+													  <td>454</td>
+													</tr>
+													<tr>
+													  <th scope="row">Cauca</th>
+													  <td>319</td>
+													  <th scope="row">Quindio</th>
+													  <td>363</td>
+													</tr>
+													<tr>
+													  <th scope="row">César</th>
+													  <td>220</td>
+													  <th scope="row">Risaralda</th>
+													  <td>366</td>
+													</tr>
+													<tr>
+													  <th scope="row">Córdoba-Sucre</th>
+													  <td>223</td>
+													  <th scope="row">Santander</th>
+													  <td>468</td>
+													</tr>
+													<tr>
+													  <th scope="row">Cundinamarca</th>
+													  <td>425</td>
+													  <th scope="row">Tolima</th>
+													  <td>473</td>
+													</tr>
+													<tr>
+													  <th scope="row">Guajira</th>
+													  <td>241</td>
+													  <th scope="row">Valle del Cauca</th>
+													  <td>376</td>
+													</tr>
+												  </tbody>
+												</table>
+											</div>
+											<div class="col-2"/>
+										</div>
+									</li>
 									<li>
 										b) Los cuatro dígitos siguientes señalarán el número de resolución mediante la cual se otorgó la habilitación de la Empresa. En caso que la resolución no tenga estos dígitos, los faltantes serán completados con ceros a la izquierda;<br /><br />
 									</li>
