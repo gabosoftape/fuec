@@ -33,7 +33,7 @@
 								<div class="col-8">
 									<b>Razon social: </b> <t t-esc="razonsocial"/>
 								</div>
-								<div class="col-4">
+								<div class="col-4" style="border-left: 1px solid #fafafa;">
 									<b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
 								</div>
 							</div>
@@ -46,7 +46,7 @@
 								<div class="col-8">
 									<b>Contratante:</b> <t t-esc="contratista_nombre"/>
 								</div>
-								<div class="col-4">
+								<div class="col-4" style="border-left: 1px solid #fafafa;">
 									<b>NIT</b>: <t t-esc="contratista_nit"/>
 								</div>
 							</div>
@@ -74,7 +74,7 @@
 												<t t-esc="responsible.nombre"/><br/>
 											</t>
 										</div>
-										<div class="col-4">
+										<div class="col-4" style="border-left: 1px solid #fafafa;">
 											<t t-foreach="responsibly" t-as="resp">
 												<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
 											</t>
