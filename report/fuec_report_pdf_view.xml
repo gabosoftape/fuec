@@ -102,7 +102,7 @@
 										<b>Union temporal</b>
 									</div>
 									<div class="col-3 text-center">
-										<b>UT Con: </b> <t t-esc="ut_con"/>
+										<b>Con: </b> <t t-esc="ut_con"/>
 									</div>
 								</t>
 								<t t-if="convenio == 'cs'">
