@@ -2,7 +2,7 @@
 <odoo>
 	<template id="fuec_layout_pdf">
 		<div class="header" style="border: 1px solid #000000;">
-			<div class="row" style="padding-top:2rem;">
+			<div class="row">
 				<div class="col-6">
 					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="max-height: 100px; width:100%;" alt=""/>
 				</div>
