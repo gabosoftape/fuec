@@ -243,22 +243,22 @@
 					</div>
 					<br/>
 					<div class="page" style="font-size:18px!important; border: 3px solid #e4e4e4;">
-						<div class="row" style="text-align:center; mb-3">
-								<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
-						</div>
-						<br/>
-						<div class="row" style="padding-left:50px; padding-right:50px;">
-							<p>
-								El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
-							</p>
-						</div>
-						<ul style="margin-left:10px !important;">
-
+							<div class="container">
+								<div class="row" style="text-align:center; mb-3">
+									<div class="col-12">
+										<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
+									</div>
+								</div>
+								<br/>
+								<ul style="margin-left:10px !important;">
+									<p>
+										El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
+									</p>
 									<li>
 										a) Los tres primeros dígitos de izquierda a derecha correcponderán al código de la Dirección Territorial que otorgó la habilitación o de aquella a la cual se hubiese trasladado la Empresa	de Servicio público de Transporte Terrestre Automotor Especial;
 									</li>
 									<br />
-									<table class="table table-sm" style="padding-left:90px; padding-right:90px;">
+									<table class="table" style="padding-left:90px!important; padding-right:90px!important;">
 									  <thead>
 									  </thead>
 									  <tbody>
@@ -395,6 +395,7 @@
 										<br />
 
 								</ul>
+							</div>
 					</div>
 				</t>
 
