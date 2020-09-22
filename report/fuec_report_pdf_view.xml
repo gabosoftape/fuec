@@ -354,7 +354,10 @@
 										<p><b>Nota:</b> El vehiculo se encuentra en perfecto estado Mecánico y de aseo.</p>
 										<p>Para verificar la autenticidad de esta planilla consultar la pagina web https://monitoringinnovation.com/contactus opcion consultas, ingresando el siguiente codigo XXKFFUEK</p>
 										<br />
-										<table style="width:100%">
+										<div class="row">
+											<div class="col-2"/>
+											<div class="col-8">
+												<table style="width:100%">
 											<tr>
 												<td colspan="4" class="tdCenter">
 													<b>INFORMACION POR RUTA ESTIMADA</b>
@@ -393,7 +396,10 @@
 												</td>
 											</tr>
 										</table>
-										<br />
+												<br />
+											</div>
+											<div class="col-2"/>
+										</div>
 										<p><b>Resol. 315/2013 Art. PROTOCOLO DE ALISTAMIENTO DIARIO,</b> Se deja constancia en este documento que participaron del proceso de alistamiento diaro el(los) conductor(es) mencionado(s) en este FUEC bajo la supervicion de la empresa a travéz deusos tecnológicos amparados por la ley 1450, art. 230 y del decreto ley 019 de 2012, art. 4.</p>
 										<br />
 
