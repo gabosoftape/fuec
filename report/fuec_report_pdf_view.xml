@@ -242,13 +242,14 @@
 						</div>
 					</div>
 					<div class="page" style="font-size:23px!important; border: 3px solid #e4e4e4;padding-top: 280px!important;">
-							<div class="container">
-								<div class="row" style="text-align:center; mb-3">
-									<div class="col-12" style="border-top: 3px solid #e4e4e4;">
-										<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
-									</div>
-								</div>
-								<br/>
+						<div class="row" style="text-align:center;">
+							<div class="col-12" >
+								<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
+							</div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="col-12">
 								<ul style="margin-left:10px !important;">
 									<p>
 										El Formato Unico de Extracto del Contrato "FUEC" estará constituido por los siguientes números:<br />
@@ -405,6 +406,9 @@
 
 								</ul>
 							</div>
+						</div>
+
+
 					</div>
 				</t>
 
