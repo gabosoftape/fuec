@@ -11,7 +11,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="article o_report_layout_standard" style="display: block!important; padding-top: 130px;">
+		<div class="article o_report_layout_standard" style="padding-top: 180px;">
 			<t t-raw="0"/>
 		</div>
 	</template>
