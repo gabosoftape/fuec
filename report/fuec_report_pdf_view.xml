@@ -241,11 +241,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="page" style="font-size:18px!important; border: 3px solid #e4e4e4;padding-top: 280px!important;">
+					<div class="page" style="font-size:23px!important; border: 3px solid #e4e4e4;padding-top: 280px!important;">
 							<div class="container">
 								<div class="row" style="text-align:center; mb-3">
-									<hr/>
-									<div class="col-12">
+									<div class="col-12" style="border-top: 3px solid #e4e4e4;">
 										<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
 									</div>
 								</div>
