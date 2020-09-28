@@ -35,7 +35,6 @@ class fuec(models.Model):
     user_rel = fields.Many2one('gpscontrol.wialon_pseudouser', string="Usuario Responsable")
     conductores = fields.Many2many('gpscontrol.wialon_driver', string="Conductores")
     fuec_series = fields.Char('Serial generado')
-    default_logo = fields.Binary('Saved Company logo')
     # acordate actualizar el wizard !!!
 
     @api.model
