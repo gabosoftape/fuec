@@ -241,8 +241,7 @@
 							</div>
 						</div>
 					</div>
-					<br/>
-					<div class="page" style="font-size:18px!important; border: 3px solid #e4e4e4;padding-top: 280px;">
+					<div class="page" style="font-size:18px!important; border: 3px solid #e4e4e4;padding-top: 280px!important;">
 							<div class="container">
 								<div class="row" style="text-align:center; mb-3">
 									<div class="col-12">
