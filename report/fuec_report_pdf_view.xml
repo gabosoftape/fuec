@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<template id="fuec_layout_pdf">
-		<div class="header" style="padding:0!important; border: 1px solid #000000;">
+		<div class="header" style="padding:0!important;">
 			<div class="row">
 				<div class="col-6">
 					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 100px; width:460px;" alt=""/>
@@ -11,7 +11,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="article o_report_layout_standard">
+		<div class="article" style="padding-top:2rem;">
 			<t t-raw="0"/>
 		</div>
 	</template>
