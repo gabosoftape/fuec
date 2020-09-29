@@ -225,7 +225,7 @@
 								<div class="col-3 text-center">
 									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="width:340px;" alt="Codigo QR"/>
 								</div>
-								 <div class="col-3 text-center" style="text-align: justify;">
+								 <div class="col-3 " style="text-align: justify!important;">
 									 <b><t t-esc="razonsocial"/></b><br/>
 									 <b><t t-esc="direccion"/></b><br/>
 									 <b><t t-esc="telefono"/></b><br/>
