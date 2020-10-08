@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<template id="fuec_layout_pdf">
-		<div class="header" style="display: block!important; padding-top: 30px!important; padding-left:8px; padding-right:20px;">
+		<div class="header" style="display: block!important; padding-top: 30px!important; padding-left:8px; ">
 			<div class="row" style="border: 3px solid #000000;">
 				<div class="col-6">
-					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 100px; width:460px; z-index: -1;" alt=""/>
+					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 94px; width:420px; display:block; margin:auto;" align="center"/>
 				</div>
 				<div class="col-6">
-					<img t-attf-src="data:image/png;base64,#{logo}" alt="" style="height: 100px; width:430px; z-index: -1;"/>
+					<img t-attf-src="data:image/png;base64,#{logo}" alt="" style="height: 94px; width:430px;" align="center"/>
 				</div>
 			</div>
 		</div>
