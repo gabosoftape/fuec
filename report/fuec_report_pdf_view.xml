@@ -70,12 +70,12 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-8">
+										<div class="col-8" style="border: 1px solid #000000;">
 											<t t-foreach="responsibly" t-as="responsible">
 												<t t-esc="responsible.nombre"/><br/>
 											</t>
 										</div>
-										<div class="col-4" style="border-left: 1px solid #000000;">
+										<div class="col-4" style="border: 1px solid #000000;">
 											<t t-foreach="responsibly" t-as="resp">
 												<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
 											</t>
@@ -93,7 +93,6 @@
 									<b>Descripcion del recorrido:</b> <t t-esc="ruta_det"/>
 								</div>
 							</div>
-							<hr/>
 							<div t-if="convenio" class="row" style="text-align:start;">
 								<t t-if="convenio == 'cv'">
 									<div class="col-3 text-center" style="border-left: 1px solid #000000;">
