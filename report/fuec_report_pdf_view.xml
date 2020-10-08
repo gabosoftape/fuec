@@ -4,10 +4,10 @@
 		<div class="header" style="display: block!important; padding-top: 30px!important;">
 			<div class="row">
 				<div class="col-6" style="border: 3px solid #000000;">
-					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 94px; width:420px; display:block; margin:auto;"/>
+					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 90px; width:420px; display:block; margin:auto;"/>
 				</div>
 				<div class="col-6" style="border: 3px solid #000000;">
-					<img t-attf-src="data:image/png;base64,#{logo}" style="height: 94px; width:430px; display:block; margin:auto;"/>
+					<img t-attf-src="data:image/png;base64,#{logo}" style="height: 90px; width:430px; display:block; margin:auto;"/>
 				</div>
 			</div>
 		</div>
