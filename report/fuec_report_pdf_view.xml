@@ -4,10 +4,10 @@
 		<div class="header" style="display: block!important; padding-top: 30px!important;">
 			<div class="row" style="border: 3px solid #000000;">
 				<div class="col-6">
-					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 100px; width:460px;" alt=""/>
+					<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 100px; width:460px; z-index: -1;" alt=""/>
 				</div>
 				<div class="col-6">
-					<img t-attf-src="data:image/png;base64,#{logo}" alt="" style="height: 100px; width:430px;"/>
+					<img t-attf-src="data:image/png;base64,#{logo}" alt="" style="height: 100px; width:430px; z-index: -1;"/>
 				</div>
 			</div>
 		</div>
@@ -27,7 +27,7 @@
 								<hr/>
 							</div>
 						</div>
-						<div style="color:black!important; margin-left:30px; margin-right:30px; margin-bottom:30px;">
+						<div style="color:black!important; padding-left:30px; padding-right:30px; padding-bottom:30px;">
 							<div class="row" style="text-align:start; border-top: 1px solid #000000;">
 								<div class="col-8">
 									<b>Razon social: </b> <t t-esc="razonsocial"/>
