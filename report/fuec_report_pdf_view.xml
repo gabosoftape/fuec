@@ -94,49 +94,18 @@
 								</div>
 							</div>
 							<div t-if="convenio" class="row" style="text-align:start;">
-								<t t-if="convenio == 'xx'">
-									<div class="col-3 text-center">
-										<b>Convenio</b> (X)
-									</div>
-									<div class="col-3 text-center">
-										<b>Consorcio</b>
-									</div>
-									<div class="col-3 text-center">
-										<b>Union temporal</b>
-									</div>
-									<div class="col-3 text-center">
-										<b>Con: </b> <t t-esc="ut_con"/>
-									</div>
-								</t>
-								<t t-if="convenio == 'xy'">
-									<div class="col-3 text-center">
-										<b>Convenio</b>
-									</div>
-									<div class="col-3 text-center">
-										<b>Consorcio</b> (X)
-									</div>
-									<div class="col-3 text-center">
-										<b>Union temporal</b>
-									</div>
-									<div class="col-3 text-center">
-										<b>Con: </b> <t t-esc="ut_con"/>
-									</div>
-								</t>
-								<t t-else="">
-									<div class="col-3 text-center" style="border-top: 2px solid #000000; border-bottom: 2px solid #000000;">
-										<b>Convenio</b> <p t-if="convenio == 'cv'">(X)</p>
-									</div>
-									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Consorcio</b> <p t-if="convenio == 'cs'">(X)</p>
-									</div>
-									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Union temporal</b> <p t-if="convenio == 'ut'">(X)</p>
-									</div>
-									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Con: </b> <t t-esc="ut_con"/>
-									</div>
-								</t>
-
+								<div class="col-3 text-center" style="border-top: 1px solid #000000; border-bottom: 2px solid #000000;">
+									<b>Convenio</b><p t-if="convenio == 'cv'">(X)</p>
+								</div>
+								<div class="col-3 text-center" style="border: 1px solid #000000;">
+									<b>Consorcio</b><p t-if="convenio == 'cs'">(X)</p>
+								</div>
+								<div class="col-3 text-center" style="border: 1px solid #000000;">
+									<b>Union temporal</b><p t-if="convenio == 'ut'">(X)</p>
+								</div>
+								<div class="col-3 text-center" style="border: 1px solid #000000;">
+									<b>Con: </b><t t-esc="ut_con"/>
+								</div>
 							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12 text-center mt-4" style="border-right: 2px solid #000000;">
