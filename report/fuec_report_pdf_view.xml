@@ -157,30 +157,16 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-12">
-									<table class="table" style="border: 1px solid #000000;">
-										  <thead>
-												<tr>
-												  <th scope="col" style="border: 1px solid #000000;">Nombres y Apellidos</th>
-												  <th scope="col" style="border: 1px solid #000000;">No. Identificacion</th>
-												  <th scope="col" style="border: 1px solid #000000;">No. Licencia</th>
-												  <th scope="col" style="border: 1px solid #000000;">Vigencia</th>
-												</tr>
-										  </thead>
-										  <tbody>
-												<t t-if="conductores">
-													<t t-foreach="conductores" t-as="cond">
-														<tr>
-														  <th scope="col" style="border: 1px solid #000000;"><t t-esc="cond[0]"/></th>
-														  <td style="border: 1px solid #000000;"><t t-esc="cond[1]"/></td>
-														  <td style="border: 1px solid #000000;"><t t-esc="cond[2]"/></td>
-														  <td style="border: 1px solid #000000;"><t t-esc="cond[3]"/></td>
-														</tr>
-													</t>
-												</t>
-										  </tbody>
-									</table>
-								</div>
+								<div class="col-3" style="border: 1px solid #000000;">Nombres y Apellidos</div>
+								<div class="col-3" style="border: 1px solid #000000;">No. Identificacion</div>
+								<div class="col-3" style="border: 1px solid #000000;">No. Licencia</div>
+								<div class="col-3" style="border: 1px solid #000000;">Vigencia</div>
+							</div>
+							<div class="row">
+								<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[0]"/></div>
+								<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[1]"/></div>
+								<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[2]"/></div>
+								<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[3]"/></div>
 							</div>
 							 <div class="row" style="text-align:center;">
 								<div class="col-3 text-center">
