@@ -121,67 +121,75 @@
 									<b>Caracteristicas del vehiculo</b>
 								</div>
 							</div>
-							<table class="table" style="border: 1px solid #000000;">
-							  <thead>
-								  <tr>
-									  <th scope="col" style="border: 1px solid #000000;">Placa</th>
-									  <th scope="col" style="border: 1px solid #000000;">Modelo</th>
-									  <th scope="col" style="border: 1px solid #000000;">Marca</th>
-									  <th scope="col" style="border: 1px solid #000000;">Clase</th>
-									  <th scope="col" style="border: 1px solid #000000;">No. Interno</th>
-									  <th scope="col" style="border: 1px solid #000000;">No. Operación</th>
-								  </tr>
-							  </thead>
-							  <tbody>
-									<tr>
-										<td style="border: 1px solid #000000;">
-											<t t-esc="vehi_placa"/>
-										</td>
-										<td style="border: 1px solid #000000;">
-											<t t-esc="vehi_modelo"/>
-										</td>
-										<td style="border: 1px solid #000000;">
-											<t t-esc="vehi_marca"/>
-										</td>
-										<td style="border: 1px solid #000000;">
-											<t t-esc="vehi_clase"/>
-										</td>
-										<td style="border: 1px solid #000000;">
-											<t t-esc="vehi_interno"/>
-										</td>
-										<td style="border: 1px solid #000000;">
-											<t t-esc="vehi_operacion"/>
-										</td>
-									</tr>
-							  </tbody>
-							</table>
+							<div class="row">
+								<div class="col-12">
+									<table class="table" style="border: 1px solid #000000;">
+										  <thead>
+											  <tr>
+												  <th scope="col" style="border: 1px solid #000000;">Placa</th>
+												  <th scope="col" style="border: 1px solid #000000;">Modelo</th>
+												  <th scope="col" style="border: 1px solid #000000;">Marca</th>
+												  <th scope="col" style="border: 1px solid #000000;">Clase</th>
+												  <th scope="col" style="border: 1px solid #000000;">No. Interno</th>
+												  <th scope="col" style="border: 1px solid #000000;">No. Operación</th>
+											  </tr>
+										  </thead>
+										  <tbody>
+												<tr>
+													<td style="border: 1px solid #000000;">
+														<t t-esc="vehi_placa"/>
+													</td>
+													<td style="border: 1px solid #000000;">
+														<t t-esc="vehi_modelo"/>
+													</td>
+													<td style="border: 1px solid #000000;">
+														<t t-esc="vehi_marca"/>
+													</td>
+													<td style="border: 1px solid #000000;">
+														<t t-esc="vehi_clase"/>
+													</td>
+													<td style="border: 1px solid #000000;">
+														<t t-esc="vehi_interno"/>
+													</td>
+													<td style="border: 1px solid #000000;">
+														<t t-esc="vehi_operacion"/>
+													</td>
+												</tr>
+										  </tbody>
+									</table>
+								</div>
+							</div>
 							<div class="row" style="text-align:center;">
 								<div class="col-12 text-center" style="border: 1px solid #000000;">
 									<b>Conductores</b>
 								</div>
 							</div>
-							<table class="table" style="border: 1px solid #000000;">
-							  <thead>
-								<tr>
-								  <th scope="col" style="border: 1px solid #000000;">Nombres y Apellidos</th>
-								  <th scope="col" style="border: 1px solid #000000;">No. Identificacion</th>
-								  <th scope="col" style="border: 1px solid #000000;">No. Licencia</th>
-								  <th scope="col" style="border: 1px solid #000000;">Vigencia</th>
-								</tr>
-							  </thead>
-							  <tbody>
-								<t t-if="conductores">
-									<t t-foreach="conductores" t-as="cond">
-										<tr>
-										  <th scope="col" style="border: 1px solid #000000;"><t t-esc="cond[0]"/></th>
-										  <td style="border: 1px solid #000000;"><t t-esc="cond[1]"/></td>
-										  <td style="border: 1px solid #000000;"><t t-esc="cond[2]"/></td>
-										  <td style="border: 1px solid #000000;"><t t-esc="cond[3]"/></td>
-										</tr>
-									</t>
-								</t>
-							  </tbody>
-							</table>
+							<div class="row">
+								<div class="col-12">
+									<table class="table" style="border: 1px solid #000000;">
+										  <thead>
+												<tr>
+												  <th scope="col" style="border: 1px solid #000000;">Nombres y Apellidos</th>
+												  <th scope="col" style="border: 1px solid #000000;">No. Identificacion</th>
+												  <th scope="col" style="border: 1px solid #000000;">No. Licencia</th>
+												  <th scope="col" style="border: 1px solid #000000;">Vigencia</th>
+												</tr>
+										  </thead>
+										  <tbody>
+												<t t-if="conductores">
+													<t t-foreach="conductores" t-as="cond">
+														<tr>
+														  <th scope="col" style="border: 1px solid #000000;"><t t-esc="cond[0]"/></th>
+														  <td style="border: 1px solid #000000;"><t t-esc="cond[1]"/></td>
+														  <td style="border: 1px solid #000000;"><t t-esc="cond[2]"/></td>
+														  <td style="border: 1px solid #000000;"><t t-esc="cond[3]"/></td>
+														</tr>
+													</t>
+												</t>
+										  </tbody>
+									</table>
+								</div>
+							</div>
 							 <div class="row" style="text-align:center;">
 								<div class="col-3 text-center">
 									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="width:170px;" alt="Codigo QR"/>
