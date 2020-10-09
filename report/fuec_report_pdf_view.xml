@@ -13,7 +13,7 @@
 				  </tr>
 			</table>
 		</div>
-		<div class="article o_report_layout_standard" style="padding-top: 220px;">
+		<div class="article o_report_layout_standard" style="padding-top: 10px;">
 			<t t-raw="0"/>
 		</div>
 	</template>
