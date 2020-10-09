@@ -102,32 +102,32 @@
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
-								<div class="col-12 text-center mt-4" style="border-right: 2px solid #000000;">
+								<div class="col-12 text-center mt-4" style="border: 1px solid #000000;">
 									<b>Vigencia del contrato: </b>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-6 text-center" style="border-right: 2px solid #000000;">
+								<div class="col-6 text-center" style="border: 1px solid #000000;">
 									<b>Desde: &amp;nbsp; </b><br/>
 									<t t-esc="inicio_contrato"/>
 								</div>
-								<div class="col-6 text-center" style="border: 2px solid #000000;">
+								<div class="col-6 text-center" style="border: 1px solid #000000;">
 									<b>Hasta: &amp;nbsp; </b><br/>
 									<t t-esc="fin_contrato"/>
 								</div>
 							</div>
-							<table class="table">
+							<table class="table" style="border: 1px solid #000000;">
 							  <thead>
-								  <tr>
+								  <tr style="border: 1px solid #000000;">
 									  <b>Caracteristicas del vehiculo</b>
 								  </tr>
 								  <tr>
-									  <th scope="col">Placa</th>
-									  <th scope="col">Modelo</th>
-									  <th scope="col">Marca</th>
-									  <th scope="col">Clase</th>
-									  <th scope="col">No. Interno</th>
-									  <th scope="col">No. Operación</th>
+									  <th scope="col" style="border: 1px solid #000000;">Placa</th>
+									  <th scope="col" style="border: 1px solid #000000;">Modelo</th>
+									  <th scope="col" style="border: 1px solid #000000;">Marca</th>
+									  <th scope="col" style="border: 1px solid #000000;">Clase</th>
+									  <th scope="col" style="border: 1px solid #000000;">No. Interno</th>
+									  <th scope="col" style="border: 1px solid #000000;">No. Operación</th>
 								  </tr>
 							  </thead>
 							  <tbody>
@@ -196,13 +196,13 @@
 									<img src="/gabosoft_fuec_portal/static/src/images/supertransporte.jpeg"  style="width:170px; padding-top:30px;"  alt=""/>
 								</div>
 								 <div class="col-3 text-center">
-									<img class="firma" t-attf-src="data:image/png;base64,#{firma}" style="width:170px; padding-top:4.5rem;"/><br/>
+									<img class="firma" t-attf-src="data:image/png;base64,#{firma}" style="width:170px; padding-top:30px;"/><br/>
 									<b>Representante legal FIRMA Y SELLO DIGITAL</b>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="page" style="padding-top: 130px!important; font-size:11px!important;">
+					<div class="page" style="padding-top: 130px!important; font-size:12px!important;">
 						<div class="row" style="text-align:center;">
 							<div class="col-12" >
 								<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
