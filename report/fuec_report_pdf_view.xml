@@ -13,7 +13,7 @@
 				  </tr>
 			</table>
 		</div>
-		<div class="article o_report_layout_standard" style="padding-top: 120px;">
+		<div class="article o_report_layout_standard" style="padding-top: 130px;">
 			<t t-raw="0"/>
 		</div>
 	</template>
@@ -62,10 +62,12 @@
 									</t>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000000;">
+							<div class="row" style="text-align:start; border-top: 1px solid #000000;" >
 								<div class="col-12">
 									<b>Responsables:</b>
 								</div>
+							</div>
+							<div class="row">
 								<div class="col-8" style="border: 1px solid #000000;">
 									<t t-foreach="responsibly" t-as="responsible">
 										<t t-esc="responsible.nombre"/><br/>
@@ -78,10 +80,10 @@
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
-								<div class="col-6" style="border: 1px solid #000000;">
+								<div class="col-8" style="border: 1px solid #000000;">
 									<b>Origen - Destino:</b> <t t-esc="ruta_nombre"/>
 								</div>
-								<div class="col-6" style="border: 1px solid #000000;">
+								<div class="col-4">
 									<b>Descripcion del recorrido:</b> <t t-esc="ruta_det"/>
 								</div>
 							</div>
@@ -200,7 +202,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="page" style="padding-top: 120px!important;">
+					<div class="page" style="padding-top: 130px!important;">
 						<div class="row" style="text-align:center;">
 							<div class="col-12" >
 								<h4><b>INSTRUCTIVO PARA LA DETERMINACION DEL NUMERO CONSECUTIVO DEL FUEC</b></h4>
