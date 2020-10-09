@@ -124,41 +124,31 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-12">
-									<table class="table" style="width: 500px important!; border: 1px solid #000000;">
-										  <thead>
-											  <tr>
-												  <th scope="col" style="border: 1px solid #000000;">Placa</th>
-												  <th scope="col" style="border: 1px solid #000000;">Modelo</th>
-												  <th scope="col" style="border: 1px solid #000000;">Marca</th>
-												  <th scope="col" style="border: 1px solid #000000;">Clase</th>
-												  <th scope="col" style="border: 1px solid #000000;">No. Interno</th>
-												  <th scope="col" style="border: 1px solid #000000;">No. Operación</th>
-											  </tr>
-										  </thead>
-										  <tbody>
-												<tr>
-													<td style="border: 1px solid #000000;">
-														<t t-esc="vehi_placa"/>
-													</td>
-													<td style="border: 1px solid #000000;">
-														<t t-esc="vehi_modelo"/>
-													</td>
-													<td style="border: 1px solid #000000;">
-														<t t-esc="vehi_marca"/>
-													</td>
-													<td style="border: 1px solid #000000;">
-														<t t-esc="vehi_clase"/>
-													</td>
-													<td style="border: 1px solid #000000;">
-														<t t-esc="vehi_interno"/>
-													</td>
-													<td style="border: 1px solid #000000;">
-														<t t-esc="vehi_operacion"/>
-													</td>
-												</tr>
-										  </tbody>
-									</table>
+								<div class="col-2" style="border: 1px solid #000000;">Placa</div>
+							 	<div class="col-2" style="border: 1px solid #000000;">Modelo</div>
+								<div class="col-2" style="border: 1px solid #000000;">Marca</div>
+								<div class="col-2" style="border: 1px solid #000000;">Clase</div>
+								<div class="col-2" style="border: 1px solid #000000;">No. Interno</div>
+								<div class="col-2" style="border: 1px solid #000000;">No. Operación</div>
+							</div>
+							<div class="row">
+								<div style="border: 1px solid #000000;">
+									<t t-esc="vehi_placa"/>
+								</div>
+								<div style="border: 1px solid #000000;">
+									<t t-esc="vehi_modelo"/>
+								</div>
+								<div style="border: 1px solid #000000;">
+									<t t-esc="vehi_marca"/>
+								</div>
+								<div style="border: 1px solid #000000;">
+									<t t-esc="vehi_clase"/>
+								</div>
+								<div style="border: 1px solid #000000;">
+									<t t-esc="vehi_interno"/>
+								</div>
+								<div style="border: 1px solid #000000;">
+									<t t-esc="vehi_operacion"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:center;">
