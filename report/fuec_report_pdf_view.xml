@@ -193,7 +193,7 @@
 									 <b><t t-esc="email"/></b><br/>
 								</div>
 								 <div class="col-3 text-center">
-									<img src="/gabosoft_fuec_portal/static/src/images/supertransporte.jpeg"  style="width:170px; padding-top:5.5rem;"  alt=""/>
+									<img src="/gabosoft_fuec_portal/static/src/images/supertransporte.jpeg"  style="width:170px; padding-top:30px;"  alt=""/>
 								</div>
 								 <div class="col-3 text-center">
 									<img class="firma" t-attf-src="data:image/png;base64,#{firma}" style="width:170px; padding-top:4.5rem;"/><br/>
