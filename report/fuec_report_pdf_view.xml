@@ -29,7 +29,7 @@
 								<hr/>
 							</div>
 						</div>
-						<div style="color:black!important; padding-left:22px; padding-right:22px; padding-bottom:30px;">
+						<div style="color:black!important; padding-left:22px; padding-right:22px;">
 							<div class="row" style="text-align:start; border: 1px solid #000000;">
 								<div class="col-8">
 									<b>Razon social: </b> <t t-esc="razonsocial"/>
