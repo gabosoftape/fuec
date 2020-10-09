@@ -84,69 +84,40 @@
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
-								<div class="col-6" style="border: 1px solid #000000;">
+								<div class="col-12" style="border: 1px solid #000000;">
 									<b>Origen - Destino:</b> <t t-esc="ruta_nombre"/>
 								</div>
-								<div class="col-6" style="border: 1px solid #000000;">
+							</div>
+							<div class="row" style="text-align:start;border: 1px solid #000000;" >
+								<div class="col-12">
 									<b>Descripcion del recorrido:</b> <t t-esc="ruta_det"/>
 								</div>
 							</div>
 							<div t-if="convenio" class="row" style="text-align:start;">
-								<t t-if="convenio == 'cv'">
-									<div class="col-3 text-center" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
-										<b>Convenio</b> (X)
-									</div>
-									<div class="col-3 text-center" style="border: 1px solid #000000;">
-										<b>Consorcio</b>
-									</div>
-									<div class="col-3 text-center" style="border: 1px solid #000000;">
-										<b>Union temporal</b>
-									</div>
-									<div class="col-3 text-center" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
-										<b>Con: </b> <t t-esc="ut_con"/>
-									</div>
-								</t>
-								<t t-if="convenio == 'cs'">
-									<div class="col-3 text-center" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
-										<b>Convenio</b>
-									</div>
-									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Consorcio</b> (X)
-									</div>
-									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Union temporal</b>
-									</div>
-									<div class="col-3 text-center" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
-										<b>Con: </b> <t t-esc="ut_con"/>
-									</div>
-								</t>
-								<t t-else="">
-									<div class="col-3 text-center" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
-										<b>Convenio</b>
-									</div>
-									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Consorcio</b>
-									</div>
-									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Union temporal</b> (X)
-									</div>
-									<div class="col-3 text-center" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000;">
-										<b>Con: </b> <t t-esc="ut_con"/>
-									</div>
-								</t>
-
+								<div class="col-3 text-center" style="border-top: 2px solid #000000; border-bottom: 2px solid #000000;">
+									<b>Convenio</b> <b t-if="convenio == 'cv'">(X)</b>
+								</div>
+								<div class="col-3 text-center" style="border: 2px solid #000000;">
+									<b>Consorcio</b> <b t-if="convenio == 'cs'">(X)</b>
+								</div>
+								<div class="col-3 text-center" style="border: 2px solid #000000;">
+									<b>Union temporal</b> <b t-if="convenio == 'ut'">(X)</b>
+								</div>
+								<div class="col-3 text-center" style="border: 2px solid #000000;">
+									<b>Con: </b> <t t-esc="ut_con"/>
+								</div>
 							</div>
 							<div class="row" style="text-align:start;">
-								<div class="col-12 text-center mt-4" style="border: 1px solid #000000;">
+								<div class="col-12 text-center mt-4" style="border-right: 2px solid #000000;">
 									<b>Vigencia del contrato: </b>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-6 text-center" style="border: 1px solid #000000;">
+								<div class="col-6 text-center" style="border-right: 2px solid #000000;">
 									<b>Desde: &amp;nbsp; </b><br/>
 									<t t-esc="inicio_contrato"/>
 								</div>
-								<div class="col-6 text-center" style="border: 1px solid #000000;">
+								<div class="col-6 text-center" style="border: 2px solid #000000;">
 									<b>Hasta: &amp;nbsp; </b><br/>
 									<t t-esc="fin_contrato"/>
 								</div>
