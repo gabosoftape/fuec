@@ -162,12 +162,14 @@
 								<div class="col-3" style="border: 1px solid #000000;">No. Licencia</div>
 								<div class="col-3" style="border: 1px solid #000000;">Vigencia</div>
 							</div>
-							<div class="row">
-								<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[0]"/></div>
-								<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[1]"/></div>
-								<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[2]"/></div>
-								<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[3]"/></div>
-							</div>
+							<t t-foreach="conductores" t-as="cond">
+								<div class="row">
+									<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[0]"/></div>
+									<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[1]"/></div>
+									<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[2]"/></div>
+									<div class="col-3" style="border: 1px solid #000000;"><t t-esc="cond[3]"/></div>
+								</div>
+							</t>
 							 <div class="row" style="text-align:center;">
 								<div class="col-3 text-center">
 									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="width:170px; padding-top:12px;" alt="Codigo QR"/>
