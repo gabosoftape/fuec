@@ -67,18 +67,20 @@
 									<b>Responsables:</b>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-8" style="border: 1px solid #000000;">
-									<t t-foreach="responsibly" t-as="responsible">
-										<t t-esc="responsible.nombre"/><br/>
-									</t>
+							<t t-foreach="responsibly" t-as="responsible">
+								<div class="row">
+									<div class="col-8" style="border: 1px solid #000000;">
+										<t t-foreach="responsibly" t-as="responsible">
+											<t t-esc="responsible.nombre"/><br/>
+										</t>
+									</div>
+									<div class="col-4" style="border: 1px solid #000000;">
+										<t t-foreach="responsibly" t-as="resp">
+											<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
+										</t>
+									</div>
 								</div>
-								<div class="col-4" style="border: 1px solid #000000;">
-									<t t-foreach="responsibly" t-as="resp">
-										<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
-									</t>
-								</div>
-							</div>
+							</t>
 							<div class="row" style="text-align:start;">
 								<div class="col-8" style="border: 1px solid #000000;">
 									<b>Origen - Destino:</b> <t t-esc="ruta_nombre"/>
