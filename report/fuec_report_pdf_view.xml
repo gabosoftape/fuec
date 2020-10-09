@@ -64,32 +64,24 @@
 							</div>
 							<div class="row" style="text-align:start; border-top: 1px solid #000000;">
 								<div class="col-12">
-									<div class="row">
-										<div class="col-12">
-											<b>Responsables:</b>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-8" style="border: 1px solid #000000;">
-											<t t-foreach="responsibly" t-as="responsible">
-												<t t-esc="responsible.nombre"/><br/>
-											</t>
-										</div>
-										<div class="col-4" style="border: 1px solid #000000;">
-											<t t-foreach="responsibly" t-as="resp">
-												<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
-											</t>
-										</div>
-									</div>
+									<b>Responsables:</b>
+								</div>
+								<div class="col-8" style="border: 1px solid #000000;">
+									<t t-foreach="responsibly" t-as="responsible">
+										<t t-esc="responsible.nombre"/><br/>
+									</t>
+								</div>
+								<div class="col-4" style="border: 1px solid #000000;">
+									<t t-foreach="responsibly" t-as="resp">
+										<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
+									</t>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
-								<div class="col-12" style="border: 1px solid #000000;">
+								<div class="col-6" style="border: 1px solid #000000;">
 									<b>Origen - Destino:</b> <t t-esc="ruta_nombre"/>
 								</div>
-							</div>
-							<div class="row" style="text-align:start;border: 1px solid #000000;" >
-								<div class="col-12">
+								<div class="col-6" style="border: 1px solid #000000;">
 									<b>Descripcion del recorrido:</b> <t t-esc="ruta_det"/>
 								</div>
 							</div>
