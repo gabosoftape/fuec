@@ -171,10 +171,10 @@
 								</div>
 							</t>
 							 <div class="row" style="text-align:center;">
-								<div class="col-2 text-center">
-									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="width:170px; padding-top:12px;" alt="Codigo QR"/>
+								<div class="col-3 text-center">
+									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="width:140px; padding-top:12px;" alt="Codigo QR"/>
 								</div>
-								 <div class="col-3 " style="text-align: justify!important; padding-top:22px; border-left: 2px solid #000000; border-right: 2px solid #000000;">
+								 <div class="col-4 " style="text-align: justify!important; font-size:11px; padding-top:22px; border-left: 2px solid #000000; border-right: 2px solid #000000;">
 									 <b><t t-esc="razonsocial"/></b><br/>
 									 <b><t t-esc="direccion"/></b><br/>
 									 <b><t t-esc="telefono"/></b><br/>
