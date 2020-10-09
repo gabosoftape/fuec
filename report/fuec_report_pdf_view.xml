@@ -124,13 +124,13 @@
 								</t>
 								<t t-else="">
 									<div class="col-3 text-center" style="border-top: 2px solid #000000; border-bottom: 2px solid #000000;">
-										<b>Convenio</b> <b t-if="convenio == 'cv'">(X)</b>
+										<b>Convenio</b> <p t-if="convenio == 'cv'">(X)</p>
 									</div>
 									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Consorcio</b> <b t-if="convenio == 'cs'">(X)</b>
+										<b>Consorcio</b> <p t-if="convenio == 'cs'">(X)</p>
 									</div>
 									<div class="col-3 text-center" style="border: 2px solid #000000;">
-										<b>Union temporal</b> <b t-if="convenio == 'ut'">(X)</b>
+										<b>Union temporal</b> <p t-if="convenio == 'ut'">(X)</p>
 									</div>
 									<div class="col-3 text-center" style="border: 2px solid #000000;">
 										<b>Con: </b> <t t-esc="ut_con"/>
