@@ -174,13 +174,13 @@
 								<div class="col-3 text-center">
 									<img class="" t-attf-src="data:image/png;base64,#{qr}" style="width:170px; padding-top:12px;" alt="Codigo QR"/>
 								</div>
-								 <div class="col-3 " style="text-align: justify!important; padding-top:22px; border: 2px solid #000000;">
+								 <div class="col-3 " style="text-align: justify!important; padding-top:22px; border: 1px solid #000000;">
 									 <b><t t-esc="razonsocial"/></b><br/>
 									 <b><t t-esc="direccion"/></b><br/>
 									 <b><t t-esc="telefono"/></b><br/>
 									 <b><t t-esc="email"/></b><br/>
 								</div>
-								 <div class="col-3 text-center" style="border: 2px solid #000000;">
+								 <div class="col-3 text-center" style="border-right: 1px solid #000000;">
 									<img src="/gabosoft_fuec_portal/static/src/images/supertransporte.jpeg"  style="width:170px; padding-top:30px;"  alt=""/>
 								</div>
 								 <div class="col-3 text-center">
