@@ -34,7 +34,7 @@
 								<div class="col-8">
 									<b>Razon social: </b> <t t-esc="razonsocial"/>
 								</div>
-								<div class="col-4" style="border: 2px solid #000000;">
+								<div class="col-4" style="border: 2px 	 solid #000000;">
 									<b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
 								</div>
 							</div>
@@ -102,7 +102,7 @@
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
-								<div class="col-12 text-center mt-4" style="border: 1px solid #000000;">
+								<div class="col-12 text-center" style="border: 1px solid #000000;">
 									<b>Vigencia del contrato: </b>
 								</div>
 							</div>
@@ -118,8 +118,8 @@
 							</div>
 							<table class="table" style="border: 1px solid #000000;">
 							  <thead>
-								  <tr style="border: 1px solid #000000;">
-									  <b>Caracteristicas del vehiculo</b>
+								  <tr>
+									  <th scope="col" style="border: 1px solid #000000;"><b>Caracteristicas del vehiculo</b></th>
 								  </tr>
 								  <tr>
 									  <th scope="col" style="border: 1px solid #000000;">Placa</th>
@@ -132,51 +132,49 @@
 							  </thead>
 							  <tbody>
 									<tr>
-										<td>
+										<td style="border: 1px solid #000000;">
 											<t t-esc="vehi_placa"/>
 										</td>
-										<td>
+										<td style="border: 1px solid #000000;">
 											<t t-esc="vehi_modelo"/>
 										</td>
-										<td>
+										<td style="border: 1px solid #000000;">
 											<t t-esc="vehi_marca"/>
 										</td>
-										<td>
+										<td style="border: 1px solid #000000;">
 											<t t-esc="vehi_clase"/>
 										</td>
-										<td>
+										<td style="border: 1px solid #000000;">
 											<t t-esc="vehi_interno"/>
 										</td>
-										<td>
+										<td style="border: 1px solid #000000;">
 											<t t-esc="vehi_operacion"/>
 										</td>
 									</tr>
 							  </tbody>
 							</table>
-
-							<hr/>
-							<div class="row p-2" style="text-align:center;">
+							<div class="row" style="text-align:center;">
 								<div class="col-12 text-center">
 									<b>Conductores</b>
 								</div>
 							</div>
-							<table class="table">
+							<table class="table" style="border: 1px solid #000000;">
 							  <thead>
 								<tr>
-								  <th scope="col">Nombres y Apellidos</th>
-								  <th scope="col">No. Identificacion</th>
-								  <th scope="col">No. Licencia</th>
-								  <th scope="col">Vigencia</th>
+								  <th scope="col" style="border: 1px solid #000000;">Nombres y Apellidos</th>
+								  <th scope="col" style="border: 1px solid #000000;">No. Identificacion</th>
+								  <th scope="col" style="border: 1px solid #000000;">No. Licencia</th>
+								  <th scope="col" style="border: 1px solid #000000;">Vigencia</th>
 								</tr>
 							  </thead>
 							  <tbody>
 								<t t-if="conductores">
 									<t t-foreach="conductores" t-as="cond">
 										<tr>
-										  <th scope="col"><t t-esc="cond[0]"/></th>
-										  <td><t t-esc="cond[1]"/></td>
-										  <td><t t-esc="cond[2]"/></td>
-										  <td><t t-esc="cond[3]"/></td>
+										  <th scope="col" style="border: 1px solid #000000;"><t t-esc="cond[0]"/></th>
+										  <td style="border: 1px solid #000000;"><t t-esc="cond[1]"/></td>
+										  <td style="border: 1px solid #000000;"><t t-esc="cond[2]"/></td>
+										  <td style="border: 1px solid #000000;"><t t-esc="cond[3]"/></td>
 										</tr>
 									</t>
 								</t>
