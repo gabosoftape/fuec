@@ -30,20 +30,20 @@
 							</div>
 						</div>
 						<div style="color:black!important; padding-left:22px; padding-right:22px; padding-bottom:30px;">
-							<div class="row" style="text-align:start; border-top: 1px solid #000000;">
+							<div class="row" style="text-align:start; border: 1px solid #000000;">
 								<div class="col-8">
 									<b>Razon social: </b> <t t-esc="razonsocial"/>
 								</div>
-								<div class="col-4" style="border: 2px 	 solid #000000;">
+								<div class="col-4" style="border: 2px solid #000000;">
 									<b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000000;">
+							<div class="row" style="text-align:start; border: 1px solid #000000;">
 								<div class="col-12">
 									<b>Contrato No. </b> <t t-esc="contract_id"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000000;">
+							<div class="row" style="text-align:start; border: 1px solid #000000;">
 								<div class="col-8">
 									<b>Contratante:</b> <t t-esc="contratista_nombre"/>
 								</div>
@@ -51,7 +51,7 @@
 									<b>NIT</b>: <t t-esc="contratista_nit"/>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000000;">
+							<div class="row" style="text-align:start; border: 1px solid #000000;">
 								<div class="col-12">
 									<b>Objeto del contrato: </b>
 									<t t-if="contract_object == '2'">
@@ -62,7 +62,7 @@
 									</t>
 								</div>
 							</div>
-							<div class="row" style="text-align:start; border-top: 1px solid #000000;" >
+							<div class="row" style="text-align:start; border: 1px solid #000000;" >
 								<div class="col-12">
 									<b>Responsables:</b>
 								</div>
@@ -88,7 +88,7 @@
 								</div>
 							</div>
 							<div t-if="convenio" class="row" style="text-align:start;">
-								<div class="col-3 text-center" style="border-top: 1px solid #000000; border-bottom: 2px solid #000000;">
+								<div class="col-3 text-center" style="border: 1px solid #000000; ">
 									<b>Convenio</b><p t-if="convenio == 'cv'">(X)</p>
 								</div>
 								<div class="col-3 text-center" style="border: 1px solid #000000;">
