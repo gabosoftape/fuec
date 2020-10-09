@@ -132,22 +132,22 @@
 								<div class="col-2" style="border: 1px solid #000000;">No. Operación</div>
 							</div>
 							<div class="row">
-								<div style="border: 1px solid #000000;">
+								<div class="col-2" style="border: 1px solid #000000;">
 									<t t-esc="vehi_placa"/>
 								</div>
-								<div style="border: 1px solid #000000;">
+								<div class="col-2" style="border: 1px solid #000000;">
 									<t t-esc="vehi_modelo"/>
 								</div>
-								<div style="border: 1px solid #000000;">
+								<div class="col-2" style="border: 1px solid #000000;">
 									<t t-esc="vehi_marca"/>
 								</div>
-								<div style="border: 1px solid #000000;">
+								<div class="col-2" style="border: 1px solid #000000;">
 									<t t-esc="vehi_clase"/>
 								</div>
-								<div style="border: 1px solid #000000;">
+								<div class="col-2" style="border: 1px solid #000000;">
 									<t t-esc="vehi_interno"/>
 								</div>
-								<div style="border: 1px solid #000000;">
+								<div class="col-2" style="border: 1px solid #000000;">
 									<t t-esc="vehi_operacion"/>
 								</div>
 							</div>
