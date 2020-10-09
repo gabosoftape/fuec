@@ -47,7 +47,7 @@
 								<div class="col-8">
 									<b>Contratante:</b> <t t-esc="contratista_nombre"/>
 								</div>
-								<div class="col-4" style="border-right: 1px solid #000000;">
+								<div class="col-4" style="border-left: 1px solid #000000;">
 									<b>NIT</b>: <t t-esc="contratista_nit"/>
 								</div>
 							</div>
