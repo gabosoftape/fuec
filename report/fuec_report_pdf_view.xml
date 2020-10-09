@@ -34,7 +34,7 @@
 								<div class="col-8">
 									<b>Razon social: </b> <t t-esc="razonsocial"/>
 								</div>
-								<div class="col-4" style="border: 2px solid #000000;">
+								<div class="col-4" style="border-left: 1px solid #000000;">
 									<b><t t-esc="id_type"/></b>: <t t-esc="id_document"/>
 								</div>
 							</div>
