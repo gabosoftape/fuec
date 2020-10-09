@@ -125,7 +125,7 @@
 							</div>
 							<div class="row">
 								<div class="col-12">
-									<table class="table" style="width:100% important!; border: 1px solid #000000;">
+									<table class="table" style="width: 500px important!; border: 1px solid #000000;">
 										  <thead>
 											  <tr>
 												  <th scope="col" style="border: 1px solid #000000;">Placa</th>
