@@ -63,11 +63,8 @@
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
-								<div class="col-8" style="border: 1px solid #000000;">
+								<div class="col-12" style="border: 1px solid #000000;">
 									<b>Origen - Destino:</b> <t t-esc="ruta_nombre"/>
-								</div>
-								<div class="col-4" style="border: 1px solid #000000;">
-									<b>Descripcion del recorrido:</b> <t t-esc="ruta_det"/>
 								</div>
 							</div>
 							<div t-if="convenio" class="row" style="text-align:start;">
