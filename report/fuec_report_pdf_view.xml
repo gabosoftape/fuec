@@ -5,7 +5,7 @@
 			<table style="width:100%; border: 3px solid #000000;">
 				  <tr>
 					<th>
-						<img src="/gabosoft_fuec_portal/static/src/images/ministerio_1.png" style="height: 90px; width:420px; display:block; margin:auto;"/>
+						<img src="/fuec/static/src/images/ministerio.png" style="height: 90px; width:420px; display:block; margin:auto;"/>
 					</th>
 					<th>
 						<img t-attf-src="data:image/png;base64,#{logo}" style="height: 90px; width:430px; display:block; margin:auto;"/>
