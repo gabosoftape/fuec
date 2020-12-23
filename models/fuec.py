@@ -18,8 +18,12 @@ class fuec(models.Model):
     # responsable
     responsables = fields.Many2many('gpscontrol.responsable_fuec', string="Responsable")
     # objeto del contrato
-    contract_object = fields.Selection([('1', 'Prestación de servicio... usuarios y/o particulares'),
-                                        ('2', 'Prestación de servicio .. empleados, funcionarios o contratistas')], string="Objeto de contrato")
+    contract_object = fields.Selection([('1', 'Contrato para transporte de estudiantes.'),
+                                        ('2', 'Contrato para transporte de empleados.'),
+                                        ('3', 'Contrato para transporte de turistas.'),
+                                        ('4', 'Contrato para un grupo especifico de usuarios (transporte de particulares).'),
+                                        ('5', 'Contrato para transporte de  usuarios del servicio de salud.'),
+                                        ], string="Objeto de contrato")
     # ruta
     ruta = fields.Many2one('gpscontrol.ruta_fuec', string="Ruta")
     # Descripcion del recorrido
