@@ -54,12 +54,11 @@
 							<div class="row" style="text-align:start; border: 1px solid #000000;">
 								<div class="col-12">
 									<b>Objeto del contrato: </b>
-									<t t-if="contract_object == '2'">
-										Prestación de servicio de transporte de pasajeros y equipaje al grupo de empleados, funcionarios o contratistas de una empresa
-									</t>
-									<t t-else="">
-										Prestación de servicio de transporte de pasajeros y equipaje al grupo de usuarios y/o particulares
-									</t>
+									<t t-if="contract_object == '1'">Contrato para transporte de estudiantes.</t>
+									<t t-if="contract_object == '2'">Contrato para transporte de empleados.</t>
+									<t t-if="contract_object == '3'">Contrato para transporte de turistas.</t>
+									<t t-if="contract_object == '4'">Contrato para un grupo especifico de usuarios (transporte de particulares).</t>
+									<t t-if="contract_object == '5'">Contrato para transporte de  usuarios del servicio de salud.</t>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
