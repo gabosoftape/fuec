@@ -78,7 +78,7 @@
 									<b>Union temporal</b><p t-if="convenio == 'ut'">(X)</p>
 								</div>
 								<div class="col-3 text-center" style="border: 1px solid #000000;">
-									<b>Con: </b><t t-esc="ut_con"/>
+									<b>Con: </b><br/><t t-esc="ut_con"/>
 								</div>
 							</div>
 							<div class="row" style="text-align:start;">
