@@ -81,6 +81,11 @@
 									<b>Con: </b><br/><t t-esc="ut_con"/>
 								</div>
 							</div>
+							<div t-else="" class="row" style="text-align:start;">
+								<div class="col-12 text-center" style="border: 1px solid #000000; ">
+									<b>Convenio con:<p>NO APLICA</p></b>
+								</div>
+							</div>
 							<div class="row" style="text-align:start;">
 								<div class="col-12 text-center" style="border: 1px solid #000000;">
 									<b>Vigencia del contrato: </b>
