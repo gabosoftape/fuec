@@ -156,14 +156,10 @@
 							<t t-foreach="responsibly" t-as="responsible">
 								<div class="row">
 									<div class="col-8" style="border: 1px solid #000000;">
-										<t t-foreach="responsibly" t-as="responsible">
-											<t t-esc="responsible.nombre"/><br/>
-										</t>
+										<t t-esc="responsible.nombre"/><br/>
 									</div>
 									<div class="col-4" style="border: 1px solid #000000;">
-										<t t-foreach="responsibly" t-as="resp">
-											<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
-										</t>
+										<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
 									</div>
 								</div>
 							</t>
