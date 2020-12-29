@@ -155,7 +155,7 @@
 							</div>
 							<div class="row">
 								<div class="col-3" style="border: 1px solid #000000;"><b>Nombre</b></div>
-								<div class="col-3" style="border: 1px solid #000000;"><b>Tipo y No. Identificacion</b></div>
+								<div class="col-3" style="border: 1px solid #000000;"><b>Tipo y No. ID</b></div>
 								<div class="col-3" style="border: 1px solid #000000;"><b>Direccion</b></div>
 								<div class="col-3" style="border: 1px solid #000000;"><b>Telefono</b></div>
 							</div>
