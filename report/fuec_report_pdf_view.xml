@@ -159,13 +159,13 @@
 										<t t-esc="responsible.nombre"/><br/>
 									</div>
 									<div class="col-3" style="border: 1px solid #000000;">
-										<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
+										<b><t t-esc="responsible.id_type"/> </b>:  <t t-esc="responsible.id_document"/><br/>
 									</div>
 									<div class="col-3" style="border: 1px solid #000000;">
-										<b><t t-esc="resp.direccion"/> </b>
+										<b><t t-esc="responsible.direccion"/> </b>
 									</div>
 									<div class="col-3" style="border: 1px solid #000000;">
-										<b><t t-esc="resp.telefono"/> </b>
+										<b><t t-esc="responsible.telefono"/> </b>
 									</div>
 								</div>
 							</t>
