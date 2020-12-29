@@ -155,11 +155,17 @@
 							</div>
 							<t t-foreach="responsibly" t-as="responsible">
 								<div class="row">
-									<div class="col-8" style="border: 1px solid #000000;">
+									<div class="col-3" style="border: 1px solid #000000;">
 										<t t-esc="responsible.nombre"/><br/>
 									</div>
-									<div class="col-4" style="border: 1px solid #000000;">
+									<div class="col-3" style="border: 1px solid #000000;">
 										<b><t t-esc="resp.id_type"/> </b>:  <t t-esc="resp.id_document"/><br/>
+									</div>
+									<div class="col-3" style="border: 1px solid #000000;">
+										<b><t t-esc="resp.direccion"/> </b>
+									</div>
+									<div class="col-3" style="border: 1px solid #000000;">
+										<b><t t-esc="resp.telefono"/> </b>
 									</div>
 								</div>
 							</t>
