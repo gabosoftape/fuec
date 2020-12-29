@@ -102,12 +102,12 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-2" style="border: 1px solid #000000;">Placa</div>
-							 	<div class="col-2" style="border: 1px solid #000000;">Modelo</div>
-								<div class="col-2" style="border: 1px solid #000000;">Marca</div>
-								<div class="col-2" style="border: 1px solid #000000;">Clase</div>
-								<div class="col-2" style="border: 1px solid #000000;">No. Interno</div>
-								<div class="col-2" style="border: 1px solid #000000;">No. Operación</div>
+								<div class="col-2" style="border: 1px solid #000000;"><b>Placa</b></div>
+							 	<div class="col-2" style="border: 1px solid #000000;"><b>Modelo</b></div>
+								<div class="col-2" style="border: 1px solid #000000;"><b>Marca</b></div>
+								<div class="col-2" style="border: 1px solid #000000;"><b>Clase</b></div>
+								<div class="col-2" style="border: 1px solid #000000;"><b>No. Interno</b></div>
+								<div class="col-2" style="border: 1px solid #000000;"><b>No. Operación</b></div>
 							</div>
 							<div class="row">
 								<div class="col-2" style="border: 1px solid #000000;">
@@ -135,10 +135,10 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-3" style="border: 1px solid #000000;">Nombres y Apellidos</div>
-								<div class="col-3" style="border: 1px solid #000000;">No. Identificacion</div>
-								<div class="col-3" style="border: 1px solid #000000;">No. Licencia</div>
-								<div class="col-3" style="border: 1px solid #000000;">Vigencia</div>
+								<div class="col-3" style="border: 1px solid #000000;"><b>Nombres y Apellidos</b></div>
+								<div class="col-3" style="border: 1px solid #000000;"><b>No. Identificacion</b></div>
+								<div class="col-3" style="border: 1px solid #000000;"><b>No. Licencia</b></div>
+								<div class="col-3" style="border: 1px solid #000000;"><b>Vigencia</b></div>
 							</div>
 							<t t-foreach="conductores" t-as="cond">
 								<div class="row">
@@ -152,6 +152,12 @@
 								<div class="col-12">
 									<b>Responsables:</b>
 								</div>
+							</div>
+							<div class="row">
+								<div class="col-3" style="border: 1px solid #000000;"><b>Nombre</b></div>
+								<div class="col-3" style="border: 1px solid #000000;"><b>Tipo y No. Identificacion</b></div>
+								<div class="col-3" style="border: 1px solid #000000;"><b>Direccion</b></div>
+								<div class="col-3" style="border: 1px solid #000000;"><b>Telefono</b></div>
 							</div>
 							<t t-foreach="responsibly" t-as="responsible">
 								<div class="row">
